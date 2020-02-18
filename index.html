@@ -4,20 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gaming match</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
 </head>
+
 <body onhashchange="pageChange()">
 
-<nav id="tabbar" class="tabbar hide">
-<a href="#front"></a>
-<a href="#browse"> browse games</a>
-<a href="#profile"> profile</a>
-<a href="deetailedView"></a>
-</nav>
 <!-- forntpage -->
 <section id="front" class="page">
 <h2>frontpage</h2>
 <div id="add-acc">
 <form>
+
 <!-- <input type="text" id="name" placeholder="Type your name" required> -->
 <input type="email" id="mail" placeholder="Type your email" required>
 <input type="text" id="password" placeholder="Type your password" required>
@@ -25,22 +23,39 @@
 </form>
 </div>
 </section>
+
 <!-- browse game page  -->
 <section id="browse" class="page">
 <h2>browse games</h2>
     <div id="background"></div>
     <section id="login"></section>
 </section>
+
 <!-- game detailed view page -->
 <section id="detailedView" class="page">
 <h2>game</h2>
 <div id="dvId"></div>
 <section id="post"></section>
-</section>
+
 <!-- profile page  -->
 <section id="profile" class="page">
 <h2>profile</h2>
 </section>
+</section>
+
+<!-- Sticky tabbar -->
+<footer id="tabbar" class="tabbar hide">
+<a href="#front"></a>
+
+<div class="tabbox">
+<a href="#friends"> <input type="image" src="images/friends.png" alt="friendlist"> </a>
+<a href="#browse"> <input type="image" src="images/forums.png" alt="forums"> </a>
+<a href="#profile"> <input type="image" src="images/friends.png" alt="profile"> </a>
+</div>
+
+<a href="deetailedView"></a>
+</footer>
+
 <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
 <script defer src="https://www.gstatic.com/firebasejs/7.8.2/firebase-auth.js"></script>
 <script src="js/firebaseFunction.js"></script>

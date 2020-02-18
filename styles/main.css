@@ -1,0 +1,60 @@
+html {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+/* Mobile Media query */
+body {
+font-color: white;
+height: 1000px;
+margin: 0%;
+}
+
+#front {
+background-color: blue;
+
+}
+
+/* tabbar mobile */
+  #tabbar {
+  display: flex;
+  flex-direction: column;
+  background-color: grey;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  bottom: 0;
+  height: 100px;
+}
+
+/* tabbox child elements */
+
+  .tabbox {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width: 100%;
+  height: 100px;
+
+  }
+
+/* image ajustment */
+  .tabbox a input {
+  margin-top: 30%;
+  width:35px;
+  height:35px;
+
+  }
+
+
+
+
+/* Input */
+#add-acc form input {
+  font-size: 20px;
+  margin-top: 10%;
+}
+
+/* Desktop Media query
+@media only screen and (min-width: 1500px) {
+
+*/
