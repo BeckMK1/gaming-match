@@ -10,16 +10,5 @@ var firebaseConfig = {
   };
   // Initialize Firebase 
   firebase.initializeApp(firebaseConfig);
-//---------------------------------------- sign up ----------------------------------------
-function signUp(){
-let email = document.querySelector('#mail').value;
-let password = document.querySelector('#password').value;
+  var db = firebase.firestore();
 
-firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
-    // Handle Errors here.
-    var errorCode = error.code;
-    var errorMessage = error.message;
-    // ...
-  });
-// ------------------------------  sign in  -------------------------------------------------
-};
