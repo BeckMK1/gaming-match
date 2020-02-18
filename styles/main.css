@@ -6,13 +6,31 @@ html {
 /* Mobile Media query */
 body {
 font-color: white;
-height: 1000px;
+height: 600px;
+width:100%;
 margin: 0%;
 }
 
+/* frontpage */
 #front {
-background-color: blue;
+  display: flex;
+  flex-flow: column-reverse;
+  height: 600px;
+  text-align: center;
+}
 
+/* Sign up box */
+#add-acc {
+background-color: white;
+flex-direction: row;
+}
+
+/* button design */
+#add-acc button {
+  text-align center;
+  margin-left:50px;
+  margin-right:50px;
+  margin-top:30px;
 }
 
 /* tabbar mobile */
@@ -23,18 +41,16 @@ background-color: blue;
   position: -webkit-sticky; /* Safari */
   position: sticky;
   bottom: 0;
-  height: 100px;
+  height: 70px;
 }
 
 /* tabbox child elements */
-
   .tabbox {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   width: 100%;
   height: 100px;
-
   }
 
 /* image ajustment */
@@ -42,10 +58,7 @@ background-color: blue;
   margin-top: 30%;
   width:35px;
   height:35px;
-
   }
-
-
 
 
 /* Input */
