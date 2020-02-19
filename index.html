@@ -10,13 +10,14 @@
 </head>
 
 <body onhashchange="pageChange()">
-
+<!-- navagtion -->
     <nav id="tabbar" class="tabbar hide">
         <a href="#front"></a>
         <a href="#browse"> browse games</a>
         <a href="#profile"> profile</a>
-        <a href="deetailedView"></a>
+        <a href="#detailedView">detailedView</a>
     </nav>
+
     <!-- forntpage -->
     <section id="front" class="page">
         <h2>frontpage</h2>
@@ -24,16 +25,19 @@
         <!-- login -->
         <section id="login">
             <form>
+                <!-- email and password fields for login -->
                 <input type="email" id="inMail" placeholder="type your email">
                 <input type="text" id="inPassword" placeholder="type your password">
                 <button type="button" name="button" onclick="signIn()">sign in</button>
             </form>
         </section>
+        <!-- show sign up fields  -->
         <button type="button" name="button" onclick="showSignUp()">sign up</button>
-    <!-- sign up -->
+    
+        <!-- sign up -->
         <div id="add-acc">
             <form>
-                <!-- <input type="text" id="name" placeholder="Type your name" required> -->
+                <!-- email and password fields for sing up user -->
                 <input type="email" id="mail" placeholder="Type your email" required>
                 <input type="text" id="password" placeholder="Type your password" required>
                 <button type="button" name="button" onclick="signUp()">signUp</button>
@@ -50,15 +54,26 @@
     <section id="detailedView" class="page">
         <h2>game</h2>
         <div id="dvId"></div>
-        <section id="post"></section>
+        <!--  show posts -->
+        <section id="show-post"></section>
+        <!-- make posts -->
+        <section id="make-post">
+            <input type="text" id="gameTitle" placeholder="game">
+            <input type="text" id="numberOfPlayers" placeholder="number of players">
+            <input type="text" id="tags" placeholder="tags">
+            <button type="button" name="button" onclick="addPost()"> create post</button>
+        </section>
     </section>
 
     <!-- profile page  -->
     <section id="profile" class="page">
         <h2>profile</h2>
         <div id="setProfile">
+        <!-- set profile settings -->
         <input type="text" id="name" placeholder="type your name">
-        <input type="url" id="profileImg" placeholder="insert image url">
+        <!-- <input type="file" id="img" accept="image/*" onchange="previewImage(this.files[0], 'imagePreview')"> -->
+        <!-- <img id="imagePreview" class="image-preview"> -->
+        <!-- update button -->
         <button type="button" name="button" onclick="updateUser()">set profile</button>
         </div>
     </section>
@@ -72,6 +87,8 @@
     <script src="js/firebaseFunction.js"></script>
     <script src="js/spa.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/makePost.js"></script>
+    <script src="viewPost.js"></script>
 </body>
 
 </html>

@@ -1,4 +1,5 @@
 "use strict";
+// ----------------------------------------- sign in/up provile page functionality -------------------------------------
 let _currentUser;
 const _userRef = db.collection("users")
 function showSignUp() {
@@ -45,13 +46,24 @@ function appendUserData() {
       
         // update auth user
         user.updateProfile({
-          displayName: document.querySelector('#name').value
         });
       
         // update database user
         _userRef.doc(user.uid).set({
-          img: document.querySelector('#profileImg').src,
+          // img: document.querySelector('#profileImg').src,
+          displayName: document.querySelector('#name').value,
         }, {
           merge: true
         });
-      }   
+      }
+
+      //----------------------------------- image previewImage --------------------------------------
+      function previewImage(file, previewId) {
+        if (file) {
+          let reader = new FileReader();
+          reader.onload = function (event) {
+            document.querySelector('#' + previewId).setAttribute('src', event.target.result);
+          };
+          reader.readAsDataURL(file);
+        }
+      }
