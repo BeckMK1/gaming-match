@@ -7,17 +7,17 @@ document.querySelector("#add-acc").style.display ="block";
 }
 //---------------------------------------- sign up ----------------------------------------
 function signUp(){
-    let email = document.querySelector('#mail').value;
+    let email = document.querySelector('#email').value;
     let password = document.querySelector('#password').value;
     
     firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
 
-      });
-    // ------------------------------  sign in  -------------------------------------------------
-    };
-    function signIn(){
-    let email = document.querySelector('#inMail').value;
-    let password = document.querySelector('#inPassword').value;
+    });
+}
+// ------------------------------  sign in  -------------------------------------------------
+function signIn(){
+    let email = document.querySelector('#email').value;
+    let password = document.querySelector('#password').value;
     firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;

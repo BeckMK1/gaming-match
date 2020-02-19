@@ -12,44 +12,72 @@
 <body onhashchange="pageChange()">
 <!-- navagtion -->
     <nav id="tabbar" class="tabbar hide">
-        <a href="#front"></a>
         <a href="#browse"> browse games</a>
         <a href="#profile"> profile</a>
         <a href="#detailedView">detailedView</a>
+        <a href="#signIn">Sign In</a>
+        <a href="#signUp">Sign Up</a>
     </nav>
 
-    <!-- forntpage -->
-    <section id="front" class="page">
-        <div id="background" class="row"></div>
+    <!-- Front Page (Signup Form) -->
+    <section id="signUp" class="page">
+        <div id="background">
+            <!-- Left side -->
+            <div class="column-50 text-center">
+              <h1>Gaming Match</h1>
+              <p>Gaming match er en web app for dig, der mangler en eller flere at spille med.<br>Det er gratis, så opret dig nu!</p>
+            </div>
+            <!-- End of Left side -->
 
-        <!-- Left side -->
-        <section class="column-50 text-center">
-          <h1>Gaming Match</h1>
-          <p>Gaming match er...</p>
-        </section>
-        <!-- End of Left side -->
-      
+            <!-- Right Side (login) -->
+            <div id="register" class="column-50">
+                <div class="signupForm">
+                    <form>
+                        <div class="formInput" id="usernameInput">
+                            <label for="username">Username</label>
+                            <input type="text" id="username">
+                        </div>
+                        <div class="formInput" id="emailInput">
+                            <label for="email">Email</label>
+                            <input type="email" id="email">
+                        </div>
+                        <div class="formInput" id="passwordInput">
+                            <label for="password">Password</label>
+                            <input type="password" id="password">
+                        </div>
+                        <div class="formInput" id="passwordConfirmationInput">
+                            <label for="passwordConfirmation">Confirm Password</label>
+                            <input type="password" id="passwordConfirmation">
+                        </div>
+                        <!-- email and password fields for login -->
+                        <button id="signupbtn" type="button" name="button" onclick="signUp()">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+            <!-- End of Right Side  -->
+        </div>
+    </section>
 
-        <!-- login -->
-        <section id="login" class="column-50">
-            <form>
-                <!-- email and password fields for login -->
-                <input type="email" id="inMail" placeholder="type your email">
-                <input type="text" id="inPassword" placeholder="type your password">
-                <button type="button" name="button" onclick="signIn()">sign in</button>
-            </form>
-        </section>
-        <!-- show sign up fields  -->
-        <button type="button" name="button" onclick="showSignUp()">sign up</button>
-    
-        <!-- sign up -->
-        <div id="add-acc">
-            <form>
-                <!-- email and password fields for sing up user -->
-                <input type="email" id="mail" placeholder="Type your email" required>
-                <input type="text" id="password" placeholder="Type your password" required>
-                <button type="button" name="button" onclick="signUp()">signUp</button>
-            </form>
+    <!-- Sign In Form -->
+    <section id="signIn" class="page">
+        <div id="background">
+            <div id="login" class="column-50">
+                <div class="signupForm">
+                    <form>
+                        <div class="formInput" id="emailInput">
+                            <label for="email">Email</label>
+                            <input type="email" id="email">
+                        </div>
+                        <div class="formInput" id="passwordInput">
+                            <label for="password">Password</label>
+                            <input type="password" id="password">
+                        </div>
+                        <!-- email and password fields for login -->
+                        <button id="signupbtn" type="button" name="button" onclick="signIn()">Sign In</button>
+                    </form>
+                </div>
+            </div>
+            <!-- End of Right Side  -->
         </div>
     </section>
 
@@ -96,7 +124,7 @@
     <script src="js/spa.js"></script>
     <script src="js/main.js"></script>
     <script src="js/makePost.js"></script>
-    <script src="viewPost.js"></script>
+    <script src="js/viewPost.js"></script>
 </body>
 
 </html>
