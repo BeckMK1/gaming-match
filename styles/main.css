@@ -1,4 +1,13 @@
 #add-acc{
 display: none;
 }
+.row {
+    display: block;
+}
+section.column-50 {
+    width: 49%;
+    display: inline-block;
+}
+
+
 /* ------------firebase login ui-------------- */
