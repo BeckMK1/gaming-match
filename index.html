@@ -13,7 +13,7 @@
 <!-- navagtion -->
     <nav id="tabbar" class="tabbar hide">
         
-        <a href="#browse"> browse games</a>
+        <a href="#browseGame"> browse games</a>
         <a href="#profile"> profile</a>
         <a href="#detailedView">detailedView</a>
     </nav>
@@ -85,11 +85,6 @@
 </section>
 </div>
 
-    <!-- browse game page  -->
-    <section id="browse" class="page">
-        <h2>browse games</h2>
-    </section>
-
     <!-- game detailed view page -->
     <section id="detailedView" class="page">
         <h2>game</h2>
@@ -117,6 +112,34 @@
         <button type="button" name="button" onclick="updateUser()">set profile</button>
         </div>
     </section>
+<!-- game page -->
+
+<section id="browseGame" class="page">
+<header>
+    <section id="userface"></section>
+</header>
+
+ <section id="over">
+   <section id="frindlist">
+     <div id="listen">
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+     </div>
+     <section id="userface"></section>
+   </section>
+
+
+<div id="Spilunderside">
+<input id="sog" type="search" placeholder="Search" onkeyup="search(this.value)">
+<h2> Most popular</h2>
+ <section id="games" class="grid-container"></section>
+</div>
+</section>
+</section>
+ <!-- main js file -->
 
 
     <!-- firebase scripts -->
@@ -129,6 +152,9 @@
     <script src="js/main.js"></script>
     <script src="js/makePost.js"></script>
     <script src="js/viewPost.js"></script>
+    <script src="js/post.js"></script>
+    <script src="js/search.js"></script>
+    <script src="js/userface.js"></script>
 </body>
 
 </html>
