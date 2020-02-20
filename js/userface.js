@@ -11,10 +11,10 @@ snapshotData.forEach(function(doc){
 
 });
 console.log(_usersref);
-appendgames(_usersref);
+appenduserimg(_usersref);
 
 });
-function appendgames(_usersref){
+function appenduserimg(_usersref){
 let htmlTemplate="";
 for (let _usersref of userface){
   console.log(_usersref)
