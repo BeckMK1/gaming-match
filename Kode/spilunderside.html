@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming match</title>
+
+    <link rel="stylesheet" href="CSS/main.css">
+
+</head>
+<header>
+  <section id="userface"></section>
+ </header>
+<body>
+
+  <section id="over">
+    <section id="frindlist">
+      <div id="listen">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </div>
+      <section id="userface"></section>
+    </section>
+
+
+<div id="Spilunderside">
+<input id="sog" type="search" placeholder="Search" onkeyup="search(this.value)">
+<h2> Most popular</h2>
+  <section id="games" class="grid-container"></section>
+</div>
+</section>
+  <!-- main js file -->
+  <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-firestore.js"></script>
+  <script src="post.js"></script>
+  <script src="search.js"></script>
+</body>
+
+</html>

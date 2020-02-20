@@ -2,8 +2,16 @@
 // ----------------------------------------- sign in/up provile page functionality -------------------------------------
 let _currentUser;
 const _userRef = db.collection("users")
-function showSignUp() {
-document.querySelector("#add-acc").style.display ="block"; 
+function showSignIn() {
+document.querySelector("#signIn").style.display ="block";
+document.querySelector("#signInpbtn").style.display="block";
+document.querySelector("#blackout").style.display="block";
+}
+
+function close() {
+document.querySelector("#signIn").style.display="none";
+document.querySelector("#signInpbtn").style.display="none";
+document.querySelector("#blackout").style.display="none";
 }
 //---------------------------------------- sign up ----------------------------------------
 function signUp(){
@@ -13,6 +21,7 @@ function signUp(){
     firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
 
     });
+    navigateTo("profile")
 }
 // ------------------------------  sign in  -------------------------------------------------
 function signIn(){
@@ -52,6 +61,7 @@ function appendUserData() {
         _userRef.doc(user.uid).set({
           // img: document.querySelector('#profileImg').src,
           displayName: document.querySelector('#name').value,
+          
         }, {
           merge: true
         });

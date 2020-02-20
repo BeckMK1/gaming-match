@@ -12,15 +12,16 @@
 <body onhashchange="pageChange()">
 <!-- navagtion -->
     <nav id="tabbar" class="tabbar hide">
+        
         <a href="#browse"> browse games</a>
         <a href="#profile"> profile</a>
         <a href="#detailedView">detailedView</a>
-        <a href="#signIn">Sign In</a>
-        <a href="#signUp">Sign Up</a>
     </nav>
 
     <!-- Front Page (Signup Form) -->
-    <section id="signUp" class="page">
+    <section id="front" class="page">
+    <div id="blackout"></div>
+    <section id="signUp">
         <div id="background">
             <!-- Left side -->
             <div class="column-50 text-center">
@@ -33,9 +34,9 @@
             <div id="register" class="column-50">
                 <div class="signupForm">
                     <form>
-                        <div class="formInput" id="usernameInput">
-                            <label for="username">Username</label>
-                            <input type="text" id="username">
+                            <div class="formInput" id="usernameInput">
+                                <label for="username">Username</label>
+                                <input type="text" id="username">
                         </div>
                         <div class="formInput" id="emailInput">
                             <label for="email">Email</label>
@@ -45,25 +46,25 @@
                             <label for="password">Password</label>
                             <input type="password" id="password">
                         </div>
-                        <div class="formInput" id="passwordConfirmationInput">
+                         <div class="formInput" id="passwordConfirmationInput"> 
                             <label for="passwordConfirmation">Confirm Password</label>
                             <input type="password" id="passwordConfirmation">
                         </div>
                         <!-- email and password fields for login -->
                         <button id="signupbtn" type="button" name="button" onclick="signUp()">Sign Up</button>
+                        <button type="button" name="button" id="sign-up"onclick="showSignIn()">sign in</button>
                     </form>
                 </div>
             </div>
             <!-- End of Right Side  -->
-        </div>
     </section>
 
     <!-- Sign In Form -->
-    <section id="signIn" class="page">
-        <div id="background">
+    <section id="signIn">
             <div id="login" class="column-50">
                 <div class="signupForm">
                     <form>
+                        <button id="close" type="button" name="button" onclick="close()">close</button>
                         <div class="formInput" id="emailInput">
                             <label for="email">Email</label>
                             <input type="email" id="email">
@@ -73,13 +74,16 @@
                             <input type="password" id="password">
                         </div>
                         <!-- email and password fields for login -->
-                        <button id="signupbtn" type="button" name="button" onclick="signIn()">Sign In</button>
+                        <button id="signInpbtn" type="button" name="button" onclick="signIn()">Sign In</button>
+                        
                     </form>
                 </div>
             </div>
             <!-- End of Right Side  -->
-        </div>
+
     </section>
+</section>
+</div>
 
     <!-- browse game page  -->
     <section id="browse" class="page">
