@@ -1,4 +1,5 @@
 /* Generic Styles */
+/* front page */
 body {
     font-family: arial;
     margin: 0;
@@ -80,4 +81,92 @@ nav#tabbar, .signupForm {
     
     
 }
-/* ------------firebase login ui-------------- */
+/* nav{
+display: none;
+} */
+/* browse game */
+
+#games {
+    display: flex;
+    flex-direction: row;
+  text-align: center;
+  justify-content: center;
+  max-width: 90%;
+  flex-wrap: wrap;
+  margin-left: 5%;
+  
+  
+  
+  }
+  #over{
+    display: flex;
+    flex-direction: row;
+  
+  }
+  li {
+    list-style: none;
+    }
+  #listen{
+      max-width: 310px;
+    width: 18%;
+    height: 75%;
+    background-color: white;
+    margin-left: 19px;
+    margin-top: 75px;
+    border-radius: 10px;
+    position: fixed;
+  
+  }
+  header{
+  width: 100%;
+  height: 70px;
+  background-color: gray;
+  position: fixed;
+  }
+  
+  #Spilunderside{
+    margin-top: 8%;
+    display: flex;
+    flex-direction: column;
+  }
+  #frindlist{
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    height: 1080px;
+    width:350px;
+  
+  
+  }
+  #gamesliste{
+    margin: 20px;
+  
+  }
+  h1{
+    text-align: center;
+  }
+  #games img{
+    height: 300px;
+    width: 200px;
+  }
+  #sog{
+    -webkit-appearance: none;
+    margin-left: 30%;
+  padding: 20px;
+  width: 400px;
+  border-color: gray;
+  border-radius: 50px;
+  font-size: 20px;
+  }
+  h2{ margin-left: 13%;
+  }
+  #userface{
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    margin-left: 93%;
+    margin-top: 0.7%;
+    border-radius: 50px;
+  
+  }
+  

@@ -1,14 +1,12 @@
-// Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-const db = firebase.firestore();
+
+
 const _usersref = db.collection("users");
 let userface=[];
 _usersref.onSnapshot(function(snapshotData) {
-games = [];
 snapshotData.forEach(function(doc){
   let _usersref = doc.data();
 
-  _usersref.uid = doc.id;
+  _usersref.uid = doc.uid;
   userface.push(_usersref);
 
 });
@@ -18,10 +16,10 @@ appendgames(_usersref);
 });
 function appendgames(_usersref){
 let htmlTemplate="";
-for (let userface of _usersref){
+for (let _usersref of userface){
   console.log(_usersref)
 
-htmlTemplate +=`<img src="${users.img}">`
+htmlTemplate =`<img src="${_usersref.img}">`
 
 document.querySelector("#userface").innerHTML = htmlTemplate;
 
