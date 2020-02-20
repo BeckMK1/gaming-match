@@ -88,7 +88,20 @@ nav#tabbar, .signupForm {
 display: none;
 } */
 /* browse game */
+#blackout{
+position: absolute;
+opacity: 95%;
+background: black;
+display: none;
+width: 100%;
+height: 100%;
+}
 
+#signIn{
+position: relative;
+display: none;
+z-index: 1;
+}
 #games {
     display: flex;
     flex-direction: row;
