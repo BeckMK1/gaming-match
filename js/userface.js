@@ -1,5 +1,4 @@
 
-
 const _usersref = db.collection("users");
 let userface=[];
 _usersref.onSnapshot(function(snapshotData) {

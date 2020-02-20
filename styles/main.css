@@ -13,7 +13,7 @@ nav#tabbar a, .formInput {
 .text-center {
     text-align: center;
 }
-nav{display: none;}
+
 /* Style for Signup Form */
 div.column-50 { /* Kolonner til Sign Up form */
     width: 49%;
