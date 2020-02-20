@@ -70,16 +70,13 @@ nav#tabbar, .signupForm {
     margin-top: 10%;
 }
 
-.frede2{
-    
-    
-    background: green;
-    border: none;
+#setProfile{
+    -webkit-appearance: none;
     padding: 15px;
     color: white;
     border-radius: 10px;
     display: block;
-    margin: 15px auto;
+    
     
     
 }
