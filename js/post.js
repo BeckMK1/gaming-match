@@ -12,6 +12,7 @@ gamesref.onSnapshot(function(snapshotData) {
   });
   console.log(games);
   appendgames(games);
+  appendgamesforpost(games);
 });
 function appendgames(games){
   let htmlTemplate="";
