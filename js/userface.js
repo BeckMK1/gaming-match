@@ -18,7 +18,9 @@ let htmlTemplate="";
 for (let _usersref of userface){
   console.log(_usersref)
 
-htmlTemplate =`<img src="${_usersref.img}">`
+htmlTemplate =`<img src="${_usersref.img}">
+<p>${_usersref.displayName}</p>
+`
 
 document.querySelector("#userface").innerHTML = htmlTemplate;
 
