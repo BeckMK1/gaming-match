@@ -11,14 +11,23 @@
 
 <body onhashchange="pageChange()">
 <!-- navagtion -->
-    <nav id="tabbar" class="tabbar hide">
-
-        <a href="#browseGame"> browse games</a>
+<header>
+    <section id="userogdrop">
+      <section id="userface">
+      <img src="images/nouser.png">
+    </section>
+    <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn"></button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#browseGame"> browse games</a>
         <a href="#profile"> profile</a>
         <a href="#detailedView">detailedView</a>
         <a href="#make-post"> create post</a>
-
-    </nav>
+  </div>
+  </div>
+  </section>
+  
+  </header>
 
     <!-- Front Page (Signup Form) -->
     <section id="front" class="page">
@@ -155,22 +164,7 @@
 <!-- game page -->
 
 <section id="browseGame" class="page">
-<header>
-  <section id="userogdrop">
-    <section id="userface">
-    <img src="images/nouser.png">
-  </section>
-  <div class="dropdown">
-<button onclick="myFunction()" class="dropbtn"></button>
-<div id="myDropdown" class="dropdown-content">
-  <a href="#">Link 1</a>
-  <a href="#">Link 2</a>
-  <a href="#">Link 3</a>
-</div>
-</div>
-</section>
 
-</header>
  <section id="over">
    <section id="frindlist">
      <div id="listen">

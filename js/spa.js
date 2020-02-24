@@ -16,7 +16,7 @@ function showPage(pageId) {
   }
   // sets active tabbar/ menu item
 function setActiveTab(pageId) {
-    let pages = document.querySelectorAll(".tabbar a");
+    let pages = document.querySelectorAll("#myDropdown a");
     for (let page of pages) {
       if (`#${pageId}` === page.getAttribute("href")) {
         page.classList.add("active");
