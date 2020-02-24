@@ -1,5 +1,6 @@
 /* Generic Styles */
 /* front page */
+
 body {
     font-family: arial;
     margin: 0;
@@ -38,7 +39,7 @@ nav#tabbar, .signupForm {
     border-radius: 10px;
     display: block;
     margin: 15px auto;
-}
+}/* end of Style for Signup Form */
 
 /* Styling for Forms */
 .formInput label {
@@ -50,36 +51,46 @@ nav#tabbar, .signupForm {
     width: 100%;
     height: 25px;
 }
+/* End  Styling for Forms */
+/* profilkasse  ny sektion-  */
+#profilkasse{
 
-
-/* Generic Styles #profile */
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  margin-left: 5%;
+}
 
 #navn{
-    -webkit-appearance: none;
-    padding: 15px;
-    color: white;
-    border-radius: 10px;
-    display: block;
-
+  font-size: 40px;
 }
 
-#frede{
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10%;
+.knapper{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ position: relative;
 }
 
+
+#imagePreview{
+  display: flex;
+}
+
+/* Virker ikke */
 #setProfile{
+
     -webkit-appearance: none;
     padding: 15px;
     color: white;
     border-radius: 10px;
     display: block;
+    margin-left: 30%;
 
 
-
+/* Virker ikke  ukent*/
 }
 #blackout{
   position: absolute;
@@ -95,13 +106,12 @@ nav#tabbar, .signupForm {
   display: none;
   z-index: 1;
   }
-/* nav{
-display: none;
-} */
+
+ /* END OF UKENT ukent*/
+
+
 
 /* browse game */
-
-
 #games {
     display: flex;
     flex-direction: row;
