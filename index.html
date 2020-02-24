@@ -16,6 +16,7 @@
         <a href="#browseGame"> browse games</a>
         <a href="#profile"> profile</a>
         <a href="#detailedView">detailedView</a>
+        <a href="#make-post"> create post</a>
 
     </nav>
 
@@ -85,6 +86,25 @@
         </div>
     </section>
 </section>
+<!-- form for making post -->
+<section id="make-post" class="page">
+    <form>
+    <label for="games">select game:</label>
+    <select id="gameSelection" name="gameSelection">
+    </select>        
+</form>
+    <form>
+        <label for="tags">add tags:</label>
+        <select id="tags" name="tags">
+        </select>        
+    </form>
+    <form>
+    <label for="playerNumber">select number of players:</label>
+    <select name="playercount" id="playercount">
+    </select>
+    </form>
+    <button type="button" name="button" onclick="addPost()"> create post</button>
+</section>
 
     <!-- game detailed view page -->
     <section id="detailedView" class="page">
@@ -93,22 +113,9 @@
         <!--  show posts -->
         <section id="show-post"></section>
         <!-- make posts -->
-        <section id="make-post">
-            <form>
-            <label for="games">select game:</label>
-            <select id="gameSelection" name="gameSelection">
-            </select>        
-        </form>
-            <input type="text" id="numberOfPlayers" placeholder="number of players">
-            <form>
-                <label for="tags">add tags:</label>
-                <select id="tags" name="tags">
-                </select>        
-            </form>
-            <button type="button" name="button" onclick="addPost()"> create post</button>
-        </section>
+     
     </section>
-
+<section id="postDetailedView"></section>
 
 
 
