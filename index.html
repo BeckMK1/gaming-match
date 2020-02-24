@@ -113,7 +113,20 @@
         <!--  show posts -->
         <section id="show-post"></section>
         <!-- make posts -->
-     
+        <section id="make-post">
+            <form>
+            <label for="games">select game:</label>
+            <select id="gameSelection" name="gameSelection">
+            </select>
+        </form>
+            <input type="text" id="numberOfPlayers" placeholder="number of players">
+            <form>
+                <label for="tags">add tags:</label>
+                <select id="tags" name="tags">
+                </select>
+            </form>
+            <button type="button" name="button" onclick="addPost()"> create post</button>
+        </section>
     </section>
 <section id="postDetailedView"></section>
 
@@ -143,9 +156,20 @@
 
 <section id="browseGame" class="page">
 <header>
+  <section id="userogdrop">
     <section id="userface">
     <img src="images/nouser.png">
+  </section>
+  <div class="dropdown">
+<button onclick="myFunction()" class="dropbtn"></button>
+<div id="myDropdown" class="dropdown-content">
+  <a href="#">Link 1</a>
+  <a href="#">Link 2</a>
+  <a href="#">Link 3</a>
+</div>
+</div>
 </section>
+
 </header>
  <section id="over">
    <section id="frindlist">
@@ -181,7 +205,7 @@
     <script src="js/post.js"></script>
     <script src="js/search.js"></script>
      <script src="js/userface.js"></script>
-     <script src="js/makePost.js"></script>
+     <script src="js/dropdown.js"></script>
 </body>
 
 </html>
