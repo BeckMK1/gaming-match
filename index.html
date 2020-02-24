@@ -66,6 +66,7 @@
         <div id="background">
             <div id="login" class="column-50">
                 <div class="signupForm">
+                    <button type="button" name="button" onclick="close()">X</button>
                     <form>
                         <div class="formInput" id="emailInput">
                             <label for="email">Email</label>
@@ -84,6 +85,7 @@
         </div>
     </section>
 </section>
+
     <!-- game detailed view page -->
     <section id="detailedView" class="page">
         <h2>game</h2>
@@ -92,9 +94,17 @@
         <section id="show-post"></section>
         <!-- make posts -->
         <section id="make-post">
-            <input type="text" id="gameTitle" placeholder="game" >
+            <form>
+            <label for="games">select game:</label>
+            <select id="gameSelection" name="gameSelection">
+            </select>
+        </form>
             <input type="text" id="numberOfPlayers" placeholder="number of players">
-            <input type="text" id="tags" placeholder="tags">
+            <form>
+                <label for="tags">add tags:</label>
+                <select id="tags" name="tags">
+                </select>
+            </form>
             <button type="button" name="button" onclick="addPost()"> create post</button>
         </section>
     </section>
@@ -141,7 +151,6 @@
 </section>
 
 </header>
-
  <section id="over">
    <section id="frindlist">
      <div id="listen">
@@ -172,7 +181,6 @@
     <script src="js/firebaseFunction.js"></script>
     <script src="js/spa.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/makePost.js"></script>
     <script src="js/viewPost.js"></script>
     <script src="js/post.js"></script>
     <script src="js/search.js"></script>
