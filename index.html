@@ -11,13 +11,23 @@
 
 <body onhashchange="pageChange()">
 <!-- navagtion -->
-    <nav id="tabbar" class="tabbar hide">
-
-        <a href="#browseGame"> browse games</a>
+<header>
+    <section id="userogdrop">
+      <section id="userface">
+      <img src="images/nouser.png">
+    </section>
+    <div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn"></button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#browseGame"> browse games</a>
         <a href="#profile"> profile</a>
         <a href="#detailedView">detailedView</a>
-
-    </nav>
+        <a href="#make-post"> create post</a>
+  </div>
+  </div>
+  </section>
+  
+  </header>
 
     <!-- Front Page (Signup Form) -->
     <section id="front" class="page">
@@ -85,6 +95,25 @@
         </div>
     </section>
 </section>
+<!-- form for making post -->
+<section id="make-post" class="page">
+    <form>
+    <label for="games">select game:</label>
+    <select id="gameSelection" name="gameSelection">
+    </select>        
+</form>
+    <form>
+        <label for="tags">add tags:</label>
+        <select id="tags" name="tags">
+        </select>        
+    </form>
+    <form>
+    <label for="playerNumber">select number of players:</label>
+    <select name="playercount" id="playercount">
+    </select>
+    </form>
+    <button type="button" name="button" onclick="addPost()"> create post</button>
+</section>
 
     <!-- game detailed view page -->
     <section id="detailedView" class="page">
@@ -97,18 +126,18 @@
             <form>
             <label for="games">select game:</label>
             <select id="gameSelection" name="gameSelection">
-            </select>        
+            </select>
         </form>
             <input type="text" id="numberOfPlayers" placeholder="number of players">
             <form>
                 <label for="tags">add tags:</label>
                 <select id="tags" name="tags">
-                </select>        
+                </select>
             </form>
             <button type="button" name="button" onclick="addPost()"> create post</button>
         </section>
     </section>
-
+<section id="postDetailedView"></section>
 
 
 
@@ -147,6 +176,27 @@
     </section>
 
 
+<section id="browseGame" class="page">
+
+ <section id="over">
+   <section id="frindlist">
+     <div id="listen">
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+     </div>
+   </section>
+
+
+<div id="Spilunderside">
+<input id="sog" type="search" placeholder="Search" onkeyup="search(this.value)">
+<h2> Most popular</h2>
+ <section id="games" class="grid-container"></section>
+</div>
+</section>
+</section>
  <!-- main js file -->
 
 
@@ -162,7 +212,7 @@
     <script src="js/post.js"></script>
     <script src="js/search.js"></script>
      <script src="js/userface.js"></script>
-     <script src="js/makePost.js"></script>
+     <script src="js/dropdown.js"></script>
 </body>
 
 </html>
