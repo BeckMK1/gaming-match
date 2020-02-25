@@ -2,218 +2,226 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaming match</title>
-    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
-    <link rel="stylesheet" href="styles/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming match</title>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body onhashchange="pageChange()">
-<!-- navagtion -->
-<header>
+  <!-- navagtion -->
+  <header>
     <section id="userogdrop">
-      <section id="userface">
+      <section id="userface" button onclick="myFunction()" class="dropbtn">
 
-      <img src="images/nouser.png">
+        <img src="images/nouser.png">
+
+      </section>
+      <div class="dropdown">
+        <img src="images/arrowdown1.png" id="arrow" button onclick="myFunction()" class="dropbtn">
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#browseGame"> browse games</a>
+          <a href="#profile"> profile</a>
+          <a href="#detailedView">detailedView</a>
+          <a href="#make-post"> create post</a>
+        </div>
+      </div>
     </section>
-    <div class="dropdown">
-      <img src="images/arrowdown1.png" id="arrow" button onclick="myFunction()" class="dropbtn" >
-    <div id="myDropdown" class="dropdown-content">
-    <a href="#browseGame"> browse games</a>
-        <a href="#profile"> profile</a>
-        <a href="#detailedView">detailedView</a>
-        <a href="#make-post"> create post</a>
-    </div>
-    </div>
-  </section>
 
   </header>
 
-    <!-- Front Page (Signup Form) -->
-    <section id="front" class="page">
+  <!-- Front Page (Signup Form) -->
+  <section id="front" class="page">
+    <div id="video-container">
+    <video autoplay loop muted>
+      <source src="images/baggrund.mp4">
+    </video>
+  </div>
     <div id="blackout"></div>
     <section id="signUp">
-        <div id="background">
-            <!-- Left side -->
-            <div class="column-50 text-center">
-              <h1>Gaming Match</h1>
-              <p>Gaming match er en web app for dig, der mangler en eller flere at spille med.<br>Det er gratis, så opret dig nu!</p>
-            </div>
-            <!-- End of Left side -->
-
-            <!-- Right Side (login) -->
-            <div id="register" class="column-50">
-                <div class="signupForm">
-                    <form>
-                        <div class="formInput" id="usernameInput">
-                            <label for="username">Username</label>
-                            <input type="text" id="username">
-                        </div>
-                        <div class="formInput" id="emailInput">
-                            <label for="email">Email</label>
-                            <input type="email" id="email">
-                        </div>
-                        <div class="formInput" id="passwordInput">
-                            <label for="password">Password</label>
-                            <input type="password" id="password">
-                        </div>
-                        <div class="formInput" id="passwordConfirmationInput">
-                            <label for="passwordConfirmation">Confirm Password</label>
-                            <input type="password" id="passwordConfirmation">
-                        </div>
-                        <!-- email and password fields for login -->
-                        <button id="signupbtn" type="button" name="button" onclick="signUp()">Sign Up</button>
-                        <button id="showSignId" type="button" name="button" onclick="showSignIn()">sign id</button>
-                    </form>
-                </div>
-            </div>
-            <!-- End of Right Side  -->
+      <div id="background">
+        <!-- Left side -->
+        <div class="frontcontent">
+        <div class="columntextfront">
+          <h1>Gaming Match</h1>
+          <p>Gaming match er en web app for dig, der mangler en eller flere at spille med.<br>Det er gratis, så opret dig nu!</p>
         </div>
+        <!-- End of Left side -->
+
+        <!-- Right Side (login) -->
+        <div id="register" class="column-50">
+          <div class="signupForm">
+            <form>
+              <div class="formInput" id="usernameInput">
+                <label for="username">Username</label>
+                <input type="text" id="username">
+              </div>
+              <div class="formInput" id="emailInput">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+              </div>
+              <div class="formInput" id="passwordInput">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+              </div>
+              <div class="formInput" id="passwordConfirmationInput">
+                <label for="passwordConfirmation">Confirm Password</label>
+                <input type="password" id="passwordConfirmation">
+              </div>
+              <!-- email and password fields for login -->
+              <button id="signupbtn" type="button" name="button" onclick="signUp()">Sign Up</button>
+              <button id="showSignId" type="button" name="button" onclick="showSignIn()">sign id</button>
+            </form>
+          </div>
+        </div>
+      </div>
+        <!-- End of Right Side  -->
+      </div>
     </section>
 
     <!-- Sign In Form -->
     <section id="signIn">
-        <div id="background">
-            <div id="login" class="column-50">
-                <div class="signupForm">
-                    <button type="button" name="button" onclick="close()">X</button>
-                    <form>
-                        <div class="formInput" id="emailInput">
-                            <label for="email">Email</label>
-                            <input type="email" id="email">
-                        </div>
-                        <div class="formInput" id="passwordInput">
-                            <label for="password">Password</label>
-                            <input type="password" id="password">
-                        </div>
-                        <!-- email and password fields for login -->
-                        <button id="signupbtn" type="button" name="button" onclick="signIn()">Sign In</button>
-                    </form>
-                </div>
-            </div>
-            <!-- End of Right Side  -->
+      <div id="background">
+        <div id="login" class="column-50">
+          <div class="signupForm">
+            <button type="button" name="button" onclick="close()">X</button>
+            <form>
+              <div class="formInput" id="emailInput">
+                <label for="email">Email</label>
+                <input type="email" id="email">
+              </div>
+              <div class="formInput" id="passwordInput">
+                <label for="password">Password</label>
+                <input type="password" id="password">
+              </div>
+              <!-- email and password fields for login -->
+              <button id="signupbtn" type="button" name="button" onclick="signIn()">Sign In</button>
+            </form>
+          </div>
         </div>
+        <!-- End of Right Side  -->
+      </div>
     </section>
-</section>
-<!-- form for making post -->
-<section id="make-post" class="page">
+  </section>
+  <!-- form for making post -->
+  <section id="make-post" class="page">
     <form>
-    <label for="games">select game:</label>
-    <select id="gameSelection" name="gameSelection">
-    </select>
-</form>
+      <label for="games">select game:</label>
+      <select id="gameSelection" name="gameSelection">
+      </select>
+    </form>
     <form>
+      <label for="tags">add tags:</label>
+      <select id="tags" name="tags">
+      </select>
+    </form>
+    <form>
+      <label for="playerNumber">select number of players:</label>
+      <select name="playercount" id="playercount">
+      </select>
+    </form>
+    <button type="button" name="button" onclick="addPost()"> create post</button>
+  </section>
+
+  <!-- game detailed view page -->
+  <section id="detailedView" class="page">
+    <h2>game</h2>
+    <div id="dvId"></div>
+    <!--  show posts -->
+    <section id="show-post"></section>
+    <!-- make posts -->
+    <section id="make-post">
+      <form>
+        <label for="games">select game:</label>
+        <select id="gameSelection" name="gameSelection">
+        </select>
+      </form>
+      <input type="text" id="numberOfPlayers" placeholder="number of players">
+      <form>
         <label for="tags">add tags:</label>
         <select id="tags" name="tags">
         </select>
-    </form>
-    <form>
-    <label for="playerNumber">select number of players:</label>
-    <select name="playercount" id="playercount">
-    </select>
-    </form>
-    <button type="button" name="button" onclick="addPost()"> create post</button>
-</section>
-
-    <!-- game detailed view page -->
-    <section id="detailedView" class="page">
-        <h2>game</h2>
-        <div id="dvId"></div>
-        <!--  show posts -->
-        <section id="show-post"></section>
-        <!-- make posts -->
-        <section id="make-post">
-            <form>
-            <label for="games">select game:</label>
-            <select id="gameSelection" name="gameSelection">
-            </select>
-        </form>
-            <input type="text" id="numberOfPlayers" placeholder="number of players">
-            <form>
-                <label for="tags">add tags:</label>
-                <select id="tags" name="tags">
-                </select>
-            </form>
-            <button type="button" name="button" onclick="addPost()"> create post</button>
-        </section>
+      </form>
+      <button type="button" name="button" onclick="addPost()"> create post</button>
     </section>
-<section id="postDetailedView"></section>
+  </section>
+  <section id="postDetailedView"></section>
 
 
 
-    <!-- profile page  -->
+  <!-- profile page  -->
 
-    <section id="profilkasse" class="page">
+  <section id="profilkasse" class="page">
     <section id="header123">
-    <h3>This is your Profile</h3>
-    
-    <section id="setbutton">
-    
-    <!--  END OF profile page  -->
-</section>
-        <!-- set profile settings -->
-    <section>
+      <h3>This is your Profile</h3>
+
+      <section id="setbutton">
+
+        <!--  END OF profile page  -->
+      </section>
+      <!-- set profile settings -->
+      <section>
         <input type="text" id="navn" placeholder="type your name">
-    </section>
+      </section>
 
       <!-- update button -->
 
-    <section class="knapper">
+      <section class="knapper">
         <input type="file" id="billede" accept="image/*" onchange="previewImage(this.files[0], 'imagePreview')">
-        
 
-        
-    <section class="imagePreview">
-        <img id="imagePreview" class="image-preview">
-    </section>
-       
+
+
+        <section class="imagePreview">
+          <img id="imagePreview" class="image-preview">
+        </section>
+
         <section class="button"></section>
         <button type="button" name="button" onclick="updateUser()">set profile</button>
-       
-    
+
+
+      </section>
     </section>
+  </section>
+
+
+  <section id="browseGame" class="page">
+
+    <section id="over">
+      <section id="frindlist">
+        <div id="listen">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </div>
+      </section>
+
+
+      <div id="Spilunderside">
+        <input id="sog" type="search" placeholder="Search" onkeyup="search(this.value)">
+        <h2> Most popular</h2>
+        <section id="games" class="grid-container"></section>
+      </div>
     </section>
-    </section>
+  </section>
+  <!-- main js file -->
 
 
-<section id="browseGame" class="page">
-
- <section id="over">
-   <section id="frindlist">
-     <div id="listen">
-       <li></li>
-       <li></li>
-       <li></li>
-       <li></li>
-       <li></li>
-     </div>
-   </section>
-
-
-<div id="Spilunderside">
-<input id="sog" type="search" placeholder="Search" onkeyup="search(this.value)">
-<h2> Most popular</h2>
- <section id="games" class="grid-container"></section>
-</div>
-</section>
-</section>
- <!-- main js file -->
-
-
-    <!-- firebase scripts -->
-    <script  src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
-    <script  src="https://www.gstatic.com/firebasejs/7.8.2/firebase-auth.js"></script>
-    <script  src="https://www.gstatic.com/firebasejs/7.8.2/firebase-firestore.js"></script>
-    <!-- my scripts -->
-    <script src="js/firebaseFunction.js"></script>
-    <script src="js/spa.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/viewPost.js"></script>
-    <script src="js/post.js"></script>
-    <script src="js/search.js"></script>
-     <script src="js/userface.js"></script>
-     <script src="js/dropdown.js"></script>
+  <!-- firebase scripts -->
+  <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-firestore.js"></script>
+  <!-- my scripts -->
+  <script src="js/firebaseFunction.js"></script>
+  <script src="js/spa.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/viewPost.js"></script>
+  <script src="js/post.js"></script>
+  <script src="js/search.js"></script>
+  <script src="js/userface.js"></script>
+  <script src="js/dropdown.js"></script>
 </body>
 
 </html>
