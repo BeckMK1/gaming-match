@@ -31,7 +31,7 @@ function signIn(){
         var errorMessage = error.message;
         // ...
       });
-      navigateTo("profile")
+      navigateTo("profilkasse")
     }
     firebase.auth().onAuthStateChanged((user) => {
         if (user) {

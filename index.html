@@ -152,35 +152,24 @@
 
   <!-- profile page  -->
 
-  <section id="profilkasse" class="page">
-    <section id="header123">
-      <h3>This is your Profile</h3>
+    <section id="profile" class="page">
 
-      <section id="setbutton">
+    <h3>This is your Profile</h3>
+        <!-- set profile settings -->
+        <div class="profile-settings">
+        <input type="text" id="name" placeholder="type your name">
 
-        <!--  END OF profile page  -->
-      </section>
-      <!-- set profile settings -->
-      <section>
-        <input type="text" id="navn" placeholder="type your name">
-      </section>
 
       <!-- update button -->
-
-      <section class="knapper">
-        <input type="file" id="billede" accept="image/*" onchange="previewImage(this.files[0], 'imagePreview')">
-
+    <section class="knapper">
+        <input type="file" id="img" accept="image/*" onchange="previewImage(this.files[0], 'imagePreview')">
 
 
-        <section class="imagePreview">
-          <img id="imagePreview" class="image-preview">
-        </section>
+        <img id="imagePreview" class="image-preview">
 
         <section class="button"></section>
         <button type="button" name="button" onclick="updateUser()">set profile</button>
-
-
-      </section>
+    </div>
     </section>
   </section>
 
