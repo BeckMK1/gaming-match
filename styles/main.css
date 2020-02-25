@@ -116,8 +116,9 @@ font-size: 20px;
 }
 /* End  Styling for Forms */
 /* profilkasse  ny sektion-  */
-#profilkasse{
 
+#profile{
+  align-items:center;
   font-size: 40px;
   display: flex;
   flex-direction: column;
@@ -126,20 +127,41 @@ font-size: 20px;
   margin-left: 5%;
 }
 
-#navn{
+#name{
+  display: flex;
   font-size: 40px;
+  margin-left: 33%;
+  margin: 0;
+    align-items: start;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
 
 .knapper{
- display: flex;
- flex-direction: column;
- justify-content: center;
- position: relative;
+  
+
+align-items: start;
+width: 300px;
+height: 100px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+position: relative;
+margin: 0;
+ position: absolute;
+ top: 50%;
+left: 50%;
+margin-right: -50%;
+transform: translate(-50%, -50%)
 }
 
 
 #imagePreview{
   display: flex;
+  
 }
 
 /* Virker ikke */
@@ -303,6 +325,7 @@ h2 {
 /* Dropdown Button */
 
 
+
 .dropbtn {
   color: white;
   font-size: 16px;
@@ -347,7 +370,5 @@ h2 {
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;}
-
-.profile-settings{
 margin-top: 100px;
 }
