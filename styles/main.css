@@ -17,13 +17,18 @@ body {
 #tabbar {
     margin-bottom: 15px;
 }
-nav#tabbar a, .formInput {
+#tabbar a, .formInput {
     color: white !important;
 }
 .columntextfront{
-  margin-top: 17%;
+
     text-align: center;
     margin-right: 15%;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
 
 
 }
@@ -31,7 +36,7 @@ nav#tabbar a, .formInput {
 
 #signUp{
   position: relative;
-  z-index: 1;
+  z-index: 3;
 }
 
 .frontcontent{
@@ -40,27 +45,47 @@ nav#tabbar a, .formInput {
   align-items: center;
   margin-left: 20%;
   margin-right: 10%;
+  margin-bottom: 20%;
+
 
 
 }
 /* Style for Signup Form */
 .column-50 { /* Kolonner til Sign Up form */
-  margin-top: 13%;
-    width: 49%;
+
+    width: 99%;
 
 
-    margin-top: 20%;
+    margin-top: 9%;
+    padding-top: 20px;
+
+}
+#overskriftfront{
+
+  border-bottom-color: white;
+  border-bottom: solid 5px;
+  font-size: 40px;
+
+}
+#tekstfront{
+
+font-size: 20px;
+  border-bottom: solid 5px;
 
 }
 #login { /* Centrer login formular */
     display: block;
     margin: 0 auto;
 }
-#tabbar, .signupForm {
+.signupForm {
     background: #525252;
-    padding: 15px;
+
+    width: 100%;
+    height: 400px;
+    padding-top: 10px;
+
 }
-.signupForm, .formInput input {
+.signupForm  {
     border-radius: 10px;
 }
 #signupbtn {
@@ -76,12 +101,18 @@ nav#tabbar a, .formInput {
 /* Styling for Forms */
 .formInput label {
     display: block;
-    padding: 5px 0;
+    margin-left: 5%;
+    margin-top: 5%;
+    padding-top: 5px;
+
+
 }
 .formInput input {
     border: none;
-    width: 100%;
-    height: 25px;
+    width: 90%;
+    height: 35px;
+    margin-left: 5%;
+    border-radius: 50px;
 }
 /* End  Styling for Forms */
 /* profilkasse  ny sektion-  */
@@ -123,6 +154,15 @@ nav#tabbar a, .formInput {
 
 
 /* Virker ikke  ukent*/
+}
+#blackoutvideo{
+  position: absolute;
+  opacity: 50%;
+  background: black;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+
 }
 #blackout{
   position: absolute;
@@ -180,6 +220,7 @@ header {
   background-color: gray;
   position: fixed;
   z-index: 8;
+  
 
 }
 
