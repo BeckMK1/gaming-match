@@ -9,6 +9,7 @@ height: 30%;
 width: 100%;
 position: relative;
 }
+
 body {
     font-family: arial;
     margin: 0;
@@ -449,4 +450,12 @@ h2 {
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;
 margin-top: 100px;
+}
+
+/* --POST DETAILED VIEW-- */
+.gameforum {
+width:800px;
+margin-left:23%;
+height:auto;
+
 }
