@@ -329,8 +329,8 @@ transform: translate(-50%, -50%)
 
 /* browse game */
 #games {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
   text-align: center;
   justify-content: center;
   max-width: 90%;
@@ -532,13 +532,15 @@ margin-top: 100px;
 }
 
 /* --POST DETAILED VIEW-- */
-.postDetailedView {
-  height:auto;
+#postDetailedView {
+  height: 1000px;
 }
 
 
 .gameForum {
-
+width:80%;
+justify-content: center;
+padding-top: 200px;
 height:auto;
 
 }
