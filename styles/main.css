@@ -9,6 +9,9 @@ height: 30%;
 width: 100%;
 position: relative;
 }
+#logoutbutton{
+margin-top: 100px;
+}
 body {
     font-family: arial;
     margin: 0;

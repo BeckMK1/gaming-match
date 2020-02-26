@@ -40,7 +40,8 @@ selectGame=game;
   
   }
   document.querySelector("#postDetailedView").innerHTML =`
-  <h2>${selectGame.title}</h2>
+  
+ <h2>${selectGame.title}</h2>
 `;
 navigateTo("postDetailedView");
 }
