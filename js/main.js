@@ -35,7 +35,9 @@ function signIn(){
     }
     firebase.auth().onAuthStateChanged((user) => {
         if (user) {
+        navigateTo("browseGame")
         document.querySelector('#userogdrop').style.display = "block";
+        document.querySelector("#loginAndSingup").style.display = "none";
           console.log(user.uid);
         } else {
           // User not logged in or has just logged out.
@@ -46,6 +48,7 @@ function signIn(){
     // ========== PROFILE PAGE FUNCTIONALITY ========== //
 // append user data to profile page
 function appendUserData() {
+  
     document.querySelector('#name').value = _currentUser.displayName;
     document.querySelector('#imagePreview').src = _currentUser.img;
   }
