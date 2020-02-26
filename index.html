@@ -28,23 +28,21 @@
         </div>
       </div>
     </section>
-    <button id="loginbutton" type="button" name="button" onclick="signUp()">Log in</button>
+    <button id="loginbutton" type="button" name="button" onclick="showSignIn()">Log in</button>
     <button id="signoutbutton" type="button" name="button" onclick="signUp()">Sign Up</button>
 
   </header>
 
   <!-- Front Page (Signup Form) -->
   <section id="front" class="page">
-
+  <div id="videoAndEfect">
     <div id="blackoutvideo"></div>
-
-
-
     <div id="video-container">
     <video autoplay loop muted>
       <source src="images/baggrund.mp4">
     </video>
   </div>
+</div>
     <div id="blackout"></div>
     <section id="signUp">
       <div id="background">
@@ -60,7 +58,6 @@
         </div>
         </div>
         <!-- End of Left side -->
-
         <!-- Right Side (login) -->
         <div id="register" class="column-50">
           <div class="signupForm">
@@ -87,16 +84,13 @@
             </form>
           </div>
         </div>
-
+      </section>
         <!-- End of Right Side  -->
-      </div>
-    </section>
-
     <!-- Sign In Form -->
     <section id="signIn">
       <div id="background">
         <div id="login" class="column-50">
-          <div class="signupForm">
+          <div class="signInForm">
             <button type="button" name="button" onclick="close()">X</button>
             <form>
               <div class="formInput" id="emailInput">
