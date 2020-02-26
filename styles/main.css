@@ -299,6 +299,10 @@ li{
 
 
 }
+
+li p{
+  coler: white;
+}
 #listen h3{
   text-align: center;
   border-bottom: solid 3px #707070 ;
