@@ -15,8 +15,8 @@ document.getElementById("closebutton").addEventListener("click", function(){
 
 //---------------------------------------- sign up ----------------------------------------
 function signUp() {
-  let email = document.querySelector('#email').value;
-  let password = document.querySelector('#password').value;
+  let email = document.querySelector('#email2').value;
+  let password = document.querySelector('#password2').value;
 
   firebase.auth().createUserWithEmailAndPassword(email, password).catch(function (error) {
 
