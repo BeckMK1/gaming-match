@@ -44,8 +44,8 @@ selectGame=game;
 
   document.querySelector("#postDetailedView").innerHTML =`
 
-  <section class="gameforum">
-
+  <section class="gameForumSection">
+  <div class="gameForum"
   <div class="postSelectionBar">
   <button onclick="Hot()">Hot</button>
   <button onclick="New()">New</button>
@@ -53,7 +53,7 @@ selectGame=game;
   </div>
   <h2>${selectGame.title}</h2>
 
-
+  </div>
   </section>
 `;
 navigateTo("postDetailedView");
