@@ -1,11 +1,23 @@
 /* Generic Styles */
-/* front page */
 
+/*header*/
+header {
+  width: 100%;
+  height: 70px;
+  background-color: #2D2C2C;
+
+  position: fixed;
+  z-index: 8;
+
+
+}
+/* front page */
 #video-container {
 position: absolute;
+
 }
 video {
-height: 30%;
+height: 100%;
 width: 100%;
 position: relative;
 }
@@ -15,8 +27,10 @@ margin-top: 100px;
 body {
     font-family: arial;
     margin: 0;
-      overflow: hidden;
+
+
 }
+
 
 #tabbar {
     margin-bottom: 15px;
@@ -83,7 +97,7 @@ body {
   align-items: center;
   margin-left: 20%;
   margin-right: 10%;
-  margin-bottom: 20%;
+
 
 
 
@@ -94,8 +108,8 @@ body {
     width: 99%;
 
 
-    margin-top: 9%;
-    padding-top: 20px;
+    margin-top: 17%;
+
 
 }
 #overskriftfront{
@@ -117,7 +131,7 @@ font-size: 20px;
 }
 .signupForm {
     background: #525252;
-
+opacity: 85%;
     width: 100%;
     padding-top: 2%;
     padding-bottom: 2%;
@@ -152,15 +166,76 @@ font-size: 20px;
 }
 /* End  Styling for Forms */
 /* profilkasse  ny sektion-  */
-
+.profile-settings{
+  display: none;
+}
 #profile{
-  align-items:center;
-  font-size: 40px;
+
+  background-color: #1C1C1C;
+padding-bottom: 70px;
+}
+#profilepage{
+  margin-top: 16%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  max-width: 100%;
+
+
+}
+#profileview{
+  display: flex;
+  flex-direction: column;
+
+  width: 50%;
+
+  text-align: center;
+  margin-left: 25%;
+
+}
+#profilekas{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  background-color: white;
+  margin-top: 2%;
+  height: 80%;
+  width: 90%;
   margin-left: 5%;
+  border-radius: 30px;
+
+
+}
+#profilekas li{
+  text-align: center;
+  list-style: none;
+
+}
+#profilepage input{
+  margin-left: 48%;
+  -webkit-appearance: none;
+
+
+}
+
+
+.userinfo{
+  border-bottom:   solid 1px;
+  border-color: gray;
+
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 8%;
+
+}
+#sidste{
+  padding-bottom: 8%;
+}
+#userface1 img{
+  height: 150px;
+  width: 150px;
+  border-radius: 75px;
+  margin-left: 6%;
+  margin-bottom: 3%;
+
 }
 
 #name{
@@ -175,6 +250,7 @@ font-size: 20px;
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
+/* your profile*/
 
 .knapper{
 
@@ -193,6 +269,7 @@ left: 50%;
 margin-right: -50%;
 transform: translate(-50%, -50%)
 }
+
 
 
 #imagePreview{
@@ -239,10 +316,11 @@ transform: translate(-50%, -50%)
   left: 35em;
   }
 .signInForm{
-  background: #525252;
+  background: black;
   width: 40%;
   padding-bottom: 1%;
   border-radius: 10px;
+  opacity: 30%
 
 }
  /* END OF UKENT ukent*/
@@ -280,7 +358,7 @@ transform: translate(-50%, -50%)
 
 
   }
-li img{
+#listen img{
   height: 50px;
   width: 50px;
   margin-right: 20%;
@@ -289,7 +367,7 @@ li img{
 
 
 }
-li{
+#listen li{
   display: flex;
   flex-direction: row;
   border:   solid 1px;
@@ -300,8 +378,12 @@ li{
   padding-top:  2%;
   padding-bottom: 2%;
 
-
 }
+/*friendslist*/
+#listen p{
+  coler: white;
+}
+
 #listen h3{
   text-align: center;
   border-bottom: solid 3px #707070 ;
@@ -309,17 +391,17 @@ li{
   color: #707070;
 font-size:50px;
 }
-header {
-  width: 100%;
-  height: 70px;
+#frindlist {
+  display: flex;
+  flex-direction: column;
   background-color: #2D2C2C;
-
-  position: fixed;
-  z-index: 8;
-
-
+  height: 1080px;
+  width: 350px;
+  color: white;
 }
 
+
+/*gamessite*/
 #Spilunderside {
   margin-top: 8%;
   display: flex;
@@ -333,7 +415,9 @@ header {
   background-color: #2D2C2C;
   height: 1080px;
   width: 350px;
+  color: white;
 }
+
 
 #gamesliste {
   margin: 20px;
@@ -445,4 +529,16 @@ h2 {
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;
 margin-top: 100px;
+}
+
+/* --POST DETAILED VIEW-- */
+.postDetailedView {
+  height:auto;
+}
+
+
+.gameForum {
+
+height:auto;
+
 }
