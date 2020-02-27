@@ -303,6 +303,10 @@ li{
 
 li p{
   color: white;
+/*friendslist*/
+}
+#listen p{
+  color: white;
 }
 
 #listen h3{
