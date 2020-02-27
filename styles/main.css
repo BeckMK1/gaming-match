@@ -503,7 +503,17 @@ h1 {
 margin-top: 100px;
 }
 
+.goBack {
+  width: 400px;
+  height: auto;
+}
+
+.goBack {
+  width: 50px;
+  height: auto;
+}
+
 .goBack{
--webkit-appearance: none;
- color: blue;
+  position: relative;
+  bottom: 30;
 }
