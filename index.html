@@ -174,12 +174,12 @@
           <button id="editbut" type="button" name="button" onclick="edit()"><p>Settings</p></button>
           <div id="edit">
           <form>
-            <input type="file" id="img" accept="image/*" onchange="previewImage(this.files[0], 'imagePreview')">
-      <input type="text" id="name-update" placeholder="Name" required>
-      <input type="email" id="mail-update" placeholder="Mail" required>
+          <div class="edituser1"id="imgchance"> <input type="file" id="img" accept="image/*" onchange="previewImage(this.files[0], 'imagePreview')"></div>
+    <div class="edituser">   <input type="text" id="name-update" placeholder="New Username"></div>
+  <div class="edituser">     <input type="email" id="mail-update" placeholder="New Email"></div>
       <!-- <input type="file" id="img-update" accept="image/*" onchange="previewImage(this.files[0], 'imagePreviewUpdate')"> -->
-      <img id="imagePreviewUpdate" class="image-preview">
-      <button type="button" name="button" onclick="updateUser()">Save User</button>
+  <div class="edituser">     <img id="imagePreviewUpdate" class="image-preview"></div>
+  <div class="edituser">     <button type="button" name="button" onclick="updateUser()">Save User</button></div>
     </form>
     </div>
   </section>
