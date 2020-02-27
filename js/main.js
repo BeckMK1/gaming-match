@@ -1,6 +1,7 @@
 "use strict";
 // ----------------------------------------- sign in/up provile page functionality -------------------------------------
 let _currentUser;
+let _selectedImgFile="";
 const _userRef = db.collection("users")
 
 function showSignIn() {
@@ -57,7 +58,7 @@ function appendUserData() {
 
   document.querySelector('#name-update').value = _currentUser.displayName;
   document.querySelector('#mail-update').value = _currentUser.mail;
-   document.querySelector('#imagePreview').src = _currentUser.img;
+   document.querySelector('#imagePreviewUpdate').src = _currentUser.img;
 }
 
 function updateUser() {
@@ -68,11 +69,11 @@ function updateUser() {
 
   // update database user
   _userRef.doc(user.uid).set({
-    img: document.querySelector('#profileImg').src,
+    img: document.querySelector('#imagePreviewUpdate').src,
     displayName: document.querySelector('#name-update').value,
     mail: document.querySelector('#mail-update').value,
   }, {
-    merge: true
+    merge: truea
   });
 document.querySelector("#edit").display = "none";
 }
@@ -106,4 +107,5 @@ function goBack() {
 
 function edit(){
 document.querySelector("#edit").style.display ="block";
+document.querySelector("#infouser").style.display = "none";
 }

@@ -8,13 +8,26 @@ document.querySelector("#userface").innerHTML=`
 <img src="${userData.data().img}">
 <p>${userData.data().displayName}</p>
 `
-// document.querySelector("#userface1").innerHTML=`
-// <img src="${userData.data().img}">
-// `
-// document.querySelector(".userinfo").innerHTML=`
+document.querySelector("#userface1").innerHTML=`
+<img src="${userData.data().img}">`
 
-// <p>username:<br>${userData.data().displayName}</p>
-// `
+
+ document.querySelector("#usernameinfo").innerHTML=`
+
+<p>Username:<br>${userData.data().displayName}</p>
+
+`
+document.querySelector("#usermail").innerHTML=`
+
+<p>Email:<br>${userData.data().mail}</p>
+
+`
+document.querySelector("#userdiscord").innerHTML=`
+
+<p>Discord:<br>${userData.data().discord}</p>
+
+`
+
 })
 }
 //update user images
