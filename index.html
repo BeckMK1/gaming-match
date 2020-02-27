@@ -172,7 +172,14 @@
 
 <div id="profilepage">
           <div id="userface1"><img src="images/nouser.png"></div>
-          <input type="file" id="img" accept="image/*" onchange="previewImage(this.files[0], 'imagePreview')">
+          <form>
+      <input type="text" id="name-update" placeholder="Name" required>
+      <input type="email" id="mail-update" placeholder="Mail" required>
+      <input type="file" id="img-update" accept="image/*" onchange="previewImage(this.files[0], 'imagePreviewUpdate')">
+      <img id="imagePreviewUpdate" class="image-preview">
+      <button type="button" name="button" onclick="updateUser()">Save User</button>
+    </form>
+          <!--<input type="file" id="img" accept="image/*" onchange="previewImage(this.files[0], 'imagePreview')">
           <div id="profilekas">
             <li class="userinfo"></li>
             <li>
@@ -181,7 +188,7 @@
             <li id="sidste">Change password:</li>
 <button type="button" name="button" onclick="updateUser()">save</button>
           </div>
-          </div>
+        </div>-->
 
 
 
@@ -254,6 +261,7 @@
   <script src="js/userface.js"></script>
   <script src="js/dropdown.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/userupdate.js"></script>
 </body>
 
 </html>
