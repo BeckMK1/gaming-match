@@ -1,57 +1,33 @@
-
 const _usersref = db.collection("users");
-let userface=[];
-_usersref.onSnapshot(function(snapshotData) {
-snapshotData.forEach(function(doc){
-  let _usersref = doc.data();
-
-  _usersref.uid = doc.uid;
-  userface.push(_usersref);
-
-});
-console.log(_usersref);
-appenduserimg(_usersref);
-
-});
-function appenduserimg(_usersref){
-let htmlTemplate="";
-for (let _usersref of userface){
-  console.log(_usersref)
-
-htmlTemplate =`<img src="${_usersref.img}">
-<p>${_usersref.displayName}</p>
+function appendUserForUserface(){
+let currentUser =firebase.auth().currentUser
+_usersref.doc(currentUser.uid).onSnapshot(function (userData){
+console.log(userData.data())
+// console.log(currentUser)
+document.querySelector("#userface").innerHTML=`
+<img src="${userData.data().img}">
+<p>${userData.data().displayName}</p>
 `
+document.querySelector("#userface1").innerHTML=`
+<img src="${userData.data().img}">`
 
-document.querySelector("#userface").innerHTML = htmlTemplate;
 
-}
+ document.querySelector("#usernameinfo").innerHTML=`
 
-}
-const _usersref1 = db.collection("users");
-let userface1=[];
-_usersref1.onSnapshot(function(snapshotData) {
-snapshotData.forEach(function(doc){
-  let _usersref1 = doc.data();
+<p>Username:<br>${userData.data().displayName}</p>
 
-  _usersref.uid = doc.uid;
-  userface.push(_usersref1);
+`
+document.querySelector("#usermail").innerHTML=`
 
-});
-console.log(_usersref1);
-appenduserimg(_usersref1);
+<p>Email:<br>${userData.data().mail}</p>
 
-});
-function appenduserimg(_usersref1){
-let htmlTemplate="";
-for (let _usersref1 of userface1){
-  console.log(_usersref1)
+`
+document.querySelector("#userdiscord").innerHTML=`
 
-htmlTemplate =`<img src="${_usersref1.img}">
+<p>Discord:<br>${userData.data().discord}</p>
 
 `
 
-document.querySelector("#profileimages").innerHTML = htmlTemplate;
-
+})
 }
-
-}
+//update user images
