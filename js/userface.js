@@ -14,7 +14,7 @@ document.querySelector("#userface1").innerHTML=`
 
  document.querySelector("#usernameinfo").innerHTML=`
 
-<p>username:<br>${userData.data().displayName}</p>
+<p>Username:<br>${userData.data().displayName}</p>
 
 `
 document.querySelector("#usermail").innerHTML=`
