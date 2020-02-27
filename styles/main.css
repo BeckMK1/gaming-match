@@ -588,7 +588,9 @@ h1 {
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;
-margin-top: 100px;
+position: relative;
+bottom: 38px;
+left: 150px;
 }
 
 .goBack{
