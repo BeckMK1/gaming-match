@@ -37,10 +37,28 @@ function showDetailView(id){
 if(game.id === id){
 selectGame=game;
 }
-  
+
   }
+
+//   <img src="${selectbanner.Photo}"></img>
+
   document.querySelector("#postDetailedView").innerHTML =`
+
+  <section class="gameForumSection">
+
+  <div class="gameForum"
   <h2>${selectGame.title}</h2>
+  <div class="postSelectionBar">
+  <div class="buttonSelection">
+  <button onclick="Hot()">Hot</button>
+  <button onclick="New()">New</button>
+  <button onclick="Top()">Top</button>
+  </div>
+  </div>
+
+
+  </div>
+  </section>
 `;
 navigateTo("postDetailedView");
 }
