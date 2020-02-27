@@ -1,7 +1,6 @@
 "use strict";
 // ----------------------------------------- sign in/up provile page functionality -------------------------------------
 let _currentUser;
-let _selectedImgFile="";
 const _userRef = db.collection("users")
 
 function showSignIn() {
@@ -24,7 +23,7 @@ function signUp() {
   });
   navigateTo("profile")
 }
-// ------------------------------  sign in  --------  -----------------------------------------
+// ------------------------------  sign in  -------------------------------------------------
 function signIn() {
   let email = document.querySelector('#email').value;
   let password = document.querySelector('#password').value;
@@ -58,7 +57,7 @@ function appendUserData() {
 
   document.querySelector('#name-update').value = _currentUser.displayName;
   document.querySelector('#mail-update').value = _currentUser.mail;
-   document.querySelector('#imagePreviewUpdate').src = _currentUser.img;
+   document.querySelector('#imagePreview').src = _currentUser.img;
 }
 
 function updateUser() {
@@ -69,13 +68,13 @@ function updateUser() {
 
   // update database user
   _userRef.doc(user.uid).set({
-    img: document.querySelector('#imagePreviewUpdate').src,
+    img: document.querySelector('#profileImg').src,
     displayName: document.querySelector('#name-update').value,
     mail: document.querySelector('#mail-update').value,
   }, {
-    merge: truea
+    merge: true
   });
-document.querySelector("#edit").display = "none";
+
 }
 //----------------------------------- image previewImage --------------------------------------
 function previewImage(file, previewId) {
@@ -104,8 +103,3 @@ function goBack() {
 // <img>${user.img}</img>
 // `
 // }
-
-function edit(){
-document.querySelector("#edit").style.display ="block";
-document.querySelector("#infouser").style.display = "none";
-}
