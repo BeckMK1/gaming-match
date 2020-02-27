@@ -1,4 +1,19 @@
 /* Generic Styles */
+html{
+height: 100%;
+width: auto;
+}
+/*header*/
+header {
+  width: 100%;
+  height: 70px;
+  background-color: #2D2C2C;
+
+  position: fixed;
+  z-index: 8;
+
+
+}
 /* front page */
 
 #video-container {
@@ -12,7 +27,8 @@ position: relative;
 body {
     font-family: arial;
     margin: 0;
-      overflow: hidden;
+    height: 100%;
+    width: auto;
 }
 
 #tabbar {
@@ -149,10 +165,33 @@ opacity: 85%;
 }
 /* End  Styling for Forms */
 /* profilkasse  ny sektion-  */
-
+.profile-settings{
+  display: none;
+}
 #profile{
-  align-items:center;
-  font-size: 40px;
+height: 100%;
+width: auto;
+  background-color: #1C1C1C;
+padding-bottom: 70px;
+}
+#profilepage{
+  margin-top: 16%;
+  display: flex;
+  flex-direction: column;
+
+
+}
+#profileview{
+  display: flex;
+  flex-direction: column;
+
+  width: 50%;
+
+  text-align: center;
+  margin-left: 25%;
+
+}
+#profilekas{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -256,6 +295,7 @@ transform: translate(-50%, -50%)
   max-width: 90%;
   flex-wrap: wrap;
   margin-left: 5%;
+  margin-top: 10%;
   }
   #over{
     display: flex;
@@ -360,17 +400,16 @@ h1 {
 
 #sog {
   -webkit-appearance: none;
-  margin-left: 30%;
+  margin-left: 25%;
   padding: 20px;
   width: 400px;
   border-color: gray;
   border-radius: 50px;
   font-size: 20px;
+  position: absolute;
 }
 
-h2 {
-  margin-left: 13%;
-}
+
 
 #userface {
   display: flex;
