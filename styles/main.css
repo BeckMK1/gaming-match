@@ -516,4 +516,11 @@ margin-top: 100px;
 .goBack{
   position: relative;
   bottom: 30;
+ margin-left: 40px;
+}
+
+#edit{
+display: none;
+-webkit-appearance: none;
+ color: blue;
 }
