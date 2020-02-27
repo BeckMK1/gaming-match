@@ -507,6 +507,11 @@ margin-top: 100px;
   width: 400px;
   height: auto;
 }
+#backanp {
+  height: 40px;
+  width: auto;
+  
+}
 
 .goBack {
   width: 50px;
