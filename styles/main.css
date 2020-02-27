@@ -202,6 +202,52 @@ padding-bottom: 70px;
   display: flex;
   flex-direction: column;
 }
+
+#usersite{
+  display: flex;
+  flex-direction: column;
+
+}
+#infouser{
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  width: 30%;
+  margin-left: 35%;
+
+
+}
+.userinfo{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  text-align: center;
+}
+.userinfo p{
+
+  color: black;
+
+}
+#editbut{
+  -webkit-appearance: none;
+  height: 50px;
+  width: 30%;
+  border-radius: 50px;
+  margin-left: 35%;
+  font-size: 25px;
+  background-color: green;
+  border: none;
+
+}
+#editbut p{
+
+  font-size: 25px;
+color: white;
+text-align: center;
+position: relative;
+bottom:17px;
+
+}
 #name{
   display: flex;
   font-size: 40px;
@@ -508,4 +554,10 @@ margin-top: 100px;
 
 .goBack{
  margin-left: 40px;
+}
+
+#edit{
+display: none;
+-webkit-appearance: none;
+ color: blue;
 }

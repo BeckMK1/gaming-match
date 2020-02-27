@@ -28,6 +28,7 @@
           <button id="logoutbutton" type="button" name="button" onclick="logout()">log af</button>
         </div>
       </div>
+
     </section>
     <section id="loginAndSingup">
     <button id="loginbutton" type="button" name="button" onclick="showSignIn()">Log in</button>
@@ -172,23 +173,28 @@
 
 <div id="profilepage">
           <div id="userface1"><img src="images/nouser.png"></div>
-          <form id="updateuser">
-      <div><input type="text" id="name-update" placeholder="Name" required></div>
-      <div><input type="email" id="mail-update" placeholder="Mail" required></div>
-    <div><input type="file" id="img-update" accept="image/*" onchange="previewImage(this.files[0], 'imagePreviewUpdate')"></div>
-    <div><img id="imagePreviewUpdate" class="image-preview">
-      <div><button type="button" name="button" onclick="updateUser()">Save User</button></div>
+          <button id="editbut" type="button" name="button" onclick="edit()"><p>Settings</p></button>
+          <div id="edit">
+          <form>
+            <input type="file" id="img" accept="image/*" onchange="previewImage(this.files[0], 'imagePreview')">
+      <input type="text" id="name-update" placeholder="Name" required>
+      <input type="email" id="mail-update" placeholder="Mail" required>
+      <!-- <input type="file" id="img-update" accept="image/*" onchange="previewImage(this.files[0], 'imagePreviewUpdate')"> -->
+      <img id="imagePreviewUpdate" class="image-preview">
+      <button type="button" name="button" onclick="updateUser()">Save User</button>
     </form>
+    </div>
   </section>
 
-          <div id="userinfo">
-            <li class="userinfo"></li>
-            <li>
-            <li class="userinfo"></li>
-            <li class="userinfo"></li>
-            <li id="sidste">Change password:</li>
+<div id="infouser">
+          <div id="usersite">
+            <li class="userinfo" id="usernameinfo"></li>
+            <li class="userinfo"id="usermail"></li>
+            <li class="userinfo" id="userdiscord"></li>
+
           </div>
         </div>
+
 
 
 

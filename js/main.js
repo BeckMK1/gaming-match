@@ -23,7 +23,7 @@ function signUp() {
   });
   navigateTo("profile")
 }
-// ------------------------------  sign in  -------------------------------------------------
+// ------------------------------  sign in  --------  -----------------------------------------
 function signIn() {
   let email = document.querySelector('#email').value;
   let password = document.querySelector('#password').value;
@@ -74,7 +74,7 @@ function updateUser() {
   }, {
     merge: true
   });
-
+document.querySelector("#edit").display = "none";
 }
 //----------------------------------- image previewImage --------------------------------------
 function previewImage(file, previewId) {
@@ -103,3 +103,7 @@ function goBack() {
 // <img>${user.img}</img>
 // `
 // }
+
+function edit(){
+document.querySelector("#edit").style.display ="block";
+}
