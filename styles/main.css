@@ -336,6 +336,7 @@ transform: translate(-50%, -50%)
   max-width: 90%;
   flex-wrap: wrap;
   margin-left: 5%;
+  margin-top: 10%;
   }
   #over{
     display: flex;
@@ -438,17 +439,16 @@ h1 {
 
 #sog {
   -webkit-appearance: none;
-  margin-left: 30%;
+  margin-left: 25%;
   padding: 20px;
   width: 400px;
   border-color: gray;
   border-radius: 50px;
   font-size: 20px;
+  position: absolute;
 }
 
-h2 {
-  margin-left: 13%;
-}
+
 
 #userface {
   display: flex;
