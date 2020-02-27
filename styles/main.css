@@ -198,7 +198,10 @@ padding-bottom: 70px;
   max-width: 100%;
   margin-left: 5%;
 }
-
+#updateuser{
+  display: flex;
+  flex-direction: column;
+}
 #name{
   display: flex;
   font-size: 40px;
