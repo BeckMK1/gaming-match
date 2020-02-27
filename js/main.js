@@ -57,7 +57,7 @@ function appendUserData() {
 
   document.querySelector('#name-update').value = _currentUser.displayName;
   document.querySelector('#mail-update').value = _currentUser.mail;
-   document.querySelector('#imagePreview').src = _currentUser.img;
+   document.querySelector('#img').src = _currentUser.img;
 }
 
 function updateUser() {
