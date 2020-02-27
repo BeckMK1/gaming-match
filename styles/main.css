@@ -15,17 +15,14 @@ header {
 
 }
 /* front page */
+
 #video-container {
 position: absolute;
-
 }
 video {
-height: 100%;
+height: 30%;
 width: 100%;
 position: relative;
-}
-#logoutbutton{
-margin-top: 100px;
 }
 body {
     font-family: arial;
@@ -33,7 +30,6 @@ body {
     height: 100%;
     width: auto;
 }
-
 
 #tabbar {
     margin-bottom: 15px;
@@ -100,7 +96,7 @@ body {
   align-items: center;
   margin-left: 20%;
   margin-right: 10%;
-
+  margin-bottom: 20%;
 
 
 
@@ -111,8 +107,8 @@ body {
     width: 99%;
 
 
-    margin-top: 17%;
-
+    margin-top: 14%;
+    padding-top: 20px;
 
 }
 #overskriftfront{
@@ -198,48 +194,9 @@ padding-bottom: 70px;
 #profilekas{
   display: flex;
   flex-direction: column;
-  align-self: center;
-  background-color: white;
-  margin-top: 2%;
-  height: 80%;
-  width: 90%;
+  align-items: center;
+  max-width: 100%;
   margin-left: 5%;
-  border-radius: 30px;
-
-
-}
-#profilekas li{
-  text-align: center;
-  list-style: none;
-
-}
-#profilepage input{
-  margin-left: 48%;
-  -webkit-appearance: none;
-
-
-}
-
-
-.userinfo{
-  border-bottom:   solid 1px;
-  border-color: gray;
-
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 8%;
-
-}
-#sidste{
-  padding-bottom: 8%;
-}
-#userface1 img{
-  height: 150px;
-  width: 150px;
-  border-radius: 75px;
-  margin-left: 6%;
-  margin-bottom: 3%;
-
 }
 
 #name{
@@ -254,7 +211,6 @@ padding-bottom: 70px;
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
-/* your profile*/
 
 .knapper{
 
@@ -273,7 +229,6 @@ left: 50%;
 margin-right: -50%;
 transform: translate(-50%, -50%)
 }
-
 
 
 #imagePreview{
@@ -333,8 +288,8 @@ transform: translate(-50%, -50%)
 
 /* browse game */
 #games {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
   text-align: center;
   justify-content: center;
   max-width: 90%;
@@ -346,6 +301,7 @@ transform: translate(-50%, -50%)
     flex-direction: row;
 
   }
+
 
   #listen{
       max-width: 310px;
@@ -362,7 +318,7 @@ transform: translate(-50%, -50%)
 
 
   }
-#listen img{
+li img{
   height: 50px;
   width: 50px;
   margin-right: 20%;
@@ -371,7 +327,7 @@ transform: translate(-50%, -50%)
 
 
 }
-#listen li{
+li{
   display: flex;
   flex-direction: row;
   border:   solid 1px;
@@ -399,17 +355,18 @@ li p{
   color: #707070;
 font-size:50px;
 }
-#frindlist {
-  display: flex;
-  flex-direction: column;
+
+header {
+  width: 100%;
+  height: 70px;
   background-color: #2D2C2C;
-  height: 1080px;
-  width: 350px;
-  color: white;
+
+  position: fixed;
+  z-index: 8;
+
+
 }
 
-
-/*gamessite*/
 #Spilunderside {
   margin-top: 8%;
   display: flex;
@@ -537,18 +494,4 @@ h2 {
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;
 margin-top: 100px;
-}
-
-/* --POST DETAILED VIEW-- */
-#postDetailedView {
-  height: 1000px;
-}
-
-
-.gameForum {
-width:80%;
-justify-content: center;
-padding-top: 200px;
-height:auto;
-
 }
