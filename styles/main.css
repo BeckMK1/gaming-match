@@ -1,5 +1,8 @@
 /* Generic Styles */
-
+html{
+height: 100%;
+width: auto;
+}
 /*header*/
 header {
   width: 100%;
@@ -27,8 +30,8 @@ margin-top: 100px;
 body {
     font-family: arial;
     margin: 0;
-
-
+    height: 100%;
+    width: auto;
 }
 
 
@@ -170,7 +173,8 @@ opacity: 85%;
   display: none;
 }
 #profile{
-
+height: 100%;
+width: auto;
   background-color: #1C1C1C;
 padding-bottom: 70px;
 }

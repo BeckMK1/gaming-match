@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gaming match</title>
-  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
   <link rel="stylesheet" href="styles/main.css">
 </head>
 
@@ -118,7 +116,7 @@
   <section id="make-post" class="page">
     <form>
       <label for="games">select game:</label>
-      <select id="gameSelection" name="gameSelection">
+      <select id="gameSelection-post" name="gameSelection">
       </select>
     </form>
     <form>
@@ -150,15 +148,13 @@
       <input type="text" id="numberOfPlayers" placeholder="number of players">
       <form>
         <label for="tags">add tags:</label>
-        <select id="tags" name="tags">
+        <select id="tags-post " name="tags">
         </select>
       </form>
       <button type="button" name="button" onclick="addPost()"> create post</button>
     </section>
   </section>
   <section id="postDetailedView" class="page">
-
-
   </section>
 
 
@@ -172,13 +168,15 @@
 
 <div id="profilepage">
           <div id="userface1"><img src="images/nouser.png"></div>
+          <div id="edit">
           <form>
       <input type="text" id="name-update" placeholder="Name" required>
       <input type="email" id="mail-update" placeholder="Mail" required>
-      <input type="file" id="img-update" accept="image/*" onchange="previewImage(this.files[0], 'imagePreviewUpdate')">
+      <!-- <input type="file" id="img-update" accept="image/*" onchange="previewImage(this.files[0], 'imagePreviewUpdate')"> -->
       <img id="imagePreviewUpdate" class="image-preview">
       <button type="button" name="button" onclick="updateUser()">Save User</button>
     </form>
+  </div>
           <!--<input type="file" id="img" accept="image/*" onchange="previewImage(this.files[0], 'imagePreview')">
           <div id="profilekas">
             <li class="userinfo"></li>
