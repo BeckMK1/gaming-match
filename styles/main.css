@@ -530,13 +530,64 @@ margin-top: 100px;
 }
 
 /* --POST DETAILED VIEW-- */
-.postDetailedView {
-  height:auto;
+
+/* Section */
+.gameForumSection {
+  width: 70%;
+  margin-left:15%;
+  margin-right:15%;
+  margin-top:10%;
+}
+
+/* flexbox parent */
+.PostSection {
+  display:flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+  flex-direction: column;
 }
 
 
-.gameForum {
+/* Cover picture */
+.gameBg {
+  height: 300px;
+  width: 100%;
+}
 
-height:auto;
+/* Game title */
+.gameTitleBox {
+  width:100%;
+  height:50px;
+  padding-top: 5%;
+}
+
+.gameTitleBox h2 {
+  margin:0%;
+  text-align: center;
+
+}
+
+/* child-element */
+.postSelectionBar {
+  display:flex;
+  height:200px;
+  flex-direction: row;
+  background-color: grey;
+  align-content: space-around;
+  width:100%;
+}
+
+.postSelectionBar, button {
+  justify-content: space-between;
+  align-content: space-around;
+  height:50px;
+  display: flex;
+}
+
+.postSection {
+  width:100%;
+  background-color: black;
+  height:300px;
+
 
 }

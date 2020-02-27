@@ -42,18 +42,28 @@ selectGame=game;
 
 //   <img src="${selectbanner.Photo}"></img>
 
+// <div class="gameTitle">
+// <h2>${selectGame.title}</h2>
+// </div>
+
   document.querySelector("#postDetailedView").innerHTML =`
 
   <section class="gameForumSection">
-  <div class="gameForum"
+  <div class= "PostSection">
+
+  <div class="gameBg">
+  </div>
+  <div class="gameTitleBox">
+  <h2>${selectGame.title}</h2>
+  </div>
   <div class="postSelectionBar">
   <button onclick="Hot()">Hot</button>
   <button onclick="New()">New</button>
   <button onclick="Top()">Top</button>
   </div>
-  <h2>${selectGame.title}</h2>
-
+  <input> </input>
   </div>
+
   </section>
 `;
 navigateTo("postDetailedView");
