@@ -499,3 +499,7 @@ margin-top: 100px;
 .goBack{
  margin-left: 40px;
 }
+
+#edit{
+display: none;
+}

@@ -175,9 +175,10 @@
 
 <div id="profilepage">
           <div id="userface1"><img src="images/nouser.png"></div>
-          <input type="file" id="img" accept="image/*" onchange="previewImage(this.files[0], 'imagePreview')">
+          <button type="button" name="button" onclick="edit()">edit</button>
           <div id="edit">
           <form>
+            <input type="file" id="img" accept="image/*" onchange="previewImage(this.files[0], 'imagePreview')">
       <input type="text" id="name-update" placeholder="Name" required>
       <input type="email" id="mail-update" placeholder="Mail" required>
       <!-- <input type="file" id="img-update" accept="image/*" onchange="previewImage(this.files[0], 'imagePreviewUpdate')"> -->
