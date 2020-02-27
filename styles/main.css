@@ -497,5 +497,6 @@ margin-top: 100px;
 }
 
 .goBack{
- margin-left: 40px;
+-webkit-appearance: none;
+ color: blue;
 }
