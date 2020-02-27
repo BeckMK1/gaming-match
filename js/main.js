@@ -91,6 +91,12 @@ function logout() {
   firebase.auth().signOut();
   console.log("logout");
 }
+
+function goBack() {
+  window.history.back();
+}
+
+
 // function appendUserFace(user){
 // document.querySelector("#userface").innerHTML+=`
 // <p>${user.displayName}</p>

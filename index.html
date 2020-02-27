@@ -10,11 +10,11 @@
 <body onhashchange="pageChange()">
   <!-- navagtion -->
   <header>
+  
     <section id="userogdrop">
       <section id="userface" button onclick="myFunction()" class="dropbtn">
         
-        
-
+      
         <img src="images/nouser.png">
 
       </section>
@@ -29,14 +29,16 @@
         </div>
       </div>
     </section>
+    <button onclick="goBack()">Go Back</button>
     <section id="loginAndSingup">
     <button id="loginbutton" type="button" name="button" onclick="showSignIn()">Log in</button>
     <button id="signoutbutton" type="button" name="button" onclick="signUp()">Sign Up</button>
+    
   </section>
   </header>
 
   <!-- Front Page (Signup Form) -->
-  
+
   <section id="front" class="page">
   <div id="videoAndEfect">
     <div id="blackoutvideo"></div>
@@ -52,7 +54,6 @@
         <!-- Left side -->
         <div class="frontcontent">
         <div class="columntextfront">
-
           <div id="overskriftfront">
           <h1>Gaming Match</h1>
         </div>
@@ -62,6 +63,7 @@
         </div>
         <!-- End of Left side -->
         <!-- Right Side (login) -->
+        
         <div id="register" class="column-50">
           <div class="signupForm">
             <form>
@@ -137,9 +139,6 @@
   </section>
 
   <!-- game detailed view page -->
-  <form>
-    <input type="button" value="Go back!" onclick="history.back()">
-  </form>
   
   <section id="detailedView" class="page">
     <h2>game</h2>
@@ -176,6 +175,7 @@
 
 <div id="profilepage">
           <div id="userface1"><img src="images/nouser.png"></div>
+          <input type="file" id="img" accept="image/*" onchange="previewImage(this.files[0], 'imagePreview')">
           <div id="edit">
           <form>
       <input type="text" id="name-update" placeholder="Name" required>
@@ -192,9 +192,9 @@
             <li class="userinfo"></li>
             <li class="userinfo"></li>
             <li id="sidste">Change password:</li>
-<button type="button" name="button" onclick="updateUser()">save</button>
+
           </div>
-        </div>-->
+          </div>
 
 
 
@@ -267,7 +267,6 @@
   <script src="js/userface.js"></script>
   <script src="js/dropdown.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/userupdate.js"></script>
 </body>
 
 </html>
