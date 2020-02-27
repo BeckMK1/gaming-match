@@ -77,15 +77,7 @@ function updateUser() {
 document.querySelector("#edit").display = "none";
 }
 //----------------------------------- image previewImage --------------------------------------
-function previewImage(file, previewId) {
-  if (file) {
-    let reader = new FileReader();
-    reader.onload = function (event) {
-      document.querySelector('#' + previewId).setAttribute('src', event.target.result);
-    };
-    reader.readAsDataURL(file);
-  }
-}
+
 
 function logout() {
   firebase.auth().signOut();
