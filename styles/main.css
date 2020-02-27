@@ -482,11 +482,17 @@ h1 {
 
 /*profilebox with dropdown menu*/
 #arrow {
+  position: relative;
+  left: 170px;
+  bottom: 49px;
   margin-left: 10px;
-  height: 10px;
-  width: 20px;
-  margin-top: 100%;
-  margin-left: 250%;
+  height: 20px;
+  width: 40px;
+  z-index: 11;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: solid white;
+  border-radius: 50px;
 }
 
 #userogdrop {
