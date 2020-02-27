@@ -421,7 +421,14 @@ h1 {
   width: 50px;
   border-radius: 50px;
   border: 5px;
-  padding-right:  10%;
+
+}
+#userface1 img {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  border: 5px;
+
 }
 
 /*profilebox with dropdown menu*/
@@ -502,4 +509,6 @@ margin-top: 100px;
 
 #edit{
 display: none;
+-webkit-appearance: none;
+ color: blue;
 }
