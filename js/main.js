@@ -55,8 +55,9 @@ function userAuthenticated(currentUser) {
 // append user data to profile page
 function appendUserData() {
 
-  document.querySelector('#name').value = _currentUser.displayName;
-  document.querySelector('#imagePreview').src = _currentUser.img;
+  document.querySelector('#name-update').value = _currentUser.displayName;
+  document.querySelector('#mail-update').value = _currentUser.mail;
+   document.querySelector('#imagePreview').src = _currentUser.img;
 }
 
 function updateUser() {
@@ -67,9 +68,9 @@ function updateUser() {
 
   // update database user
   _userRef.doc(user.uid).set({
-    // img: document.querySelector('#profileImg').src,
-    displayName: document.querySelector('#name').value,
-
+    img: document.querySelector('#profileImg').src,
+    displayName: document.querySelector('#name-update').value,
+    mail: document.querySelector('#mail-update').value,
   }, {
     merge: true
   });

@@ -8,13 +8,13 @@ document.querySelector("#userface").innerHTML=`
 <img src="${userData.data().img}">
 <p>${userData.data().displayName}</p>
 `
-document.querySelector("#userface1").innerHTML=`
-<img src="${userData.data().img}">
-`
-document.querySelector(".userinfo").innerHTML=`
+// document.querySelector("#userface1").innerHTML=`
+// <img src="${userData.data().img}">
+// `
+// document.querySelector(".userinfo").innerHTML=`
 
-<p>username:<br>${userData.data().displayName}</p>
-`
+// <p>username:<br>${userData.data().displayName}</p>
+// `
 })
 }
 //update user images
