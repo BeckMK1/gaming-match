@@ -33,25 +33,23 @@
     <img src="images/back (1).svg" id="backanp" button onclick="goBack()"></button>
   </div> -->
   </header>
-  <section id="loginAndSingup">
-    <button id="loginbutton" type="button" name="button" onclick="showSignIn()">Log in</button>
-    <button id="signoutbutton" type="button" name="button" onclick="signUp()">Sign Up</button>
-  </section>
-  </header>
+
 
   <!-- Front Page (Signup Form) -->
   <section id="front" class="page">
-  <div id="videoAndEfect">
+    <section id="loginAndSingup">
+      <button id="loginbutton" type="button" name="button" onclick="showSignIn()">Log in</button>
+      <button id="signoutbutton" type="button" name="button" onclick="signUp()">Sign Up</button>
+    </section>
     <div id="blackoutvideo"></div>
     <div id="video-container">
     <video autoplay loop muted>
       <source src="images/baggrund.mp4">
     </video>
   </div>
-</div>
+
     <div id="blackout"></div>
-    <section id="signUp">
-      <div id="background">
+      <section id="signUp">
         <!-- Left side -->
         <div class="frontcontent">
         <div class="columntextfront">
@@ -89,17 +87,16 @@
 
             </form>
           </div>
-        </div>
+        </div>¨
+      </div>
       </section>
         <!-- End of Right Side  -->
     <!-- Sign In Form -->
 
     <section id="signIn">
-      <button id="closebutton" type="button" name="button">X</button>
-      <div id="background">
         <div id="login" class="column-50">
           <div class="signInForm">
-
+            <button id="closebutton" type="button" name="button">X</button>
             <form>
               <div class="formInput" id="emailInput">
                 <label for="email">Email</label>
@@ -110,12 +107,12 @@
                 <input type="password" id="password">
               </div>
               <!-- email and password fields for login -->
-              <button id="signinbtn" type="button" name="button" onclick="signIn()">Sign In</button>
+              <button id="signinbtn" type="button" name="button" onclick="signIn()"><p>Sign In</p></button>
             </form>
           </div>
         </div>
         <!-- End of Right Side  -->
-      </div>
+
     </section>
   </section>
   <!-- form for making post -->

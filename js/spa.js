@@ -36,7 +36,6 @@ function pageChange() {
     if (location.hash) {
       page = location.hash.slice(1);
     }
-
     showPage(page);
 }
     pageChange(); // called by default when the app is loaded for the first time

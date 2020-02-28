@@ -1,9 +1,9 @@
 /* Generic Styles */
+/*header*/
 html{
 height: 100%;
 width: auto;
 }
-/*header*/
 header {
   width: 100%;
   height: 70px;
@@ -16,13 +16,21 @@ header {
 }
 /* front page */
 
+#front{
+height: 100%;
+width: auto;
+overflow-y: hidden;
+
+}
 #video-container {
 position: absolute;
+max-height: 92.8%;
+overflow: hidden;
 }
 video {
-height: 30%;
+height: 100%;
 width: 100%;
-position: relative;
+
 }
 body {
     font-family: arial;
@@ -127,6 +135,9 @@ font-size: 20px;
 #login { /* Centrer login formular */
     display: block;
     margin: 0 auto;
+}
+.logincolumn-50{
+
 }
 .signupForm {
     background: #525252;
@@ -254,9 +265,9 @@ transform: translate(-50%, -50%)
   position: absolute;
   opacity: 50%;
   background: black;
-  z-index: 1;
+  z-index: 2;
   width: 100%;
-  height: 100%;
+  height: 92.8%;
 
 }
 #blackout{
@@ -265,27 +276,56 @@ transform: translate(-50%, -50%)
   background: black;
   display: none;
   width: 100%;
-  height: 100%;
+  height: 92.8%;
   z-index: 8;
   }
   #signIn{
   position: relative;
   display: none;
-  z-index: 9;
-  bottom: 40em;
-  left: 35em;
+  z-index: 9; 
+  bottom: 85%;
+  left: 30%;
   }
 .signInForm{
-  background: black;
+  background: #525252;
   width: 40%;
   padding-bottom: 1%;
   border-radius: 10px;
-  opacity: 30%
 
 }
  /* END OF UKENT ukent*/
-
-
+ #signinbtn{
+  -webkit-appearance: none;
+  height: 50px;
+  width: 30%;
+  border-radius: 50px;
+  font-size: 25px;
+  background-color: green;
+  border: none;
+  position: relative;
+  left: 36%;
+  max-width: 100%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+ }
+ #signinbtn p{
+   position: relative;
+  color: white;
+  margin: 0;
+  left: 30%;
+ }
+ #closebutton{
+  -webkit-appearance: none;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 180px;
+  font-size: 25px;
+  background-color: green;
+  border: none;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin: 0;
+ }
 
 /* browse game */
 #games {
@@ -536,22 +576,16 @@ display: none;
   position: relative;
   -webkit-appearance: none;
   height: 50px;
-  width: 30%;
+  width: 200px;
   border-radius: 50px;
-
   font-size: 25px;
   background-color: green;
   border: none;
-left: 30% ;
   align-items: center;
-  max-width: 100%;
   position: relative;
-  left: 30%;
-  max-width: 100%;
+  left: 40%;
   margin-top: 2%;
   margin-bottom: 2%;
-
-
 }
 #editbut p{
   font-size: 25px;
@@ -560,26 +594,21 @@ text-align: center;
 position: relative;
 bottom:17px;
 left: 24%;
-
-
 }
-
 #saveuser{
   -webkit-appearance: none;
   height: 50px;
-  width: 30%;
+  width: 200px;
   border-radius: 50px;
-
   font-size: 25px;
   background-color: green;
   border: none;
   position: relative;
-  left: 36%;
+  left: 40%;
   max-width: 100%;
   margin-top: 2%;
   margin-bottom: 2%;
-
-
+  
 }
 #saveuser p {
   font-size: 25px;
@@ -590,7 +619,10 @@ bottom:17px;
 left: 20%;
 }
 /* Dropdown Button */
-
+#postDetailedView{
+width: auto;
+height: 100%;
+}
 
 
 .dropbtn {
@@ -599,29 +631,7 @@ left: 20%;
   border: none;
   cursor: pointer;
 }
-#editbut{
-  -webkit-appearance: none;
-  height: 50px;
-  width: 30%;
-  border-radius: 50px;
-  margin-left: 35%;
-  font-size: 25px;
-  background-color: green;
-  border: none;
 
-  align-items: center;
-  max-width: 100%;
-  margin-left: 5%;
-}
-#editbut p{
-
-  font-size: 25px;
-color: white;
-text-align: center;
-position: relative;
-bottom:17px;
-
-}
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
  color: green;
