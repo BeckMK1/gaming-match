@@ -571,6 +571,7 @@ display: none;
 -webkit-appearance: none;
  color: blue;
 }
+
 #loginAndSingup{
 position: relative;
 z-index: 2;
