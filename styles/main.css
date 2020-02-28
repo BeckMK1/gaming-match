@@ -459,6 +459,7 @@ h1 {
   flex-direction: row;
 }
 
+
 /* Dropdown Button */
 
 
@@ -469,7 +470,29 @@ h1 {
   border: none;
   cursor: pointer;
 }
+#editbut{
+  -webkit-appearance: none;
+  height: 50px;
+  width: 30%;
+  border-radius: 50px;
+  margin-left: 35%;
+  font-size: 25px;
+  background-color: green;
+  border: none;
 
+  align-items: center;
+  max-width: 100%;
+  margin-left: 5%;
+}
+#editbut p{
+
+  font-size: 25px;
+color: white;
+text-align: center;
+position: relative;
+bottom:17px;
+
+}
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
  color: green;
@@ -548,7 +571,7 @@ height: 300px;
 #backanp {
   height: 40px;
   width: auto;
-  margin-top: -35px;
+  margin-top: 25px;
   position:absolute;
   z-index: 11;
 
@@ -563,7 +586,7 @@ height: 300px;
 .goBack{
   position: relative;
   bottom: 30;
- margin-left: 23%;
+ margin-left: 40px;
 }
 
 #edit{
@@ -571,6 +594,7 @@ display: none;
 -webkit-appearance: none;
  color: blue;
 }
+<<<<<<< HEAD
 
 #loginAndSingup{
 position: relative;
@@ -579,3 +603,5 @@ width: 100%;
 height:70px;
 background-color: black;
 }
+=======
+>>>>>>> 3b14bf1ac81d14cb6fad31d1bde9fe029b6c0905
