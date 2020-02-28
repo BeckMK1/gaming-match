@@ -44,8 +44,8 @@ firebase.auth().onAuthStateChanged((user) => {
   }
 });
 
-function userAuthenticated(currentUser) {
-  appendUserForUserface(currentUser)
+function userAuthenticated(user) {
+  appendUserForUserface(user)
   document.querySelector('#userogdrop').style.display = "block";
   document.querySelector("#loginAndSingup").style.display = "none";
   navigateTo("browseGame")
@@ -105,4 +105,7 @@ function goBack() {
 function userNotAuthenticated(){
 document.querySelector("header").style.display="none";
 navigateTo("front");
+}
+function edit(){
+document.querySelector("#edit").style.display= "block";
 }
