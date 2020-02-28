@@ -88,11 +88,11 @@ body {
 /*frontpage*/
 .columntextfront {
   text-align: center;
-  margin-right: 15%;
+  margin-right: 100px;
   color: white;
   display: flex;
   flex-direction: column;
-  width: 100%;
+  width: 150%;
 }
 .frontcontent {
   display: flex;
@@ -106,9 +106,10 @@ body {
 /* Style for Signup Form */
 .column-50 {
   /* Kolonner til Sign Up form */
-  width: 99%;
-  margin-top: 14%;
-  padding-top: 20px;
+  width: 90%;
+  margin-top: 10%;
+
+  margin-left: 25%;
 }
 
 #overskriftfront {
@@ -262,7 +263,7 @@ opacity: 85%;
 #signIn {
   position: relative;
   display: none;
-  z-index: 9; 
+  z-index: 9;
   bottom: 85%;
   left: 30%;
   }
@@ -576,7 +577,7 @@ h1 {
   max-width: 100%;
   margin-top: 2%;
   margin-bottom: 2%;
-  
+
 }
 
 #saveuser p {
