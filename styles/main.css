@@ -533,6 +533,7 @@ display: none;
   font-size: 25px;
 }
 #editbut{
+  position: relative;
   -webkit-appearance: none;
   height: 50px;
   width: 30%;
@@ -541,19 +542,16 @@ display: none;
   font-size: 25px;
   background-color: green;
   border: none;
-
+left: 30% ;
   align-items: center;
   max-width: 100%;
-  margin-left: 5%;
 }
 #editbut p{
-
   font-size: 25px;
 color: white;
 text-align: center;
 position: relative;
 bottom:17px;
-
 }
 
 /* Dropdown Button */
@@ -639,13 +637,15 @@ background-color: red;
 color: white;
 border-radius: 25px;
 margin-left: 6%;
-text-align: center;
-
 font-size: 20px;
 
 }
 
-
+#logoutbutton p{
+margin: 0;
+position: relative;
+left: 35%;
+}
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
