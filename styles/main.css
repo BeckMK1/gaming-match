@@ -414,6 +414,7 @@ h1 {
 #userface {
   display: flex;
   flex-direction: row;
+
 }
 
 #userface img {
@@ -433,21 +434,27 @@ h1 {
 
 /*profilebox with dropdown menu*/
 #arrow {
-  margin-left: 10px;
-  height: 10px;
-  width: 20px;
-  margin-top: 100%;
-  margin-left: 250%;
+  position: relative;
+  margin-left: 110%;
+  bottom: 49px;
+
+  height: 20px;
+  width: 40px;
+  z-index: 11;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: solid white;
+  border-radius: 50px;
 }
 
 #userogdrop {
   margin-left: 83%;
-  margin-right: 3%;
-  margin-top: 0.7%;
+
+  margin-top: 0.5%;
   background-color: white;
   height: 50px;
   width: 150px;
-  border-radius: 50px;
+  border-radius: 25px;
   display: flex;
   flex-direction: row;
 }
@@ -470,7 +477,7 @@ h1 {
 
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
-  border-radius: 50px;
+
   display: inline-block;
 }
 
@@ -478,29 +485,60 @@ h1 {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: #2D2C2C;
+
+
   z-index: 1;
-  right: 5px;
+
 }
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
+  color: white;
+margin-top: 5%;
   text-decoration: none;
   display: block;
+width: 60%;
+position: relative;
+left: 20px;
+  border: solid 1px;
+  border-radius: 25px;
+  height: 25px;
+  padding-top: 5px;
+
+
+
 }
+
+#logoutbutton{
+  margin-top: 10%;
+-webkit-appearance: none;
+height: 20%;
+width: 62%;
+border: solid 1px;
+background-color: red;
+color: white;
+border-radius: 25px;
+margin-left: -75px;
+
+font-size: 20px;
+
+}
+
+
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #ddd
 }
 
+#myDropdown{}
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {display:block;
-margin-top: 100px;
+  width: 300px;
+  margin-top: -39px;
+text-align: center;
+height: 300px;
 }
 
 .goBack {
@@ -510,11 +548,11 @@ margin-top: 100px;
 #backanp {
   height: 40px;
   width: auto;
-  margin-top: 25px;
+  margin-top: -35px;
   position:absolute;
-  z-index: 3;
-  
-  
+  z-index: 11;
+
+
 }
 
 .goBack {
@@ -525,7 +563,7 @@ margin-top: 100px;
 .goBack{
   position: relative;
   bottom: 30;
- margin-left: 40px;
+ margin-left: 23%;
 }
 
 #edit{

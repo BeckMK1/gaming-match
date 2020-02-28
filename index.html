@@ -5,41 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gaming match</title>
   <link rel="stylesheet" href="styles/main.css">
-  
+
 </head>
 
 <body onhashchange="pageChange()">
   <!-- navagtion -->
   <header>
-  
+
     <section id="userogdrop">
       <section id="userface" button onclick="myFunction()" class="dropbtn">
-        
-      
+
+
         <img src="images/nouser.png">
 
       </section>
-      <div class="dropdown">
+
         <img src="images/arrowdown1.png" id="arrow" button onclick="myFunction()" class="dropbtn">
         <div id="myDropdown" class="dropdown-content">
-          <a href="#browseGame"> browse games</a>
-          <a href="#profile"> profile</a>
-          <a href="#detailedView">detailedView</a>
-          <a href="#make-post"> create post</a>
+          <a class="dropdowntext" href="#browseGame"> browse games</a>
+          <a class="dropdowntext" href="#profile"> profile</a>
+          <a class="dropdowntext" href="#detailedView">detailedView</a>
+          <a class="dropdowntext" href="#make-post"> create post</a>
           <button id="logoutbutton" type="button" name="button" onclick="logout()">log af</button>
         </div>
-      </div>
     
+
     </section>
     <div class="goBack">
     <div class="backanp"></div>
-    <img src="images/back (1).svg" id="backanp" button onclick="goBack()"></button> 
+    <img src="images/back (1).svg" id="backanp" button onclick="goBack()"></button>
   </div>
   </header>
   <section id="loginAndSingup">
     <button id="loginbutton" type="button" name="button" onclick="showSignIn()">Log in</button>
     <button id="signoutbutton" type="button" name="button" onclick="signUp()">Sign Up</button>
-    
+
   </section>
   <!-- Front Page (Signup Form) -->
 
@@ -67,7 +67,7 @@
         </div>
         <!-- End of Left side -->
         <!-- Right Side (login) -->
-        
+
         <div id="register" class="column-50">
           <div class="signupForm">
             <form>
@@ -96,7 +96,7 @@
       </section>
         <!-- End of Right Side  -->
     <!-- Sign In Form -->
-    
+
     <section id="signIn">
       <button id="closebutton" type="button" name="button">X</button>
       <div id="background">
@@ -122,7 +122,7 @@
     </section>
   </section>
   <!-- form for making post -->
-  
+
   <section id="make-post" class="page">
     <form>
       <label for="games">select game:</label>
@@ -143,7 +143,7 @@
   </section>
 
   <!-- game detailed view page -->
-  
+
   <section id="detailedView" class="page">
     <h2>game</h2>
     <div id="dvId"></div>
@@ -190,7 +190,7 @@
       <button type="button" name="button" onclick="updateUser()">Save User</button>
     </form>
   </div>
-</section> 
+</section>
     </section>
 
 
@@ -217,7 +217,7 @@
 
       <div id="Spilunderside">
         <input id="sog" type="search" placeholder="Search" onkeyup="search(this.value)">
-        
+
         <section id="games" class="grid-container"></section>
       </div>
     </section>
@@ -241,5 +241,3 @@
 </body>
 
 </html>
-
-
