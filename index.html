@@ -14,17 +14,19 @@
   <header>
     <section id="userogdrop">
       <section id="userface">
-        <img src="images/nouser.png">
+        <img src="images/nouser.png" alt="profile-picture">
       </section>
 
-        <img src="images/arrowdown1.png" id="arrow" button onclick="myFunction()" class="dropbtn">
-        <div id="myDropdown" class="dropdown-content">
-          <a class="dropdowntext" href="#browseGame"> browse games</a>
-          <a class="dropdowntext" href="#profile"> profile</a>
-          <a class="dropdowntext" href="#detailedView">detailedView</a>
-          <a class="dropdowntext" href="#make-post"> create post</a>
-          <button id="logoutbutton" type="button" name="button" onclick="logout()"><p>logout</p></button>
-        </div>
+      <img src="images/arrowdown1.png" id="arrow" button onclick="myFunction()" class="dropbtn">
+      <div id="myDropdown" class="dropdown-content">
+        <a class="dropdowntext" href="#browseGame"> browse games</a>
+        <a class="dropdowntext" href="#profile"> profile</a>
+        <a class="dropdowntext" href="#detailedView">detailedView</a>
+        <a class="dropdowntext" href="#make-post"> create post</a>
+        <button id="logoutbutton" type="button" name="button" onclick="logout()">
+          <p>logout</p>
+        </button>
+      </div>
 
 
     </section>
@@ -52,45 +54,47 @@
       <section id="signUp">
         <!-- Left side -->
         <div class="frontcontent">
-        <div class="columntextfront">
+          <div class="columntextfront">
 
-          <div id="overskriftfront">
-          <h1>Gaming Match</h1>
-        </div>
-        <div id="tekstfront">
-          <p>Gaming match er en web app for dig, der mangler en eller flere at spille med.<br>Det er gratis, så opret dig nu!</p>
-        </div>
-        </div>
-        <!-- End of Left side -->
-        <!-- Right Side (login) -->
-        <div id="register" class="column-50">
-          <div class="signupForm">
-            <form>
-              <div class="formInput" id="usernameInput">
-                <label for="username">Username</label>
-                <input type="text" id="username">
-              </div>
-              <div class="formInput" id="emailInput">
-                <label for="email">Email</label>
-                <input type="email" id="email2">
-              </div>
-              <div class="formInput" id="passwordInput">
-                <label for="password">Password</label>
-                <input type="password" id="password2">
-              </div>
-              <div class="formInput" id="passwordConfirmationInput">
-                <label for="passwordConfirmation">Confirm Password</label>
-                <input type="password" id="passwordConfirmation">
-              </div>
-              <!-- email and password fields for login -->
-              <button id="signupbtn" type="button" name="button" onclick="signUp()">Sign Up</button>
-
-            </form>
+            <div id="overskriftfront">
+              <h1>Gaming Match</h1>
+            </div>
+            <div id="tekstfront">
+              <p>Gaming match er en web app for dig, der mangler en eller flere at spille med.<br>Det er gratis, så opret dig nu!</p>
+            </div>
           </div>
-        </div>¨
-      </div>
+        </div>
       </section>
         <!-- End of Right Side  -->
+          <!-- End of Left side -->
+          <!-- Right Side (login) -->
+          <div id="register" class="column-50">
+            <div class="signupForm">
+              <form>
+                <div class="formInput" id="usernameInput">
+                  <label for="username">Username</label>
+                  <input type="text" id="username">
+                </div>
+                <div class="formInput" id="emailInput">
+                  <label for="email">Email</label>
+                  <input type="email" id="email2">
+                </div>
+                <div class="formInput" id="passwordInput">
+                  <label for="password">Password</label>
+                  <input type="password" id="password2">
+                </div>
+                <div class="formInput" id="passwordConfirmationInput">
+                  <label for="passwordConfirmation">Confirm Password</label>
+                  <input type="password" id="passwordConfirmation">
+                </div>
+                <!-- email and password fields for login -->
+                <button id="signupbtn" type="button" name="button" onclick="signUp()">Sign Up</button>
+
+              </form>
+            </div>
+          </div>
+    </section>
+    <!-- End of Right Side  -->
     <!-- Sign In Form -->
 
     <section id="signIn">
@@ -168,79 +172,77 @@
 
 
 
-    <section id="profile" class="page">
-      <section id="profileview">
+  <section id="profile" class="page">
+    <section id="profileview">
 
-<div id="profilepage">
-          <div id="userface1"><img src="images/nouser.png"></div>
-          <button id="editbut" type="button" name="button" onclick="edit()"><p>Settings</p></button>
-          <div id="edit">
+      <div id="profilepage">
+        <div id="userface1"><img src="images/nouser.png" alt="profile-picture"></div>
+        <button id="editbut" type="button" name="button" onclick="edit()">
+          <p>Settings</p>
+        </button>
+        <div id="edit">
           <form>
-          <div class="edituser1"id="imgchance"> <input type="file" id="img" accept="image/*" onchange="previewImage(this.files[0], 'imagePreview')"></div>
-    <div class="edituser">   <input type="text" id="name-update" placeholder="New Username"></div>
-  <div class="edituser">     <input type="email" id="mail-update" placeholder="New Email"></div>
-      <!-- <input type="file" id="img-update" accept="image/*" onchange="previewImage(this.files[0], 'imagePreviewUpdate')"> -->
-  <div class="edituser">     <img id="imagePreviewUpdate" class="image-preview"></div>
-  <div class="edituser">     <button id="saveuser" type="button" name="button" onclick="updateUser()"><p>Save User</p></button></div>
-    </form>
+            <div class="edituser1" id="imgchance"> <input type="file" id="img" accept="image/*" onchange="previewImage(this.files[0], 'imagePreview')"></div>
+            <div class="edituser"> <input type="text" id="name-update" placeholder="New Username"></div>
+            <div class="edituser"> <input type="email" id="mail-update" placeholder="New Email"></div>
+            <!-- <input type="file" id="img-update" accept="image/*" onchange="previewImage(this.files[0], 'imagePreviewUpdate')"> -->
+            <div class="edituser"> <img id="imagePreviewUpdate" class="image-preview"></div>
+            <div class="edituser"> <button id="saveuser" type="button" name="button" onclick="updateUser()">
+                <p>Save User</p>
+              </button></div>
+          </form>
+        </div>
+    </section>
+
+    <div id="infouser">
+      <div id="usersite">
+        <li class="userinfo" id="usernameinfo"></li>
+        <li class="userinfo" id="usermail"></li>
+        <li class="userinfo" id="userdiscord"></li>
+
+      </div>
     </div>
+
+
+
+
+
   </section>
 
-<div id="infouser">
-          <div id="usersite">
-            <li class="userinfo" id="usernameinfo"></li>
-            <li class="userinfo"id="usermail"></li>
-            <li class="userinfo" id="userdiscord"></li>
-
-          </div>
-        </div>
-
-
-
-
-
-    </section>
-
-
-
-
-        <!-- set profile settings
-        <div class="profile-settings">
-        <input type="text" id="name" placeholder="type your name">
-
-
-      <! update button
-    <section class="knapper">
-        <input type="file" id="img" accept="image/*" onchange="previewImage(this.files[0], 'imagePreview')">
-
-
-        <img id="imagePreview" class="image-preview">
-
-        <section class="button"></section>
-        <button type="button" name="button" onclick="updateUser()">set profile</button>
-    </div>
-    </section>
-  </section>  -->
-
-
   <section id="browseGame" class="page">
-<!-- frindlist -->
+    <!-- frindlist -->
     <section id="over">
       <section id="frindlist">
 
-        <div id="listen">
+        <ul id="listen">
           <h3>Friends</h3>
-          <li><img src="images/nouser.png"><P>navn</p></li>
-              <li><img src="images/nouser.png"><P>navn</p></li>
-                  <li><img src="images/nouser.png"><P>navn</p></li>
-                      <li><img src="images/nouser.png"><P>navn</p></li>
-                        <li><img src="images/nouser.png"><P>navn</p></li>
-                            <li><img src="images/nouser.png"><P>navn</p></li>
-                                <li><img src="images/nouser.png"><P>navn</p></li>
-                                    <li><img src="images/nouser.png"><P>navn</p></li>
+          <li><img src="images/nouser.png">
+            <P>navn</p>
+          </li>
+          <li><img src="images/nouser.png">
+            <P>navn</p>
+          </li>
+          <li><img src="images/nouser.png">
+            <P>navn</p>
+          </li>
+          <li><img src="images/nouser.png">
+            <P>navn</p>
+          </li>
+          <li><img src="images/nouser.png">
+            <P>navn</p>
+          </li>
+          <li><img src="images/nouser.png">
+            <P>navn</p>
+          </li>
+          <li><img src="images/nouser.png">
+            <P>navn</p>
+          </li>
+          <li><img src="images/nouser.png">
+            <P>navn</p>
+          </li>
 
 
-        </div>
+        </ul>
       </section>
 
 
