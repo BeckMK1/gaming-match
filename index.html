@@ -1,23 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gaming match</title>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
   <link rel="stylesheet" href="styles/main.css">
-
 </head>
 
 <body onhashchange="pageChange()">
   <!-- navagtion -->
   <header>
-
     <section id="userogdrop">
-      <section id="userface" button onclick="myFunction()" class="dropbtn">
-
-
+      <section id="userface">
         <img src="images/nouser.png">
-
       </section>
 
         <img src="images/arrowdown1.png" id="arrow" button onclick="myFunction()" class="dropbtn">
@@ -28,7 +25,7 @@
           <a class="dropdowntext" href="#make-post"> create post</a>
           <button id="logoutbutton" type="button" name="button" onclick="logout()">log af</button>
         </div>
-    
+
 
     </section>
     <!-- <div class="goBack">
@@ -40,8 +37,9 @@
     <button id="loginbutton" type="button" name="button" onclick="showSignIn()">Log in</button>
     <button id="signoutbutton" type="button" name="button" onclick="signUp()">Sign Up</button>
   </section>
-  <!-- Front Page (Signup Form) -->
+  </header>
 
+  <!-- Front Page (Signup Form) -->
   <section id="front" class="page">
   <div id="videoAndEfect">
     <div id="blackoutvideo"></div>
@@ -57,6 +55,7 @@
         <!-- Left side -->
         <div class="frontcontent">
         <div class="columntextfront">
+
           <div id="overskriftfront">
           <h1>Gaming Match</h1>
         </div>
@@ -66,7 +65,6 @@
         </div>
         <!-- End of Left side -->
         <!-- Right Side (login) -->
-
         <div id="register" class="column-50">
           <div class="signupForm">
             <form>
@@ -121,11 +119,10 @@
     </section>
   </section>
   <!-- form for making post -->
-
   <section id="make-post" class="page">
     <form>
       <label for="games">select game:</label>
-      <select id="gameSelection-post" name="gameSelection">
+      <select id="gameSelection" name="gameSelection">
       </select>
     </form>
     <form>
@@ -142,7 +139,6 @@
   </section>
 
   <!-- game detailed view page -->
-
   <section id="detailedView" class="page">
     <h2>game</h2>
     <div id="dvId"></div>
@@ -158,13 +154,15 @@
       <input type="text" id="numberOfPlayers" placeholder="number of players">
       <form>
         <label for="tags">add tags:</label>
-        <select id="tags-post " name="tags">
+        <select id="tags" name="tags">
         </select>
       </form>
       <button type="button" name="button" onclick="addPost()"> create post</button>
     </section>
   </section>
   <section id="postDetailedView" class="page">
+
+
   </section>
 
 
@@ -178,19 +176,54 @@
 
 <div id="profilepage">
           <div id="userface1"><img src="images/nouser.png"></div>
-          <button type="button" name="button" onclick="edit()">edit</button>
+          <button id="editbut" type="button" name="button" onclick="edit()"><p>Settings</p></button>
           <div id="edit">
           <form>
-            <input type="file" id="img" accept="image/*" onchange="previewImage(this.files[0], 'imagePreview')">
-      <input type="text" id="name-update" placeholder="Name" required>
-      <input type="email" id="mail-update" placeholder="Mail" required>
+          <div class="edituser1"id="imgchance"> <input type="file" id="img" accept="image/*" onchange="previewImage(this.files[0], 'imagePreview')"></div>
+    <div class="edituser">   <input type="text" id="name-update" placeholder="New Username"></div>
+  <div class="edituser">     <input type="email" id="mail-update" placeholder="New Email"></div>
       <!-- <input type="file" id="img-update" accept="image/*" onchange="previewImage(this.files[0], 'imagePreviewUpdate')"> -->
-      <img id="imagePreviewUpdate" class="image-preview">
-      <button type="button" name="button" onclick="updateUser()">Save User</button>
+  <div class="edituser">     <img id="imagePreviewUpdate" class="image-preview"></div>
+  <div class="edituser">     <button type="button" name="button" onclick="updateUser()">Save User</button></div>
     </form>
-  </div>
-</section>
+    </div>
+  </section>
+
+<div id="infouser">
+          <div id="usersite">
+            <li class="userinfo" id="usernameinfo"></li>
+            <li class="userinfo"id="usermail"></li>
+            <li class="userinfo" id="userdiscord"></li>
+
+          </div>
+        </div>
+
+
+
+
+
     </section>
+
+
+
+
+        <!-- set profile settings
+        <div class="profile-settings">
+        <input type="text" id="name" placeholder="type your name">
+
+
+      <! update button
+    <section class="knapper">
+        <input type="file" id="img" accept="image/*" onchange="previewImage(this.files[0], 'imagePreview')">
+
+
+        <img id="imagePreview" class="image-preview">
+
+        <section class="button"></section>
+        <button type="button" name="button" onclick="updateUser()">set profile</button>
+    </div>
+    </section>
+  </section>  -->
 
 
   <section id="browseGame" class="page">
@@ -237,6 +270,7 @@
   <script src="js/userface.js"></script>
   <script src="js/dropdown.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/userupdate.js"></script>
 </body>
 
 </html>
