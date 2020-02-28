@@ -39,8 +39,7 @@ firebase.auth().onAuthStateChanged((user) => {
     userAuthenticated(user)
     console.log(user.uid);
   } else {
-    navigateTo("front")
-    // User not logged in or has just logged out.
+    userNotAuthenticated();// User not logged in or has just logged out.
     console.log("you are loged out")
   }
 });
@@ -103,3 +102,7 @@ function goBack() {
 // <img>${user.img}</img>
 // `
 // }
+function userNotAuthenticated(){
+document.querySelector("header").style.display="none";
+navigateTo("front");
+}
