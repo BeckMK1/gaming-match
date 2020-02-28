@@ -548,7 +548,7 @@ height: 300px;
 #backanp {
   height: 40px;
   width: auto;
-  margin-top: 25px;
+  margin-top: -35px;
   position:absolute;
   z-index: 11;
 
@@ -563,7 +563,7 @@ height: 300px;
 .goBack{
   position: relative;
   bottom: 30;
- margin-left: 40px;
+ margin-left: 23%;
 }
 
 #edit{
