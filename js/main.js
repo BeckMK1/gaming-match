@@ -108,4 +108,5 @@ navigateTo("front");
 }
 function edit(){
 document.querySelector("#edit").style.display= "block";
+document.querySelector("#infouser").style.display= "none";
 }
