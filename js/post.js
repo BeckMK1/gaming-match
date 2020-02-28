@@ -48,13 +48,10 @@ selectGame=game;
 
   document.querySelector("#postDetailedView").innerHTML =`
 
-  <section class="gameForumSection">
-
   <div class="gameBg">
-  </div>
-  <div class="gameTitleBox">
-  <h2>${selectGame.title}</h2>
-  </div>
+  <img class="coverImg" src="${selectGame.coverImg}">
+  </div> 
+  <section class="gameForumSection">
 
   <div class="postSelectionBar">
   <button onclick="Hot()">Hot</button>
