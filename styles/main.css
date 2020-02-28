@@ -638,12 +638,13 @@ h1 {
   bottom: 30;
   margin-left: 40px;
 }
+
 /*gameForum*/
 .gameForumSection {
   width: 70%;
   margin-left: 15%;
   margin-right: 15%;
-  margin-top: 10%;
+
 }
 
 /* flexbox parent */
@@ -688,6 +689,18 @@ h1 {
   align-content: space-around;
   height: 50px;
   display: flex;
+}
+
+.postSelectionBar button {
+  -webkit-appearance: none;
+  background-color: #424242;
+  text-align: center;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  width:70px;
+  color:white;
+
 }
 
 .postSection {
