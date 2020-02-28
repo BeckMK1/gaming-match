@@ -178,6 +178,7 @@ padding-bottom: 70px;
   margin-top: 16%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 
 
 }
@@ -465,29 +466,28 @@ h1 {
 .userinfo{
   display: flex;
   flex-direction: column;
+  justify-content: center;
   background-color: white;
   text-align: center;
   font-size: 20px;
+  height: 10%;
+  width: 50%;
+  margin-left: 25%;
 }
 .userinfo p{
 
   color: black;
+  margin: 0;
+
+}
+#saveuser{
+  -webkit-appearance: none;
 
 }
 #userface p{
   margin-left: 10%;
 }
-.edituser1{
-  background-color: white;
-  width: 60%;
-  height: 80px;
-  border-radius: 5px;
-  margin-left: 20%;
-  margin-top: 5%;
-}
-.edituser1 input{
-  margin-top: 9%;
-}
+
 .userinfo{
   display: flex;
   flex-direction: column;
@@ -538,13 +538,20 @@ display: none;
   height: 50px;
   width: 30%;
   border-radius: 50px;
-  margin-left: 60%;
+
   font-size: 25px;
   background-color: green;
   border: none;
 left: 30% ;
   align-items: center;
   max-width: 100%;
+  position: relative;
+  left: 30%;
+  max-width: 100%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+
+
 }
 #editbut p{
   font-size: 25px;
@@ -552,8 +559,36 @@ color: white;
 text-align: center;
 position: relative;
 bottom:17px;
+left: 24%;
+
+
 }
 
+#saveuser{
+  -webkit-appearance: none;
+  height: 50px;
+  width: 30%;
+  border-radius: 50px;
+
+  font-size: 25px;
+  background-color: green;
+  border: none;
+  position: relative;
+  left: 36%;
+  max-width: 100%;
+  margin-top: 2%;
+  margin-bottom: 2%;
+
+
+}
+#saveuser p {
+  font-size: 25px;
+color: white;
+text-align: center;
+position: relative;
+bottom:17px;
+left: 20%;
+}
 /* Dropdown Button */
 
 
