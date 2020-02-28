@@ -690,21 +690,15 @@ display: none;
 -webkit-appearance: none;
  color: blue;
 }
+
+/* Section Margin */
 .gameForumSection {
   width: 70%;
+  height: 1000px;
   margin-left:15%;
   margin-right:15%;
-  margin-top:10%;
+  padding-top:5%;
 }
-
-/* flexbox parent */
-.PostSection {
-  display:flex;
-  flex-wrap: wrap;
-  align-content: stretch;
-  flex-direction: column;
-}
-
 
 /* Cover picture */
 .gameBg {
@@ -712,7 +706,7 @@ display: none;
   width: 100%;
 }
 
-/* Game title */
+/* Title of the game */
 .gameTitleBox {
   width:100%;
   height:50px;
@@ -725,28 +719,29 @@ display: none;
 
 }
 
-/* child-element */
+
+/* Flexbox parent */
 .postSelectionBar {
+  height:30px;
   display:flex;
-  height:200px;
-  flex-direction: row;
   background-color: grey;
-  align-content: space-around;
   width:100%;
-}
-
-.postSelectionBar, button {
   justify-content: space-between;
-  align-content: space-around;
-  height:50px;
-  display: flex;
 }
 
-.postSection {
-  width:100%;
-  background-color: black;
-  height:300px;
+/* Button */
+.postSelectionBar button {
+-webkit-appearance: none;
+width:50px;
+flex-direction: row;
+}
 
+/* Posting Section */
+.PostSection {
+  width:100%;
+  height:auto;
+
+}
 
 }
 #loginAndSingup{

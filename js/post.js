@@ -49,21 +49,23 @@ selectGame=game;
   document.querySelector("#postDetailedView").innerHTML =`
 
   <section class="gameForumSection">
-  <div class= "PostSection">
 
   <div class="gameBg">
   </div>
   <div class="gameTitleBox">
   <h2>${selectGame.title}</h2>
   </div>
+
   <div class="postSelectionBar">
-  <div class="buttonSelection">
   <button onclick="Hot()">Hot</button>
   <button onclick="New()">New</button>
   <button onclick="Top()">Top</button>
   </div>
-  <input> </input>
+  <div class="postSection">
+
   </div>
+
+
 
   </section>
 `;
