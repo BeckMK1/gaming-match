@@ -459,6 +459,7 @@ h1 {
   flex-direction: row;
 }
 
+
 /* Dropdown Button */
 
 
@@ -469,7 +470,29 @@ h1 {
   border: none;
   cursor: pointer;
 }
+#editbut{
+  -webkit-appearance: none;
+  height: 50px;
+  width: 30%;
+  border-radius: 50px;
+  margin-left: 35%;
+  font-size: 25px;
+  background-color: green;
+  border: none;
 
+  align-items: center;
+  max-width: 100%;
+  margin-left: 5%;
+}
+#editbut p{
+
+  font-size: 25px;
+color: white;
+text-align: center;
+position: relative;
+bottom:17px;
+
+}
 /* Dropdown button on hover & focus */
 .dropbtn:hover, .dropbtn:focus {
  color: green;
