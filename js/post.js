@@ -1,9 +1,8 @@
-
 const gamesref = db.collection("Games");
-let games=[];
-gamesref.onSnapshot(function(snapshotData) {
+let games = [];
+gamesref.onSnapshot(function (snapshotData) {
   games = [];
-  snapshotData.forEach(function(doc){
+  snapshotData.forEach(function (doc) {
     let game = doc.data();
 
     game.id = doc.id;
@@ -14,39 +13,46 @@ gamesref.onSnapshot(function(snapshotData) {
   appendgames(games);
   // appendgamesforpost(games);
 });
-function appendgames(games){
-  let htmlTemplate="";
-  for (let game of games){
+
+// show game on browse page
+function appendgames(games) {
+  let htmlTemplate = "";
+  for (let game of games) {
     console.log(games)
 
-htmlTemplate +=`<article id="gamesliste" onclick="showDetailView('${game.id}')">
+    htmlTemplate += `<article id="gamesliste" onclick="showDetailView('${game.id}')">
 <h2>${game.title}</h2>
 <img src="${game.Photo}">
 </article>`
 
-document.querySelector("#games").innerHTML = htmlTemplate;
+    document.querySelector("#games").innerHTML = htmlTemplate;
 
   }
 
 }
-function showDetailView(id){
+
+
+
+// show game details when you click on the game on the browse game page. this is also where post are. 
+function showDetailView(id) {
   console.log(id)
   let selectGame;
 
-  for(let game of games){
-if(game.id === id){
-selectGame=game;
-}
+  for (let game of games) {
+    if (game.id === id) {
+      selectGame = game;
+    }
 
   }
 
-//   <img src="${selectbanner.Photo}"></img>
+  //   <img src="${selectbanner.Photo}"></img>
 
-// <div class="gameTitle">
-// <h2>${selectGame.title}</h2>
-// </div>
+  // <div class="gameTitle">
+  // <h2>${selectGame.title}</h2>
+  // </div>
 
-  document.querySelector("#postDetailedView").innerHTML =`
+  // this is the ui for the detailed game page 
+  document.querySelector("#postDetailedView").innerHTML = `
 
   <div class="gameBg">
   <img class="coverImg" src="${selectGame.coverImg}">
@@ -59,12 +65,25 @@ selectGame=game;
   <button onclick="Top()">Top</button>
   </div>
   <div class="postSection">
-
+  <div id="make-post">
+    <div class="makePostTitle">
+      <input type="text" placeholder="name your post">
+    </div>
+      <label for="maketags">add tags:</label>
+      <select id="maketags" name="maketags">
+      </select>
   </div>
+  <div id="showPost">
+    <div id="postTitle"><div>
+    <div class="playerCount"></div>
+    <div id="tags"></div>
+  </div>
+</div>
 
 
 
   </section>
 `;
-navigateTo("postDetailedView");
+  navigateTo("postDetailedView");
+  postFun();
 }

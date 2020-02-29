@@ -123,16 +123,11 @@
   </section>
   <!-- form for making post -->
   <section id="make-post" class="page">
-    <form>
-      <label for="games">select game:</label>
-      <select id="gameSelection" name="gameSelection">
-      </select>
-    </form>
-    <form>
+    <!-- <form>
       <label for="tags">add tags:</label>
       <select id="tags" name="tags">
       </select>
-    </form>
+    </form> -->
     <form>
       <label for="playerNumber">select number of players:</label>
       <select name="playercount" id="playercount">
@@ -155,18 +150,10 @@
         </select>
       </form>
       <input type="text" id="numberOfPlayers" placeholder="number of players">
-      <form>
-        <label for="tags">add tags:</label>
-        <select id="tags" name="tags">
-        </select>
-      </form>
       <button type="button" name="button" onclick="addPost()"> create post</button>
     </section>
   </section>
-  <section id="postDetailedView" class="page">
-
-
-  </section>
+  <section id="postDetailedView" class="page"></section>
 
 
 
@@ -264,7 +251,7 @@
   <script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-firestore.js"></script>
   <!-- my scripts -->
   <script src="js/firebaseFunction.js"></script>
-  <script src="js/spa.js"></script>
+  <script src="js/spa.js"></script> 
   <script src="js/viewPost.js"></script>
   <script src="js/post.js"></script>
   <script src="js/search.js"></script>
@@ -272,6 +259,7 @@
   <script src="js/dropdown.js"></script>
   <script src="js/main.js"></script>
   <script src="js/userupdate.js"></script>
+  <script src="js/makePost.js"></script>
 </body>
 
 </html>
