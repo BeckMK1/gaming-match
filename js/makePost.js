@@ -13,7 +13,7 @@
 //   }
 
 // inporting tags
-function postFun(){
+function makePostFun(){
 const tagsref = db.collection("tags");
 let tags=[];
 tagsref.onSnapshot(function(snapshotData) {
@@ -42,3 +42,13 @@ function appendtags(tags){
 }
 }
 // creating post
+function addPost(){
+  const _postRef = db.collection("posts");
+_postRef.add({
+  playerCount: "1",
+  maxplayerCount: document.querySelector("#postPlayerCount").textContent,
+  gameTitle:document.querySelector("#postGameTitle").textContent,
+  title: document.querySelector("#postTitle").value,
+    tag: document.querySelector("#maketags").value,   
+})
+}

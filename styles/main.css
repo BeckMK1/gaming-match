@@ -739,8 +739,12 @@ margin-top: 5%;
   margin: 0%;
   text-align: center;
 }
-
-
+#postDetailedView{
+  position: absolute;
+}
+#hiddenInfoPoste{
+  display:none;
+}
 /* Flexbox parent */
 .postSelectionBar {
   display: flex;
@@ -776,7 +780,6 @@ margin-top: 5%;
 
 .postSection {
   width: 100%;
-  background-color: black;
   height: 639px;
 
 }

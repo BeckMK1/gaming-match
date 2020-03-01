@@ -1,3 +1,4 @@
+function viewPostFun(){
 const _showPostRef = db.collection("posts");
 let posts=[];
 _showPostRef.onSnapshot(function(snapshotData) {
@@ -18,13 +19,15 @@ function appendPosts(posts){
     console.log(post)
 
 htmlTemplate +=`<article>
+
 <p>${post.title}</p>
 <p>${post.tag}</p>
-<p>${post.palyercount}</p>
+<p>${post.playerCount}/${post.maxplayerCount}</p>
 </article>`
 
-document.querySelector("#show-post").innerHTML = htmlTemplate;
+document.querySelector("#view-post").innerHTML = htmlTemplate;
 
   }
 
+}
 }

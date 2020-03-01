@@ -59,9 +59,10 @@ function showDetailView(id) {
   <div class="gameBg">
   <img class="coverImg" src="${selectGame.coverImg}">
   </div>
-  <div>
-  <p id="postGameTitle">${selectGame.title}</p>
-  </div>
+  <div id="hiddenInfoPost">
+<p id="postGameTitle">${selectGame.title}</p>
+<p id="postPlayerCount">${selectGame.maxPlayerCount}</p>
+</div>
   <section class="gameForumSection">
 
   <div class="postSelectionBar">
@@ -72,20 +73,22 @@ function showDetailView(id) {
   <div class="postSection">
   <div id="make-post">
     <div class="makePostTitle">
-      <input type="text" placeholder="name your post">
+      <input id="postTitle" type="text" placeholder="name your post">
     </div>
       <label for="maketags">add tags:</label>
       <select id="maketags" name="maketags">
       </select>
   </div>
-  <button type="button" name="button" onclick="addPost()"> create post</button>
+  <button type="button" name="button" onclick="addPost()">create post</button>
   <div id="showPost">
     <div id="postTitle"><div>
     <div class="playerCount"></div>
     <div id="tags"></div>
   </div>
 </div>
+<div id="view-post">
 
+<div> 
 
 
   </section>
@@ -95,22 +98,6 @@ function showDetailView(id) {
 
 
   navigateTo("postDetailedView");
-  postFun();
-}
-function addPost(id){
-let postSelectGame;
-
-  for (let game of games) {
-    if (game.id === id) {
-      postSelectGame = game;
-    }
-
-  }
-
-  const _postRef = db.collection("posts");
-_postRef.add({
-  gameTitle: postSelectGame.title,
-  title: document.querySelector("#postTitle").value,
-    tag: document.querySelector("#tags").value,
-})
+  makePostFun();
+  viewPostFun();
 }
