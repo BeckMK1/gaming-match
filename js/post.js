@@ -57,7 +57,7 @@ function showDetailView(id) {
   <div class="gameBg">
   <img class="coverImg" src="${selectGame.coverImg}">
   </div> 
-  <p>${selectGame.title}</p>
+  <p class="postGameTitle">${selectGame.title}</p>
   <section class="gameForumSection">
 
   <div class="postSelectionBar">

@@ -48,7 +48,7 @@ function userAuthenticated(user) {
   appendUserForUserface(user)
   document.querySelector('#userogdrop').style.display = "block";
   document.querySelector("#loginAndSingup").style.display = "none";
-  navigateTo("broseGame")
+  navigateTo("browseGame")
 }
 // ========== PROFILE PAGE FUNCTIONALITY ========== //
 // append user data to profile page

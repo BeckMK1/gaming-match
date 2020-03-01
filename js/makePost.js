@@ -45,7 +45,7 @@ function appendtags(tags){
 const _postRef = db.collection("posts");
 function addPost(){
 _postRef.add({
-  gameTitle: document.querySelector("#gameTitle").value,
+  gameTitle: document.getElementsByid('postGameTitle')[0].innerHTML,
   title: document.querySelector("#postTitle").value,
     tag: document.querySelector("#tags").value,
 })
