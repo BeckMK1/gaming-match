@@ -5,7 +5,7 @@ _usersref.doc(currentUser.uid).onSnapshot(function (userData){
 console.log(userData.data())
 // console.log(currentUser)
 document.querySelector("#userface").innerHTML=`
-<img src="${userData.data().img}">
+<img id="UserImage" src="${userData.data().img}">
 <p id="userName">${userData.data().displayName}</p>
 `
 document.querySelector("#userface1").innerHTML=`

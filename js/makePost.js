@@ -45,6 +45,8 @@ function appendtags(tags){
 function addPost(){
   const _postRef = db.collection("posts");
 _postRef.add({
+  player:document.querySelector("#userName").textContent,
+  playerImg: document.querySelector("#userImage").textContent,
   playerCount: "1",
   maxplayerCount: document.querySelector("#postPlayerCount").textContent,
   gameTitle:document.querySelector("#postGameTitle").textContent,

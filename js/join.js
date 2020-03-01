@@ -12,15 +12,15 @@
       });
     });
 function join(id){
-    let selectpost;
-    for (let post of posts) {
-      if (post.id === id) {
-        selectpost = post;
-      }
-  
+    let selectPost;
+
+  for (let post of posts) {
+    if (game.id === id) {
+      selectPost = post;
     }
-  
-   let updetePlayer = db.collection("posts").doc(`${selectpost}`).set({
+
+  }
+   let updetePlayer = db.collection("posts").doc(selectPost);
     return updetePlayer.update({
   player:document.querySelector("#userName").textContent,
   
