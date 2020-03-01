@@ -363,25 +363,30 @@ li p {
   color: white;
 
 }
-#frindlist {
+#friendlist {
   display: flex;
   flex-direction: column;
   background-color: #2D2C2C;
   height: 1080px;
-  width: 350px;
+  width: 290px;
   color: white;
 }
 
+/* paragraph color */
 #listen p {
   color: white;
 }
 
-#listen h3 {
+#listen {
+  margin-left:0%;
+}
+
+#friendlist h3 {
   text-align: center;
   border-bottom: solid 3px #707070;
   opacity: 30%;
   color: #707070;
-  font-size: 50px;
+  font-size: 30px;
 }
 
 header {
@@ -749,7 +754,7 @@ margin-top: 5%;
   width: 100%;
   position: relative;
 
-  
+
 }
 
 .postSelectionBar, button {
