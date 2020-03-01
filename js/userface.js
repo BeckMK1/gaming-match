@@ -6,7 +6,7 @@ console.log(userData.data())
 // console.log(currentUser)
 document.querySelector("#userface").innerHTML=`
 <img src="${userData.data().img}">
-<p>${userData.data().displayName}</p>
+<p id="userName">${userData.data().displayName}</p>
 `
 document.querySelector("#userface1").innerHTML=`
 <img src="${userData.data().img}">`

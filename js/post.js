@@ -75,21 +75,21 @@ function showDetailView(id) {
     <div class="makePostTitle">
       <input id="postTitle" type="text" placeholder="name your post">
     </div>
+    <div id="create">
       <label for="maketags">add tags:</label>
       <select id="maketags" name="maketags">
       </select>
+    <button type="button" name="button" onclick="addPost()">create post</button>
   </div>
-  <button type="button" name="button" onclick="addPost()">create post</button>
   <div id="showPost">
     <div id="postTitle"><div>
     <div class="playerCount"></div>
     <div id="tags"></div>
   </div>
 </div>
-<div id="view-post"></div>
-
-
-
+</div>
+</div>
+</div>
   </section>
 `;
 

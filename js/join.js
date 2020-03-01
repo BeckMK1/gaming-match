@@ -20,8 +20,8 @@ function join(id){
   
     }
   
-   db.collection("posts").doc(`'${selectpost}'`).set({
-  player:_currentUser
+   db.collection("posts").doc(`${selectpost}`).set({
+  player:document.querySelector("#userName").textContent,
   
     })
 }
