@@ -35,7 +35,6 @@ document.querySelector("#view-post").innerHTML = htmlTemplate;
 
 }
 }
-
 const _showPostRef = db.collection("posts");
 let posts=[];
 _showPostRef.onSnapshot(function(snapshotData) {
