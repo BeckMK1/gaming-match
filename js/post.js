@@ -57,6 +57,7 @@ function showDetailView(id) {
   <div class="gameBg">
   <img class="coverImg" src="${selectGame.coverImg}">
   </div> 
+  <p>${selectGame.title}</p>
   <section class="gameForumSection">
 
   <div class="postSelectionBar">
@@ -73,6 +74,7 @@ function showDetailView(id) {
       <select id="maketags" name="maketags">
       </select>
   </div>
+  <button type="button" name="button" onclick="addPost()"> create post</button>
   <div id="showPost">
     <div id="postTitle"><div>
     <div class="playerCount"></div>
