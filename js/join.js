@@ -20,7 +20,8 @@ function join(id){
   
     }
   
-   db.collection("posts").doc(`${selectpost}`).set({
+   let updetePlayer = db.collection("posts").doc(`${selectpost}`).set({
+    return updetePlayer.update({
   player:document.querySelector("#userName").textContent,
   
     })

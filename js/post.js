@@ -80,12 +80,7 @@ function showDetailView(id) {
       </select>
     <button type="button" name="button" onclick="addPost()">create post</button>
   </div>
-  <div id="showPost">
-    <div id="postTitle"><div>
-    <div class="playerCount"></div>
-    <div id="tags"></div>
-  </div>
-</div>
+<div id="view-post"></div>
   </section>
 `;
 
