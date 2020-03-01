@@ -220,7 +220,7 @@ opacity: 85%;
   position: absolute;
   top: 25%;
   left: 50%;
-  margin-right: -50%;
+
   transform: translate(-50%, -50%)
 }
 
@@ -324,6 +324,7 @@ opacity: 85%;
 #over {
   display: flex;
   flex-direction: row;
+
 }
 /*friendslist*/
 #listen {
@@ -589,10 +590,7 @@ h1 {
   left: 20%;
 }
 /* Dropdown Button */
-#postDetailedView{
-width: auto;
-height: 100%;
-}
+
 
 
 /* Dropdownmenu Button */
@@ -666,7 +664,7 @@ height: 100%;
 .show {
   display: block;
   width: 300px;
-  margin-top: -39px;
+margin-top: -36px;
   text-align: center;
   height: 300px;
 }
@@ -697,9 +695,11 @@ height: 100%;
 
 /*gameForum*/
 .gameForumSection {
-  width: 70%;
-  margin-left: 15%;
-  margin-right: 15%;
+  width: 73.8%;
+  margin-left: 27.3%;
+  margin-top: 13%;
+
+
 
 }
 
@@ -707,16 +707,22 @@ height: 100%;
 .PostSection {
   display: flex;
   flex-wrap: wrap;
-  align-content: stretch;
+
   flex-direction: column;
 }
 
 /* Cover picture */
 .gameBg {
-  height: 300px;
-  width: 100%;
+  height: 200px;
+  width: 73.8%;
+  margin-left: 27.3%;
+
+
 }
 .coverImg{
+height: 166%;
+width: 100%;
+margin-top: 5%;
 
 }
 
@@ -736,13 +742,14 @@ height: 100%;
 /* Flexbox parent */
 .postSelectionBar {
   display: flex;
-  height: 200px;
+
   flex-direction: row;
   background-color: grey;
   align-content: space-around;
   width: 100%;
   position: relative;
-  top:197px;
+
+  
 }
 
 .postSelectionBar, button {
@@ -766,9 +773,9 @@ height: 100%;
 
 .postSection {
   width: 100%;
-  height: 300px;
-  position: relative;
-  top: 197px;
+  background-color: black;
+  height: 639px;
+
 }
 
 #loginAndSingup {
