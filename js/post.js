@@ -33,6 +33,7 @@ function appendgames(games) {
 
 
 
+
 // show game details when you click on the game on the browse game page. this is also where post are. 
 function showDetailView(id) {
   console.log(id)
@@ -45,6 +46,7 @@ function showDetailView(id) {
 
   }
 
+
   //   <img src="${selectbanner.Photo}"></img>
 
   // <div class="gameTitle">
@@ -56,8 +58,11 @@ function showDetailView(id) {
 
   <div class="gameBg">
   <img class="coverImg" src="${selectGame.coverImg}">
-  </div> 
-  <p class="postGameTitle">${selectGame.title}</p>
+  </div>
+  <div id="hiddenInfoPost">
+<p id="postGameTitle">${selectGame.title}</p>
+<p id="postPlayerCount">${selectGame.maxPlayerCount}</p>
+</div>
   <section class="gameForumSection">
 
   <div class="postSelectionBar">
@@ -68,24 +73,30 @@ function showDetailView(id) {
   <div class="postSection">
   <div id="make-post">
     <div class="makePostTitle">
-      <input type="text" placeholder="name your post">
+      <input id="postTitle" type="text" placeholder="name your post">
     </div>
       <label for="maketags">add tags:</label>
       <select id="maketags" name="maketags">
       </select>
   </div>
-  <button type="button" name="button" onclick="addPost()"> create post</button>
+  <button type="button" name="button" onclick="addPost()">create post</button>
   <div id="showPost">
     <div id="postTitle"><div>
     <div class="playerCount"></div>
     <div id="tags"></div>
   </div>
 </div>
-
+<div id="view-post">
+<div> 
 
 
   </section>
 `;
+
+
+
+
   navigateTo("postDetailedView");
-  postFun();
+  makePostFun();
+  viewPostFun();
 }
