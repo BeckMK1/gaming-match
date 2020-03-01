@@ -87,7 +87,6 @@ function showDetailView(id) {
   </div>
 </div>
 <div id="view-post">
-
 <div> 
 
 
