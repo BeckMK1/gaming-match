@@ -33,6 +33,7 @@ function appendgames(games) {
 
 
 
+
 // show game details when you click on the game on the browse game page. this is also where post are. 
 function showDetailView(id) {
   console.log(id)
@@ -45,6 +46,7 @@ function showDetailView(id) {
 
   }
 
+
   //   <img src="${selectbanner.Photo}"></img>
 
   // <div class="gameTitle">
@@ -56,8 +58,10 @@ function showDetailView(id) {
 
   <div class="gameBg">
   <img class="coverImg" src="${selectGame.coverImg}">
-  </div> 
-  <p class="postGameTitle">${selectGame.title}</p>
+  </div>
+  <div>
+  <p id="postGameTitle">${selectGame.title}</p>
+  </div>
   <section class="gameForumSection">
 
   <div class="postSelectionBar">
@@ -86,6 +90,27 @@ function showDetailView(id) {
 
   </section>
 `;
+
+
+
+
   navigateTo("postDetailedView");
   postFun();
+}
+function addPost(id){
+let postSelectGame;
+
+  for (let game of games) {
+    if (game.id === id) {
+      postSelectGame = game;
+    }
+
+  }
+
+  const _postRef = db.collection("posts");
+_postRef.add({
+  gameTitle: postSelectGame.title,
+  title: document.querySelector("#postTitle").value,
+    tag: document.querySelector("#tags").value,
+})
 }
