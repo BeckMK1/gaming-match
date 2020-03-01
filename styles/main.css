@@ -368,25 +368,30 @@ li p {
   color: white;
 
 }
-#frindlist {
+#friendlist {
   display: flex;
   flex-direction: column;
   background-color: #2D2C2C;
   height: 1080px;
-  width: 350px;
+  width: 290px;
   color: white;
 }
 
+/* paragraph color */
 #listen p {
   color: white;
 }
 
-#listen h3 {
+#listen {
+  margin-left:0%;
+}
+
+#friendlist h3 {
   text-align: center;
   border-bottom: solid 3px #707070;
   opacity: 30%;
   color: #707070;
-  font-size: 50px;
+  font-size: 30px;
 }
 
 header {
@@ -709,7 +714,7 @@ margin-left: 34%;
 .gameForumSection {
   width: 73.8%;
   margin-left: 27.3%;
-  margin-top: 13%;
+
 
 
 
@@ -761,13 +766,17 @@ margin-top: 5%;
   display: flex;
 
   flex-direction: row;
-  background-color: grey;
+  background-color: black;
   align-content: space-around;
   width: 100%;
   position: relative;
-  margin-top: 50px;;
+  margin-top: 10%;
 
 
+<<<<<<< HEAD
+
+=======
+>>>>>>> a22cf3970faa477340fa75485d8a4d05568b7ab0
 }
 
 .postSelectionBar, button {
@@ -789,13 +798,108 @@ margin-top: 5%;
 
 }
 
-.postSection {
-  width: 100%;
-  height: 639px;
+
+
+.makePostTitle{
+  -webkit-appearance: none;
+
+
+}
+#make-post{
+  display: flex;
+  flex-direction: column;
+background-color: gray;
+
+}
+.underpost{
+
+
+}
+.buttonjoin{
+  border-top: solid 4px;
+  display: flex;
+  flex-direction: row;
+
+}
+.buttonjoin p {
+margin-left: 10%;}
+#view-post{
+  border-color: white;
+  text-align: center;
+}
+#view-post article{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+  margin-right: 10%;
+background-color: white;
+justify-content: space-between;
+border: solid 1px;
+border-radius: 25px;
+margin-top: 2%;
+}
+#view-post button{
+  background: green;
+  border: none;
+width: 25%;
+height: 50px;
+  color: white;
+  border-radius: 10px;
+  display: block;
+  margin-left: 42%;
+  margin-bottom: 1%;
+  margin-top: 1%;
+
+}
+#postkas{
+  margin-top: 50px;
+
+}
+#overkas{
+  height: 25%;
+  width: 30%;
+  display: flex;
+  flex-direction:
 
 }
 
+#create{
+  width: 50%;
+  display: flex;
+  flex-direction:row;
+  margin-left: 55%;
+
+}
+#create button{
+  background: green;
+  border: none;
+width: 25%;
+height: 50px;
+  color: white;
+  border-radius: 40px;
+  display: block;
+margin-top: 1%;
+  margin-right: 10%;
+}
+#create label,select{
+  margin-top: 4%;
+  margin-right: 11px;
+  color: white;
+}
+
+#postTitle{
+  -webkit-appearance: none;
+height: 150px;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 3%;
+  border-radius:20px;
+  text-align: center;
+  font-size: 25px;
+
+}
 #loginAndSingup {
+
   position: relative;
   z-index: 2;
   width: 100%;

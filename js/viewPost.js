@@ -22,6 +22,8 @@ function appendPosts(posts){
 htmlTemplate +=`<article>
 
 <p>${post.title}</p>
+
+<div class="buttonjoin">
 <p>${post.tag}</p>
 <p>${post.playerCount}/${post.maxplayerCount}</p>
 <button type="button" name="button" onclick="join('${post.id}')">join</p>

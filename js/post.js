@@ -34,7 +34,7 @@ function appendgames(games) {
 
 
 
-// show game details when you click on the game on the browse game page. this is also where post are. 
+// show game details when you click on the game on the browse game page. this is also where post are.
 function showDetailView(id) {
   console.log(id)
   let selectGame;
@@ -53,7 +53,7 @@ function showDetailView(id) {
   // <h2>${selectGame.title}</h2>
   // </div>
 
-  // this is the ui for the detailed game page 
+  // this is the ui for the detailed game page
   document.querySelector("#postDetailedView").innerHTML = `
 
   <div class="gameBg">
@@ -73,14 +73,29 @@ function showDetailView(id) {
   <div class="postSection">
   <div id="make-post">
     <div class="makePostTitle">
-      <input id="postTitle" type="text" placeholder="name your post">
+      <input id="postTitle" type="text" placeholder="Write a post here">
     </div>
+    <div id="create">
       <label for="maketags">add tags:</label>
       <select id="maketags" name="maketags">
       </select>
     <button type="button" name="button" onclick="addPost()">create post</button>
   </div>
-<div id="view-post"></div>
+  <div class="overkas">
+  <div id="view-post"></div>
+  <div class="hygs">
+  <div id="postkas">
+    <div id="postTitle"></div>
+    </div>
+    <div class="underpost">
+    <div class="playerCount"></div>
+    <div id="tags"></div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+
   </section>
 `;
 
