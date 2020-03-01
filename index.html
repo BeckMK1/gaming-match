@@ -12,7 +12,20 @@
 <body onhashchange="pageChange()">
   <!-- navagtion -->
   <header>
+    <section class="goBack">
+    <div class="backanp"></div>
+    <img src="images/backbut.png" class="backanp" button onclick="goBack()"></button>
+    
+
+    </section>
+    <section class="gofor">
+    <div class="foranp"></div>
+
+    <img src="images/playf.png" class="backanp" button onclick="goBack()"></button>
+
+    </section>
     <section id="userogdrop">
+
       <section id="userface">
         <img src="images/nouser.png" alt="profile-picture">
       </section>
@@ -30,10 +43,15 @@
 
     </section>
 
+<<<<<<< HEAD
     <div class="goBack">
     <div class="backanp"></div>
     <img src="images/back (1).svg" alt="backbutton" id="backanp" button onclick="goBack()">
     </div>
+=======
+
+  <section id="frindlist">
+>>>>>>> a22cf3970faa477340fa75485d8a4d05568b7ab0
 
   <section id="friendlist">
     <h3>Friends</h3>
@@ -68,6 +86,7 @@
 
 
   </header>
+
 
 
   <!-- Front Page (Signup Form) -->
@@ -171,7 +190,8 @@
       <input type="text" id="numberOfPlayers" placeholder="number of players">
     </section>
   </section>
-  <section id="postDetailedView" class="page"></section>
+  <section id="postDetailedView" class="page">
+  </section>
 
 
 
@@ -180,7 +200,9 @@
 
 
   <section id="profile" class="page">
+
     <section id="profileview">
+
 
       <div id="profilepage">
         <div id="userface1"><img src="images/nouser.png" alt="profile-picture"></div>
@@ -216,44 +238,14 @@
 
   </section>
 
-  <section id="browseGame" class="page">
+
     <!-- frindlist -->
     <section id="over">
-      <section id="frindlist">
-
-        <ul id="listen">
-          <h3>Friends</h3>
-          <li><img src="images/nouser.png">
-            <P>navn</p>
-          </li>
-          <li><img src="images/nouser.png">
-            <P>navn</p>
-          </li>
-          <li><img src="images/nouser.png">
-            <P>navn</p>
-          </li>
-          <li><img src="images/nouser.png">
-            <P>navn</p>
-          </li>
-          <li><img src="images/nouser.png">
-            <P>navn</p>
-          </li>
-          <li><img src="images/nouser.png">
-            <P>navn</p>
-          </li>
-          <li><img src="images/nouser.png">
-            <P>navn</p>
-          </li>
-          <li><img src="images/nouser.png">
-            <P>navn</p>
-          </li>
-
-
-        </ul>
-      </section>
+      <section id="browseGame" class="page">
 
 
       <div id="Spilunderside">
+
         <input id="sog" type="search" placeholder="Search" onkeyup="search(this.value)">
 
         <section id="games" class="grid-container"></section>
@@ -278,6 +270,7 @@
   <script src="js/main.js"></script>
   <script src="js/userupdate.js"></script>
   <script src="js/makePost.js"></script>
+  <script src="js/join.js"></script>
 </body>
 
 </html>
