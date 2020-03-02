@@ -771,7 +771,7 @@ margin-top: 5%;
   display:none;
 }
 
-/* Flexbox parent */
+/* Flexbox parent -HOT- -TOP- -NEW- buttons */
 .postSelectionBar {
   display: flex;
 
@@ -793,15 +793,25 @@ margin-top: 5%;
 
 .postSelectionBar button {
   -webkit-appearance: none;
-  background-color: #424242;
+  display: inline-block;
+  background-color: transparent;
   text-align: center;
-  border: none;
+  border: 1px solid #fff;
+  font-size: 16px;
+  outline: none;
   text-decoration: none;
   display: inline-block;
   width:70px;
-  color:white;
-
+  color:#c7c7c7;
 }
+
+.postSelectionBar button:hover,
+.postSelectionBar button:active {
+  background-color: #fff;
+  color: black;
+  font-weight: bold;
+}
+
 
 
 /* her er bunden binde*/
@@ -822,6 +832,7 @@ margin-top: 5%;
 }
 .buttonjoin{
   border-top: solid 4px;
+  border-radius: 4px;
   display: flex;
   flex-direction: row;
 
@@ -830,8 +841,9 @@ margin-top: 5%;
 margin-left: 10%;
 }
 
+/* Post article styling */
+
 #view-post{
-  border-color: white;
   text-align: center;
 }
 
@@ -843,18 +855,23 @@ margin-left: 10%;
   background-color: white;
   justify-content: space-between;
   border: solid 1px;
-  border-radius: 25px;
+  border-radius: 4px;
   margin-top: 2%;
+}
+
+#view-post article p{
+  font-size:20px;
+
 }
 
 /* join button */
 
-#view-post button{
-  background-color: green;
+#view-post button {
+  background-color: #047300;
   display: inline-block;
   border: none;
-  width: 150px;
-  height: 50px;
+  width: 100px;
+  height: 45px;
   color: #c7c7c7;
   border-radius: 5px;
   font-size:16px;
@@ -867,6 +884,9 @@ margin-left: 10%;
   margin-top: 1%;
 
 }
+
+
+
 #postkas{
   margin-top: 50px;
 
@@ -899,7 +919,7 @@ margin-left: 10%;
   text-decoration: none;
   /* placement */
   text-align: center;
-
+  margin: 30px 10px 10px 20px
 
 }
 
@@ -911,7 +931,8 @@ margin-left: 10%;
 }
 
 #create label,select{
-  margin-top: 4%;
+  height:25px;
+  margin-top: 53px;
   margin-right: 11px;
   color: white;
 }
@@ -925,7 +946,7 @@ margin-left: 10%;
   width: 70%;
   margin-left: 15%;
   margin-top: 3%;
-  border-radius:20px;
+  border-radius: 4px;
   text-align: center;
   font-size: 20px;
 }
@@ -937,7 +958,7 @@ margin-left: 10%;
     width: 70%;
     margin-left: 15%;
     margin-top: 3%;
-    border-radius:20px;
+    border-radius: 4px;
     text-align: center;
     font-size: 20px;
 }
