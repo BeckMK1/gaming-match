@@ -73,8 +73,8 @@ function showDetailView(id) {
   <div class="postSection">
   <div id="make-post">
     <div class="makePostTitle">
-      <input id="postTitle" type="text" placeholder="Enter a title.">
-      <input id="postComment" type="text" placeholder="Write something.">
+      <input id="postTitle" type="text" placeholder="Write something here">
+
       </div>
     <div id="create">
       <label for="maketags">Add tags:</label>

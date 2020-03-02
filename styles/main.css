@@ -25,7 +25,13 @@ body {
   width: auto;
   overflow-x: hidden;
 }
-
+#setUpUserName{
+position: relative;
+bottom:50%;
+width: 500px;
+float: right;
+right: 250px;
+}
 
 /* ============== FRONT-PAGE ============== */
 
@@ -81,6 +87,7 @@ header {
 
 /* log in/log out */
 #loginbutton {
+  -webkit-appearance: none;
   float: right;
   height: 40px;
   border: none;
@@ -89,6 +96,12 @@ header {
   margin: 15px;
   transition-duration: 0.4s;
   cursor: pointer;
+
+}
+
+#loginbutton p{
+  text-align: center;
+  margin-left: 30%;
 }
 
 #loginbutton:hover {
@@ -97,6 +110,7 @@ header {
 }
 
 #signoutbutton {
+  -webkit-appearance: none;
   float: right;
   height: 40px;
   border: none;
@@ -105,7 +119,13 @@ header {
   margin: 15px;
   transition-duration: 0.4s;
   cursor: pointer;
+
 }
+#signoutbutton p{
+  text-align: center;
+  margin-left: 25%;
+}
+
 
 #signoutbutton:hover {
   background-color: #f44336;
@@ -114,7 +134,7 @@ header {
 
 #signUp {
   position: relative;
-  z-index: 3;
+  z-index: 4;
 }
 
 /* Signup boxes dimensions */
@@ -162,22 +182,28 @@ header {
 }
 
 
-.signupForm {
-    background: #525252;
-    opacity: 85%;
-    width: 100%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    border-radius: 10px;
-}
+
 
 .signupForm {
+  position: relative;
+  z-index: 4;
   background: #525252;
-  opacity: 85%;
+
   width: 100%;
   padding-top: 2%;
   padding-bottom: 2%;
   border-radius: 10px;
+}
+.signuForm {
+  position: relative;
+  z-index: 4;
+  background: #525252;
+margin-left: 50%;
+  width: 80%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 10px;
+  margin-top: -100px;
 }
 
 /* button */
@@ -380,7 +406,7 @@ header {
   position: fixed;
   display: flex;
   flex-direction: column;
-  overflow: scroll;
+  overflow-x: scroll;
 }
 
 /* friendlist box */
@@ -443,6 +469,7 @@ li p {
   margin-top: 8%;
   display: flex;
   flex-direction: column;
+  position: absolute;
 }
 #gamesliste {
   margin: 20px;
@@ -460,13 +487,15 @@ h1 {
 /*search function*/
 #sog {
   -webkit-appearance: none;
-  margin-left: 25%;
+  margin-left: 20%;
   padding: 20px;
   width: 400px;
-  border-color: gray;
+  border: solid 2px;
+  border-color: black;
   border-radius: 50px;
   font-size: 20px;
   position: absolute;
+
 }
 
 
@@ -632,16 +661,14 @@ h1 {
 }
 
 /* The container <div> - needed to position the dropdown content */
-.dropdown {
-  display: inline-block;
-}
+
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
   background-color: #2D2C2C;
-  z-index: 1;
+  z-index: 10;
 }
 
 /* Links inside the dropdown */
@@ -660,6 +687,7 @@ h1 {
 }
 /*logut button*/
 #logoutbutton {
+
   margin-top: 10%;
   -webkit-appearance: none;
   height: 20%;
@@ -846,6 +874,7 @@ margin-top: 4%;
 .buttonjoin p {
 margin-left: 10%;
 
+
 }
 
 /* Post article styling */
@@ -954,19 +983,10 @@ margin-left: 10%;
 
 
 /* Title typing box */
-#postTitle{
-  -webkit-appearance: none;
-  height: 30px;
-  width: 70%;
-  margin-left: 15%;
-  margin-top: 3%;
-  border-radius: 4px;
-  text-align: center;
-  font-size: 20px;
-}
+
 
 /* Comment typing box */
-#postComment {
+#postTitle {
     -webkit-appearance: none;
     height: 150px;
     width: 70%;
@@ -987,4 +1007,11 @@ margin-left: 10%;
 }
 #setUpUserName{
 display: none;
+
+
+border-color: black;
+}
+
+#postPage{
+
 }
