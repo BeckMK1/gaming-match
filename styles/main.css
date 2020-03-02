@@ -971,3 +971,6 @@ margin-left: 10%;
   height: 70px;
   background-color: black;
 }
+#setUpUserName{
+display: none;
+}

@@ -55,9 +55,16 @@ function join(id){
   }
 
   }
+  navigateTo("postPage");
+  document.querySelector("#postPage").innerHTML=`
+  <article>
+  <p>${selectPost.player}</p>
+  <p>${selectPost.playerCount}</p>
+  </article>
+  `;
   let updetePlayer = db.collection("posts").doc(`${selectPost.id}`);
   return updetePlayer.update({
   player:document.querySelector("#userName").textContent,
-  })
+  });
 
 }
