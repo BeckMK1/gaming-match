@@ -523,7 +523,6 @@ h1 {
   display: flex;
   flex-direction: row;
 }
-
 #updateuser {
   display: flex;
   flex-direction: column;

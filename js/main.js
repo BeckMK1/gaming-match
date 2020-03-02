@@ -84,7 +84,7 @@ function updateUser() {
 
   // update database user
   _userRef.doc(user.uid).set({
-    img: document.querySelector('#profileImg').src,
+    img: document.querySelector('#img').value,
     displayName: document.querySelector('#name-update').value,
     mail: document.querySelector('#mail-update').value,
   }, {
@@ -126,9 +126,4 @@ navigateTo("front");
 function edit(){
 document.querySelector("#edit").style.display= "block";
 document.querySelector("#infouser").style.display= "none";
-}
-function hideList(){
-if(pageId == "profile"){
-document.queryCommandEnabled("#friendlist").style.display="none"
-}
 }
