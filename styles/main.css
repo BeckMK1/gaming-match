@@ -25,7 +25,13 @@ body {
   width: auto;
   overflow-x: hidden;
 }
-
+#setUpUserName{
+position: relative;
+bottom:50%;
+width: 500px;
+float: right;
+right: 250px;
+}
 
 /* ============== FRONT-PAGE ============== */
 
@@ -128,7 +134,7 @@ header {
 
 #signUp {
   position: relative;
-  z-index: 3;
+  z-index: 4;
 }
 
 /* Signup boxes dimensions */
@@ -186,6 +192,8 @@ header {
 }
 
 .signupForm {
+  position: relative;
+  z-index: 4;
   background: #525252;
   opacity: 85%;
   width: 100%;

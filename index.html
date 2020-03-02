@@ -117,10 +117,6 @@
           <div id="register" class="column-50">
             <div class="signupForm">
               <form>
-                <div class="formInput" id="usernameInput">
-                  <label for="username">Username</label>
-                  <input type="text" id="username">
-                </div>
                 <div class="formInput" id="emailInput">
                   <label for="email">Email</label>
                   <input type="email" id="email2">
@@ -129,17 +125,23 @@
                   <label for="password">Password</label>
                   <input type="password" id="password2">
                 </div>
-                <div class="formInput" id="passwordConfirmationInput">
-                  <label for="passwordConfirmation">Confirm Password</label>
-                  <input type="password" id="passwordConfirmation">
-                </div>
                 <!-- email and password fields for login -->
                 <button id="signupbtn" type="button" name="button" onclick="signUp()">Sign Up</button>
-
               </form>
             </div>
           </div>
         </div>
+        <section id="setUpUserName" class="colum-50">
+          <div class="signupForm">
+          <form>
+            <div class="formInput" id="usernameInput">
+              <label for="username">Username</label>
+              <input type="text" id="username">
+              <button id="signupbtn" type="button" name="button" onclick="signUpNav()">Sign Up</button>
+            </div>
+            </form>
+          </div>
+        </section>
     </section>
     <!-- End of Right Side  -->
     <!-- Sign In Form -->
@@ -163,13 +165,6 @@
           </div>
         </div>
         <!-- End of Right Side  -->
-<section id="setUpUserName">
-  <form>
-    <div class="formInput" id="usernameInput">
-      <label for="username">Username</label>
-      <input type="text" id="username">
-    </div>
-</section>
     </section>
 
   <!-- form for making post -->

@@ -21,8 +21,25 @@ function signUp() {
   firebase.auth().createUserWithEmailAndPassword(email, password).catch(function (error) {
 
   });
-  navigateTo("profile")
+  document.querySelector("#setUpUserName").style.display= "block";
+  document.querySelector(".signupForm").style.display="none";;
 }
+
+function signUpNav(){
+  let user = firebase.auth().currentUser;
+
+  // update auth user
+  user.updateProfile({});
+  _userRef.doc(user.uid).set({
+  displayName: document.querySelector("#username").value,
+},{
+    merge: true
+})
+navigateTo("browseGame");
+document.querySelector('#userogdrop').style.display = "block";
+document.querySelector("#loginAndSingup").style.display = "none";
+}
+
 // ------------------------------  sign in  -------------------------------------------------
 function signIn() {
   let email = document.querySelector('#email').value;
@@ -48,7 +65,6 @@ function userAuthenticated(user) {
   appendUserForUserface(user)
   document.querySelector('#userogdrop').style.display = "block";
   document.querySelector("#loginAndSingup").style.display = "none";
-  navigateTo("browseGame")
 }
 // ========== PROFILE PAGE FUNCTIONALITY ========== //
 // append user data to profile page
