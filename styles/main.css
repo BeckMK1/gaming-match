@@ -388,7 +388,7 @@ header {
   position: fixed;
   display: flex;
   flex-direction: column;
-  overflow: scroll;
+  overflow-x: scroll;
 }
 
 /* friendlist box */
@@ -761,9 +761,9 @@ margin-left: 29%;
 }
 
 .coverImg{
-height: 166%;
+height: 200%;
 width: 100%;
-margin-top: 5%;
+margin-top: 4%;
 }
 
 /* Title of the game */
@@ -793,7 +793,7 @@ margin-top: 5%;
   align-content: space-around;
   width: 100%;
   position: relative;
-  margin-top: 12%;
+  margin-top: 14%;
 
 }
 
