@@ -36,7 +36,7 @@
         <a class="dropdowntext" href="#profile"> profile</a>
         <a class="dropdowntext" href="#detailedView">detailedView</a>
         <a class="dropdowntext" href="#make-post"> create post</a>
-        <button id="logoutbutton" type="button" name="button" onclick="logout()"><p>logout</p></button>
+        <button id="logoutbutton" type="button" name="button" onclick="logout()">logout</button>
       </div>
 
     </section>
@@ -85,8 +85,8 @@
   <!-- Front Page (Signup Form) -->
   <section id="front" class="page">
     <section id="loginAndSingup">
-      <button id="loginbutton" type="button" name="button" onclick="showSignIn()"><p>Log in</p></button>
-      <button id="signoutbutton" type="button" name="button" onclick="signUp()"><p>Sign up</p></button>
+      <button id="loginbutton" type="button" name="button" onclick="showSignIn()">Log in</button>
+      <button id="signoutbutton" type="button" name="button" onclick="signUp()">Sign up</button>
     </section>
     <div id="blackoutvideo"></div>
     <div id="video-container">
@@ -117,10 +117,7 @@
           <div id="register" class="column-50">
             <div class="signupForm">
               <form>
-                <div class="formInput" id="usernameinput">
-                  <label for="username">Username</label>
-                  <input type="text" id="username">
-                </div>
+
                 <div class="formInput" id="emailinput">
                   <label for="email">Email</label>
                   <input type="email" id="email2">
@@ -130,8 +127,7 @@
                   <input type="password" id="password2">
                 </div>
                 <div class="formInput" id="passwordConfirmationInput">
-                  <label for="passwordConfirmation">Confirm Password</label>
-                  <input type="password" id="passwordConfirmation">
+
                 </div>
                 <!-- email and password fields for login -->
                 <button id="signupbtn" type="button" name="button" onclick="signUp()">Sign Up</button>
@@ -158,16 +154,18 @@
                 <input type="password" id="password">
               </div>
               <!-- email and password fields for login -->
-              <button id="signinbtn" type="button" name="button" onclick="signIn()"><p>Sign In</p></button>
+              <button id="signinbtn" type="button" name="button" onclick="signIn()">Sign In</button>
             </form>
           </div>
         </div>
+
         <!-- End of Right Side  -->
 <section id="setUpUserName">
-  <form>
-    <div class="formInput" id="usernameInput">
+
+    <div class="formInput" id="usernameinput">
       <label for="username">Username</label>
       <input type="text" id="username">
+
     </div>
 </section>
     </section>
@@ -181,11 +179,11 @@
     <section id="show-post"></section>
     <!-- make posts -->
     <section id="make-post">
-      <form>
+
         <label for="games">select game:</label>
         <select id="gameSelection" name="gameSelection">
         </select>
-      </form>
+
       <input type="text" id="numberOfPlayers" placeholder="number of players">
     </section>
   </section>
@@ -205,32 +203,35 @@
 
       <div id="profilepage">
         <div id="userface1"><img src="images/nouser.png" alt="profile-picture"></div>
-        <button id="editbut" type="button" name="button" onclick="edit()">
-          <p>Settings</p>
-        </button>
+        <button id="editbut" type="button" name="button" onclick="edit()">Settings</button>
         <div id="edit">
-          <form>
+
             <div class="edituser1" id="imgchance"> <input type="file" id="img" accept="image/*" onchange="previewImage(this.files[0], 'imagePreview')"></div>
             <div class="edituser"> <input type="text" id="name-update" placeholder="New Username"></div>
             <div class="edituser"> <input type="email" id="mail-update" placeholder="New Email"></div>
             <!-- <input type="file" id="img-update" accept="image/*" onchange="previewImage(this.files[0], 'imagePreviewUpdate')"> -->
-            <div class="edituser"> <img id="imagePreviewUpdate" class="image-preview"></div>
-            <div class="edituser"> <button id="saveuser" type="button" name="button" onclick="updateUser()">
-                <p>Save User</p>
+
+            <div class="edituser"><button id="saveuser" type="button" name="button" onclick="updateUser()">
+              Save User
               </button></div>
-          </form>
+
         </div>
     </section>
 
     <div id="infouser">
       <div id="usersite">
+        <ul>
         <li class="userinfo" id="usernameinfo"></li>
         <li class="userinfo" id="usermail"></li>
         <li class="userinfo" id="userdiscord"></li>
-
+</ul>
       </div>
     </div>
   </div>
+
+
+
+
 
 
 
