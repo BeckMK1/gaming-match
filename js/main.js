@@ -127,3 +127,8 @@ function edit(){
 document.querySelector("#edit").style.display= "block";
 document.querySelector("#infouser").style.display= "none";
 }
+function hideList(){
+if(pageId == "profile"){
+document.queryCommandEnabled("#friendlist").style.display="none"
+}
+}
