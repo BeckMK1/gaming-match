@@ -511,7 +511,7 @@ h1 {
 
 #userogdrop {
   margin-left: 83%;
-  
+
   background-color: white;
   height: 50px;
   width: 150px;
@@ -659,21 +659,28 @@ h1 {
   position:absolute;
   background-color: #2D2C2C;
   z-index: 10;
-}
 
+}
+#myDropdown{
+position: relative;
+bottom: 45px;
+}
 /* Links inside the dropdown */
 .dropdown-content a {
   color: white;
   margin-top: 5%;
   text-decoration: none;
-  display: block;
-  width: 60%;
-  position: relative;
-  left: 20px;
-  border: solid 1px;
+  display:flex;
+  flex-direction: column;
+  border: solid 2px;
   border-radius: 25px;
-  height: 25px;
+  width: 60%;
   padding-top: 5px;
+  padding-bottom: 5px;
+
+margin-left: 5%;
+
+
 }
 /*logut button*/
 #logoutbutton {
