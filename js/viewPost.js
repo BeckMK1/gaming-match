@@ -26,7 +26,7 @@ htmlTemplate +=`<article>
 <div class="buttonjoin">
 <p>${post.tag}</p>
 <p>${post.playerCount}/${post.maxplayerCount}</p>
-<button type="button" name="button" onclick="join('${post.id}')">join</p>
+<button type="button" name="button" onclick="join('${post.id}')">join</button>
 </article>`
 
 document.querySelector("#view-post").innerHTML = htmlTemplate;
