@@ -182,24 +182,28 @@ header {
 }
 
 
-.signupForm {
-    background: #525252;
-    opacity: 85%;
-    width: 100%;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    border-radius: 10px;
-}
+
 
 .signupForm {
   position: relative;
   z-index: 4;
   background: #525252;
-  opacity: 85%;
+
   width: 100%;
   padding-top: 2%;
   padding-bottom: 2%;
   border-radius: 10px;
+}
+.signuForm {
+  position: relative;
+  z-index: 4;
+  background: #525252;
+margin-left: 50%;
+  width: 80%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border-radius: 10px;
+  margin-top: -100px;
 }
 
 /* button */
@@ -1003,6 +1007,9 @@ margin-left: 10%;
 }
 #setUpUserName{
 display: none;
+
+
+border-color: black;
 }
 
 #postPage{
