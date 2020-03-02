@@ -73,13 +73,14 @@ function showDetailView(id) {
   <div class="postSection">
   <div id="make-post">
     <div class="makePostTitle">
-      <input id="postTitle" type="text" placeholder="Write a post here">
-    </div>
+      <input id="postTitle" type="text" placeholder="Enter a title.">
+      <input id="postComment" type="text" placeholder="Write something.">
+      </div>
     <div id="create">
-      <label for="maketags">add tags:</label>
+      <label for="maketags">Add tags:</label>
       <select id="maketags" name="maketags">
       </select>
-    <button type="button" name="button" onclick="addPost()">create post</button>
+    <button type="button" name="button" onclick="addPost()">Submit</button>
   </div>
   <div class="overkas">
   <div id="view-post"></div>

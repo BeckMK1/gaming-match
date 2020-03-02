@@ -44,8 +44,10 @@
     </section>
 
 
-
-
+    <div class="goBack">
+    <div class="backanp"></div>
+    <img src="images/back (1).svg" alt="backbutton" id="backanp" button onclick="goBack()">
+    </div>
 
 
 
@@ -80,7 +82,7 @@
     </ul>
   </section>
 
-</section>
+
   </header>
 
 
@@ -171,6 +173,21 @@
 
   <!-- form for making post -->
 
+  <section id="detailedView" class="page">
+    <h2>game</h2>
+    <div id="dvId"></div>
+    <!--  show posts -->
+    <section id="show-post"></section>
+    <!-- make posts -->
+    <section id="make-post">
+      <form>
+        <label for="games">select game:</label>
+        <select id="gameSelection" name="gameSelection">
+        </select>
+      </form>
+      <input type="text" id="numberOfPlayers" placeholder="number of players">
+    </section>
+  </section>
   <section id="postDetailedView" class="page">
   </section>
 
@@ -251,6 +268,7 @@
   <script src="js/main.js"></script>
   <script src="js/userupdate.js"></script>
   <script src="js/makePost.js"></script>
+  <script src="js/join.js"></script>
 </body>
 
 </html>
