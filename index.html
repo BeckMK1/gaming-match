@@ -14,14 +14,14 @@
   <header>
     <section class="goBack">
     <div class="backanp"></div>
-    <img src="images/backbut.png" alt="backbutton" class="backanp"><button onclick="goBack()"></button>
+    <img src="images/backbut.png" alt="backbutton" class="backanp" onclick="goBack()">
 
 
     </section>
     <section class="gofor">
     <div class="foranp"></div>
 
-    <img src="images/playf.png" alt="forwardbutton" class="backanp"><button onclick="goBack()"></button>
+    <img src="images/playf.png" alt="forwardbutton" class="backanp" onclick="goBack()">
 
     </section>
     <section id="userogdrop">
@@ -30,7 +30,7 @@
         <img src="images/nouser.png" alt="profile-picture">
       </section>
 
-      <img src="images/arrowdown1.png" alt="dropdownarrow" id="arrow"><button onclick="myFunction()" class="dropbtn">
+      <img src="images/arrowdown1.png" alt="dropdownarrow" id="arrow" onclick="myFunction()" class="dropbtn">
       <div id="myDropdown" class="dropdown-content">
         <a class="dropdowntext" href="#browseGame"> browse games</a>
         <a class="dropdowntext" href="#profile"> profile</a>
@@ -117,32 +117,29 @@
           <div id="register" class="column-50">
             <div class="signupForm">
               <form>
-                <div class="formInput" id="emailInput">
+                <div class="formInput" id="usernameinput">
+                  <label for="username">Username</label>
+                  <input type="text" id="username">
+                </div>
+                <div class="formInput" id="emailinput">
                   <label for="email">Email</label>
                   <input type="email" id="email2">
                 </div>
-                <div class="formInput" id="passwordInput">
+                <div class="formInput" id="passwordinput">
                   <label for="password">Password</label>
                   <input type="password" id="password2">
                 </div>
+                <div class="formInput" id="passwordConfirmationInput">
+                  <label for="passwordConfirmation">Confirm Password</label>
+                  <input type="password" id="passwordConfirmation">
+                </div>
                 <!-- email and password fields for login -->
                 <button id="signupbtn" type="button" name="button" onclick="signUp()">Sign Up</button>
+
               </form>
             </div>
           </div>
         </div>
-        <section id="setUpUserName" class="colum-50">
-          <div class="signuForm">
-          <form>
-            <div class="formInput" id="usernameInput">
-              <label for="username">Username</label>
-              <input type="text" id="username">
-              <button id="signupbtn" type="button" name="button" onclick="signUpNav()">Sign Up</button>
-            </div>
-            </form>
-          </div>
-        </section>
-        </section>
     </section>
     <!-- End of Right Side  -->
     <!-- Sign In Form -->
@@ -166,6 +163,13 @@
           </div>
         </div>
         <!-- End of Right Side  -->
+<section id="setUpUserName">
+  <form>
+    <div class="formInput" id="usernameInput">
+      <label for="username">Username</label>
+      <input type="text" id="username">
+    </div>
+</section>
     </section>
 
   <!-- form for making post -->
@@ -210,30 +214,29 @@
             <div class="edituser"> <input type="text" id="name-update" placeholder="New Username"></div>
             <div class="edituser"> <input type="email" id="mail-update" placeholder="New Email"></div>
             <!-- <input type="file" id="img-update" accept="image/*" onchange="previewImage(this.files[0], 'imagePreviewUpdate')"> -->
-            
+            <div class="edituser"> <img id="imagePreviewUpdate" class="image-preview"></div>
             <div class="edituser"> <button id="saveuser" type="button" name="button" onclick="updateUser()">
                 <p>Save User</p>
               </button></div>
           </form>
         </div>
-      </div>
     </section>
-  </section>
 
     <div id="infouser">
-      <ul id="usersite">
+      <div id="usersite">
         <li class="userinfo" id="usernameinfo"></li>
         <li class="userinfo" id="usermail"></li>
         <li class="userinfo" id="userdiscord"></li>
 
-      </ul>
+      </div>
     </div>
+  </div>
 
 
 
 
 
-
+  </section>
 
 
     <!-- frindlist -->
