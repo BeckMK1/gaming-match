@@ -34,10 +34,9 @@
       <div id="myDropdown" class="dropdown-content">
         <a class="dropdowntext" href="#browseGame"> browse games</a>
         <a class="dropdowntext" href="#profile"> profile</a>
-        <a class="dropdowntext" href="#detailedView">detailedView</a>
-        <a class="dropdowntext" href="#make-post"> create post</a>
         <button id="logoutbutton" type="button" name="button" onclick="logout()">logout</button>
       </div>
+  
 
     </section>
 
@@ -165,28 +164,13 @@
     <div class="formInput" id="usernameinput">
       <label for="username">Username</label>
       <input type="text" id="username">
+      <div class="edituser1" id="imgchance"> <input type="url" id="img" placeholder="place a link to an image here"></div>
 
     </div>
 </section>
     </section>
 
   <!-- form for making post -->
-
-  <section id="detailedView" class="page">
-    <h2>game</h2>
-    <div id="dvId"></div>
-    <!--  show posts -->
-    <section id="show-post"></section>
-    <!-- make posts -->
-    <section id="make-post">
-
-        <label for="games">select game:</label>
-        <select id="gameSelection" name="gameSelection">
-        </select>
-
-      <input type="text" id="numberOfPlayers" placeholder="number of players">
-    </section>
-  </section>
   <section id="postDetailedView" class="page">
   </section>
 
@@ -202,7 +186,7 @@
 
 
       <div id="profilepage">
-        
+
         <button id="editbut" type="button" name="button" onclick="edit()">Settings</button>
         <div id="edit">
 
