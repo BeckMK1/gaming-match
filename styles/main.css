@@ -665,7 +665,7 @@ h1 {
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
-  position: absolute;
+  position:absolute;
   background-color: #2D2C2C;
   z-index: 10;
 }
