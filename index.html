@@ -14,14 +14,14 @@
   <header>
     <section class="goBack">
     <div class="backanp"></div>
-    <img src="images/backbut.png" class="backanp" button onclick="goBack()"></button>
+    <img src="images/backbut.png" alt="backbutton" class="backanp"><button onclick="goBack()"></button>
 
 
     </section>
     <section class="gofor">
     <div class="foranp"></div>
 
-    <img src="images/playf.png" class="backanp" button onclick="goBack()"></button>
+    <img src="images/playf.png" alt="forwardbutton" class="backanp"><button onclick="goBack()"></button>
 
     </section>
     <section id="userogdrop">
@@ -30,21 +30,19 @@
         <img src="images/nouser.png" alt="profile-picture">
       </section>
 
-      <img src="images/arrowdown1.png" id="arrow" button onclick="myFunction()" class="dropbtn">
+      <img src="images/arrowdown1.png" alt="dropdownarrow" id="arrow"><button onclick="myFunction()" class="dropbtn">
       <div id="myDropdown" class="dropdown-content">
         <a class="dropdowntext" href="#browseGame"> browse games</a>
         <a class="dropdowntext" href="#profile"> profile</a>
         <a class="dropdowntext" href="#detailedView">detailedView</a>
         <a class="dropdowntext" href="#make-post"> create post</a>
-        <button id="logoutbutton" type="button" name="button" onclick="logout()">
-          <p>logout</p>
-        </button>
+        <button id="logoutbutton" type="button" name="button" onclick="logout()"><p>logout</p></button>
       </div>
 
     </section>
 
 
-    
+
 
 
 
@@ -87,8 +85,8 @@
   <!-- Front Page (Signup Form) -->
   <section id="front" class="page">
     <section id="loginAndSingup">
-      <button id="loginbutton" type="button" name="button" onclick="showSignIn()">Log in</button>
-      <button id="signoutbutton" type="button" name="button" onclick="signUp()">Sign Up</button>
+      <button id="loginbutton" type="button" name="button" onclick="showSignIn()"><p>Log in</p></button>
+      <button id="signoutbutton" type="button" name="button" onclick="signUp()"><p>Sign up</p></button>
     </section>
     <div id="blackoutvideo"></div>
     <div id="video-container">
@@ -225,12 +223,12 @@
     </section>
 
     <div id="infouser">
-      <div id="usersite">
+      <ul id="usersite">
         <li class="userinfo" id="usernameinfo"></li>
         <li class="userinfo" id="usermail"></li>
         <li class="userinfo" id="userdiscord"></li>
 
-      </div>
+      </ul>
     </div>
 
 
@@ -241,9 +239,9 @@
 
 
     <!-- frindlist -->
-    <section id="over">
-      <section id="browseGame" class="page">
 
+      <section id="browseGame" class="page">
+<section id="over">
 
       <div id="Spilunderside">
 
