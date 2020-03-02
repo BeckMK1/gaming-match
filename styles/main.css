@@ -689,7 +689,7 @@ h1 {
 .show {
   display: block;
   width: 300px;
-margin-top: -36px;
+  margin:0%;
   text-align: center;
   height: 300px;
 }
