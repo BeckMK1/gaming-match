@@ -13,15 +13,15 @@
   <!-- navagtion -->
   <header>
     <section class="goBack">
-    <div class="backanp"></div>
-    <img src="images/backbut.png" alt="backbutton" class="backanp" onclick="goBack()">
+      <div class="backanp"></div>
+      <img src="images/backbut.png" alt="backbutton" class="backanp" onclick="goBack()">
 
 
     </section>
     <section class="gofor">
-    <div class="foranp"></div>
+      <div class="foranp"></div>
 
-    <img src="images/playf.png" alt="forwardbutton" class="backanp" onclick="goBack()">
+      <img src="images/playf.png" alt="forwardbutton" class="backanp" onclick="goBack()">
 
     </section>
     <section id="userogdrop">
@@ -45,36 +45,36 @@
 
 
 
-  <section id="friendlist">
-    <h3>Friends</h3>
-    <ul id="listen">
-      <li><img src="images/nouser.png" alt="friendprofile">
-        <P>navn</p>
-      </li>
-      <li><img src="images/nouser.png" alt="friendprofile">
-        <P>navn</p>
-      </li>
-      <li><img src="images/nouser.png" alt="friendprofile">
-        <P>navn</p>
-      </li>
-      <li><img src="images/nouser.png" alt="friendprofile">
-        <P>navn</p>
-      </li>
-      <li><img src="images/nouser.png" alt="friendprofile">
-        <P>navn</p>
-      </li>
-      <li><img src="images/nouser.png" alt="friendprofile">
-        <P>navn</p>
-      </li>
-      <li><img src="images/nouser.png" alt="friendprofile">
-        <P>navn</p>
-      </li>
-      <li><img src="images/nouser.png" alt="friendprofile">
-        <P>navn</p>
-      </li>
+    <section id="friendlist">
+      <h3>Friends</h3>
+      <ul id="listen">
+        <li><img src="images/nouser.png" alt="friendprofile">
+          <P>navn</p>
+        </li>
+        <li><img src="images/nouser.png" alt="friendprofile">
+          <P>navn</p>
+        </li>
+        <li><img src="images/nouser.png" alt="friendprofile">
+          <P>navn</p>
+        </li>
+        <li><img src="images/nouser.png" alt="friendprofile">
+          <P>navn</p>
+        </li>
+        <li><img src="images/nouser.png" alt="friendprofile">
+          <P>navn</p>
+        </li>
+        <li><img src="images/nouser.png" alt="friendprofile">
+          <P>navn</p>
+        </li>
+        <li><img src="images/nouser.png" alt="friendprofile">
+          <P>navn</p>
+        </li>
+        <li><img src="images/nouser.png" alt="friendprofile">
+          <P>navn</p>
+        </li>
 
-    </ul>
-  </section>
+      </ul>
+    </section>
 
 
   </header>
@@ -89,86 +89,88 @@
     </section>
     <div id="blackoutvideo"></div>
     <div id="video-container">
-    <video autoplay loop muted>
-      <source src="images/baggrund.mp4">
-    </video>
-  </div>
+      <video autoplay loop muted>
+        <source src="images/baggrund.mp4">
+      </video>
+    </div>
 
     <div id="blackout"></div>
     <div class="frontcontent">
       <section id="signUp">
         <!-- Left side -->
 
-          <div class="columntextfront">
+        <div class="columntextfront">
 
-            <div id="overskriftfront">
-              <h1>Gaming Match</h1>
-            </div>
-            <div id="tekstfront">
-              <p>Gaming match er en web app for dig, der mangler en eller flere at spille med.<br>Det er gratis, så opret dig nu!</p>
-            </div>
+          <div id="overskriftfront">
+            <h1>Gaming Match</h1>
           </div>
+          <div id="tekstfront">
+            <p>Gaming match er en web app for dig, der mangler en eller flere at spille med.<br>Det er gratis, så opret
+              dig nu!</p>
+          </div>
+        </div>
 
       </section>
-        <!-- End of Right Side  -->
-          <!-- End of Left side -->
-          <!-- Right Side (login) -->
-          <div id="register" class="column-50">
-            <div class="signupForm">
-              <form>
+      <!-- End of Right Side  -->
+      <!-- End of Left side -->
+      <!-- Right Side (login) -->
+      <div id="register" class="column-50">
+        <div class="signupForm">
+          <form>
 
-                <div class="formInput" id="emailinput">
-                  <label for="email">Email</label>
-                  <input type="email" id="email2">
-                </div>
-                <div class="formInput" id="passwordinput">
-                  <label for="password">Password</label>
-                  <input type="password" id="password2">
-                </div>
-                <div class="formInput" id="passwordConfirmationInput">
-
-                </div>
-                <!-- email and password fields for login -->
-                <button id="signupbtn" type="button" name="button" onclick="signUp()">Sign Up</button>
-
-              </form>
+            <div class="formInput" id="emailinput">
+              <label for="email">Email</label>
+              <input type="email" id="email2">
             </div>
-          </div>
+            <div class="formInput" id="passwordinput">
+              <label for="password">Password</label>
+              <input type="password" id="password2">
+            </div>
+            <div class="formInput" id="passwordConfirmationInput">
+
+            </div>
+            <!-- email and password fields for login -->
+            <button id="signupbtn" type="button" name="button" onclick="signUp()">Sign Up</button>
+
+          </form>
         </div>
-    </section>
-    <!-- End of Right Side  -->
-    <!-- Sign In Form -->
-
-    <section id="signIn">
-        <div id="login" class="column-50">
-          <div class="signInForm">
-            <button id="closebutton" type="button" name="button">X</button>
-            <form>
-              <div class="formInput" id="emailInput">
-                <label for="email">Email</label>
-                <input type="email" id="email">
-              </div>
-              <div class="formInput" id="passwordInput">
-                <label for="password">Password</label>
-                <input type="password" id="password">
-              </div>
-              <!-- email and password fields for login -->
-              <button id="signinbtn" type="button" name="button" onclick="signIn()">Sign In</button>
-            </form>
-          </div>
-        </div>
-
-        <!-- End of Right Side  -->
-<section id="setUpUserName">
-
-    <div class="formInput" id="usernameinput">
-      <label for="username">Username</label>
-      <input type="text" id="username">
-      <div class="edituser1" id="imgchance"> <input type="url" id="img" placeholder="place a link to an image here"></div>
-
+      </div>
     </div>
-</section>
+  </section>
+  <!-- End of Right Side  -->
+  <!-- Sign In Form -->
+
+  <section id="signIn">
+    <div id="login" class="column-50">
+      <div class="signInForm">
+        <button id="closebutton" type="button" name="button">X</button>
+        <form>
+          <div class="formInput" id="emailInput">
+            <label for="email">Email</label>
+            <input type="email" id="email">
+          </div>
+          <div class="formInput" id="passwordInput">
+            <label for="password">Password</label>
+            <input type="password" id="password">
+          </div>
+          <!-- email and password fields for login -->
+          <button id="signinbtn" type="button" name="button" onclick="signIn()">Sign In</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- End of Right Side  -->
+    <section id="setUpUserName">
+
+      <div class="formInput" id="usernameinput">
+        <label for="username">Username</label>
+        <input type="text" id="username">
+        <div class="edituser1" id="imgchance"> <input type="url" id="img" placeholder="place a link to an image here">
+        </div>
+
+      </div>
     </section>
+  </section>
 
   <!-- form for making post -->
 
@@ -177,7 +179,7 @@
   <section id="postDetailedView" class="page">
   </section>
 
-<section id="postPage" class="page"></section>
+  <section id="postPage" class="page"></section>
 
   <!-- profile page  -->
 
@@ -194,14 +196,16 @@
         <button id="editbut" type="button" name="button" onclick="edit()">Settings</button>
         <div id="edit">
 
-            <div class="edituser1" id="imgchance"> <input type="url" id="img" placeholder="place a link to an image here"></div>
-            <div class="edituser"> <input type="text" id="name-update" placeholder="New Username"></div>
-            <div class="edituser"> <input type="email" id="mail-update" placeholder="New Email"></div>
-            
+          <div class="edituser1" id="imgchance"> <input type="url" id="img" placeholder="place a link to an image here">
+          </div>
+          <div class="edituser"> <input type="text" id="name-update" placeholder="New Username"></div>
+          <div class="edituser"> <input type="email" id="mail-update" placeholder="New Email"></div>
+          <div class="edituser"> <input type="text" id="discord-update" placeholder="Discord Name"></div>
+          <!-- <input type="file" id="img-update" accept="image/*" onchange="previewImage(this.files[0], 'imagePreviewUpdate')"> -->
 
-            <div class="edituser"><button id="saveuser" type="button" name="button" onclick="updateUser()">
+          <div class="edituser"><button id="saveuser" type="button" name="button" onclick="updateUser()">
               Save User
-              </button></div>
+            </button></div>
 
         </div>
     </section>
@@ -209,29 +213,21 @@
     <div id="infouser">
       <div id="usersite">
         <ul>
-        <li class="userinfo" id="usernameinfo"></li>
-        <li class="userinfo" id="usermail"></li>
-        <li class="userinfo" id="userdiscord"></li>
-</ul>
+          <li class="userinfo" id="usernameinfo"></li>
+          <li class="userinfo" id="usermail"></li>
+          <li class="userinfo" id="userdiscord"></li>
+        </ul>
       </div>
     </div>
-  </div>
-
-
-
-
-
-
-
-
+    </div>
 
   </section>
 
 
-    <!-- frindlist -->
+  <!-- frindlist -->
 
-      <section id="browseGame" class="page">
-<section id="over">
+  <section id="browseGame" class="page">
+    <section id="over">
 
       <div id="Spilunderside">
 

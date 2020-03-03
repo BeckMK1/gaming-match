@@ -23,7 +23,7 @@ document.querySelector("#usermail").innerHTML=`
 `
 document.querySelector("#userdiscord").innerHTML=`
 
-<p>Discord:<br>${userData.data().discord}</p>
+<p id="discord">Discord:<br>${userData.data().discord}</p>
 
 `
 
