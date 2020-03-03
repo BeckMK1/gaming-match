@@ -1,6 +1,6 @@
 html {
-height: 100%;
-width: auto;
+  height: 100%;
+  width: auto;
 }
 
 header {
@@ -11,10 +11,10 @@ header {
   z-index: 8;
 }
 
-#front{
-height: 100%;
-width: auto;
-overflow-y: hidden;
+#front {
+  height: 100%;
+  width: auto;
+  overflow-y: hidden;
 
 }
 
@@ -25,26 +25,27 @@ body {
   width: auto;
   overflow-x: hidden;
 }
-#setUpUserName{
-position: relative;
-bottom:50%;
-width: 500px;
-float: right;
-right: 250px;
+
+#setUpUserName {
+  position: relative;
+  bottom: 50%;
+  width: 500px;
+  float: right;
+  right: 250px;
 }
 
 /* ============== FRONT-PAGE ============== */
 
 /* Video background */
 #video-container {
-position: absolute;
-max-height: 92.8%;
-overflow: hidden;
+  position: absolute;
+  max-height: 92.8%;
+  overflow: hidden;
 }
 
 video {
-height: 100%;
-width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 /*video filter*/
@@ -73,7 +74,8 @@ width: 100%;
   margin-bottom: 15px;
 }
 
-#tabbar a, .formInput {
+#tabbar a,
+.formInput {
   color: white !important;
 }
 
@@ -141,6 +143,7 @@ header {
   flex-direction: column;
   width: 150%;
 }
+
 .frontcontent {
   display: flex;
   flex-direction: row;
@@ -189,11 +192,12 @@ header {
   padding-bottom: 2%;
   border-radius: 10px;
 }
+
 .signuForm {
   position: relative;
   z-index: 4;
   background: #525252;
-margin-left: 50%;
+  margin-left: 50%;
   width: 80%;
   padding-top: 2%;
   padding-bottom: 2%;
@@ -237,16 +241,18 @@ margin-left: 50%;
   z-index: 9;
   bottom: 85%;
   left: 30%;
-  }
-.signInForm{
+}
+
+.signInForm {
   background: #525252;
   width: 40%;
   padding-bottom: 1%;
   border-radius: 10px;
 
 }
- /* END OF UKENT ukent*/
- #signinbtn{
+
+/* END OF UKENT ukent*/
+#signinbtn {
   -webkit-appearance: none;
   height: 50px;
   width: 30%;
@@ -260,16 +266,16 @@ margin-left: 50%;
   margin-top: 2%;
   margin-bottom: 2%;
   padding-left: 6%;
- }
+}
 
- #signinbtn p{
-   position: relative;
+#signinbtn p {
+  position: relative;
   color: white;
   margin: 0;
   left: 30%;
- }
+}
 
- #closebutton{
+#closebutton {
   -webkit-appearance: none;
   padding-left: 5px;
   padding-right: 5px;
@@ -280,7 +286,7 @@ margin-left: 50%;
   margin-top: 2%;
   margin-bottom: 2%;
   margin: 0;
- }
+}
 
 
 /* ============== PROFILE-PAGE ==============  */
@@ -407,7 +413,8 @@ margin-left: 50%;
 
 /* friendlist box */
 #friendlist {
-  display: flex;/*flex;*/
+  display: flex;
+  /*flex;*/
   flex-direction: column;
   background-color: #2D2C2C;
   height: 1080px;
@@ -423,7 +430,7 @@ margin-left: 50%;
 }
 
 #listen {
-  margin-left:0%;
+  margin-left: 0%;
 }
 
 #friendlist h3 {
@@ -467,6 +474,7 @@ li p {
   flex-direction: column;
   position: absolute;
 }
+
 #gamesliste {
   margin: 20px;
 }
@@ -519,6 +527,7 @@ h1 {
   display: flex;
   flex-direction: row;
 }
+
 #updateuser {
   display: flex;
   flex-direction: column;
@@ -646,7 +655,8 @@ h1 {
 }
 
 /* Dropdown button on hover & focus */
-.dropbtn:hover, .dropbtn:focus {
+.dropbtn:hover,
+.dropbtn:focus {
   color: green;
 }
 
@@ -656,21 +666,23 @@ h1 {
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
-  position:absolute;
+  position: absolute;
   background-color: #2D2C2C;
   z-index: 10;
 
 }
-#myDropdown{
-position: relative;
-bottom: 45px;
+
+#myDropdown {
+  position: relative;
+  bottom: 45px;
 }
+
 /* Links inside the dropdown */
 .dropdown-content a {
   color: white;
   margin-top: 5%;
   text-decoration: none;
-  display:flex;
+  display: flex;
   flex-direction: column;
   border: solid 2px;
   border-radius: 25px;
@@ -678,10 +690,11 @@ bottom: 45px;
   padding-top: 5px;
   padding-bottom: 5px;
 
-margin-left: 5%;
+  margin-left: 5%;
 
 
 }
+
 /*logut button*/
 #logoutbutton {
 
@@ -711,7 +724,7 @@ margin-left: 5%;
 .show {
   display: block;
   width: 300px;
-  margin:0%;
+  margin: 0%;
   text-align: center;
   height: 200px;
 }
@@ -720,22 +733,24 @@ margin-left: 5%;
   width: 400px;
   height: auto;
 
-margin-left: 25%;
+  margin-left: 25%;
   position: fixed;
   margin-top: 1%;
 
 
 }
+
 .gofor {
   width: 400px;
   height: auto;
 
-margin-left: 29%;
+  margin-left: 29%;
   position: fixed;
   margin-top: 1%;
 
 
 }
+
 /*go back button*/
 .backanp {
   height: 40px;
@@ -774,10 +789,10 @@ margin-left: 29%;
 
 }
 
-.coverImg{
-height: 200%;
-width: 100%;
-margin-top: 4%;
+.coverImg {
+  height: 200%;
+  width: 100%;
+  margin-top: 4%;
 }
 
 /* Title of the game */
@@ -791,11 +806,13 @@ margin-top: 4%;
   margin: 0%;
   text-align: center;
 }
-#postDetailedView{
+
+#postDetailedView {
   position: absolute;
 }
-#hiddenInfoPoste{
-  display:none;
+
+#hiddenInfoPoste {
+  display: none;
 }
 
 /* Flexbox parent -HOT- -TOP- -NEW- buttons */
@@ -811,7 +828,8 @@ margin-top: 4%;
 
 }
 
-.postSelectionBar, button {
+.postSelectionBar,
+button {
   justify-content: space-between;
   align-content: space-around;
   height: 50px;
@@ -828,8 +846,8 @@ margin-top: 4%;
   outline: none;
   text-decoration: none;
   display: inline-block;
-  width:70px;
-  color:#c7c7c7;
+  width: 70px;
+  color: #c7c7c7;
 }
 
 .postSelectionBar button:hover,
@@ -842,42 +860,43 @@ margin-top: 4%;
 
 
 /* her er bunden binde*/
-.makePostTitle{
+.makePostTitle {
   -webkit-appearance: none;
 
 
 
 }
-#make-post{
+
+#make-post {
   display: flex;
   flex-direction: column;
   background-color: #333333;
 
 }
-.underpost{
 
+.underpost {}
 
-}
-.buttonjoin{
+.buttonjoin {
   border-top: solid 4px;
   border-radius: 4px;
   display: flex;
   flex-direction: row;
 
 }
+
 .buttonjoin p {
-margin-left: 10%;
+  margin-left: 10%;
 
 
 }
 
 /* Post article styling */
 
-#view-post{
+#view-post {
   text-align: center;
 }
 
-#view-post article{
+#view-post article {
   display: flex;
   flex-direction: column;
   margin-left: 10%;
@@ -889,8 +908,8 @@ margin-left: 10%;
   margin-top: 2%;
 }
 
-#view-post article p{
-  font-size:20px;
+#view-post article p {
+  font-size: 20px;
 
 
 }
@@ -905,7 +924,7 @@ margin-left: 10%;
   height: 45px;
   color: #c7c7c7;
   border-radius: 5px;
-  font-size:16px;
+  font-size: 16px;
   outline: none;
   text-decoration: none;
   /* placement */
@@ -918,25 +937,26 @@ margin-left: 10%;
 
 
 
-#postkas{
+#postkas {
   margin-top: 50px;
 
 }
-#overkas{
+
+#overkas {
   height: 25%;
   width: 30%;
   display: flex;
 }
 
-#create{
+#create {
   width: 50%;
   display: flex;
-  flex-direction:row;
+  flex-direction: row;
   margin-left: 50%;
 }
 
 /* Create lobby/post button */
-#create button{
+#create button {
   background-color: transparent;
   display: inline-block;
   width: 150px;
@@ -945,13 +965,12 @@ margin-left: 10%;
   color: #c7c7c7;
   border: 1px solid #fff;
   border-radius: 5px;
-  font-size:16px;
+  font-size: 16px;
   outline: none;
   text-decoration: none;
   /* placement */
   text-align: center;
   margin: 30px 10px 10px 20px
-
 }
 
 #create button:hover,
@@ -961,14 +980,15 @@ margin-left: 10%;
   font-weight: bold;
 }
 
-#create select{
-  height:25px;
+#create select {
+  height: 25px;
   margin-top: 8%;
   margin-right: 11px;
   color: black;
 }
-#create label{
-  height:25px;
+
+#create label {
+  height: 25px;
   margin-top: 9%;
   margin-right: 11px;
   color: white;
@@ -981,14 +1001,14 @@ margin-left: 10%;
 
 /* Comment typing box */
 #postTitle {
-    -webkit-appearance: none;
-    height: 150px;
-    width: 70%;
-    margin-left: 15%;
-    margin-top: 3%;
-    border-radius: 4px;
-    text-align: center;
-    font-size: 20px;
+  -webkit-appearance: none;
+  height: 150px;
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 3%;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 20px;
 }
 
 #loginAndSingup {
@@ -999,13 +1019,12 @@ margin-left: 10%;
   height: 70px;
   background-color: black;
 }
-#setUpUserName{
-display: none;
+
+#setUpUserName {
+  display: none;
 
 
-border-color: black;
+  border-color: black;
 }
 
-#postPage{
-
-}
+#postPage {}

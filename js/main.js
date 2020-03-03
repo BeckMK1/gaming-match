@@ -7,10 +7,11 @@ function showSignIn() {
   document.querySelector("#signIn").style.display = "block";
   document.querySelector("#blackout").style.display = "block";
 }
-document.getElementById("closebutton").addEventListener("click", function(){
+document.getElementById("closebutton").addEventListener("click", function () {
   console.log("here")
   document.querySelector("#signIn").style.display = "none";
-  document.querySelector("#blackout").style.display = "none";})
+  document.querySelector("#blackout").style.display = "none";
+})
 
 
 //---------------------------------------- sign up ----------------------------------------
@@ -21,22 +22,22 @@ function signUp() {
   firebase.auth().createUserWithEmailAndPassword(email, password).catch(function (error) {
 
   });
-  document.querySelector("#setUpUserName").style.display= "block";
-  document.querySelector(".signupForm").style.display="none";;
+  document.querySelector("#setUpUserName").style.display = "block";
+  document.querySelector(".signupForm").style.display = "none";;
 }
 
-function signUpNav(){
+function signUpNav() {
   let user = firebase.auth().currentUser;
 
   // update auth user
   user.updateProfile({});
   _userRef.doc(user.uid).set({
-  displayName: document.querySelector("#username").value,
-},{
+    displayName: document.querySelector("#username").value,
+  }, {
     merge: true
-})
-document.querySelector('#userogdrop').style.display = "block";
-document.querySelector("#loginAndSingup").style.display = "none";
+  })
+  document.querySelector('#userogdrop').style.display = "block";
+  document.querySelector("#loginAndSingup").style.display = "none";
 }
 
 // ------------------------------  sign in  -------------------------------------------------
@@ -49,14 +50,14 @@ function signIn() {
     var errorMessage = error.message;
     // ...
   });
-  
+
 }
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
     userAuthenticated(user)
     console.log(user.uid);
   } else {
-    userNotAuthenticated();// User not logged in or has just logged out.
+    userNotAuthenticated(); // User not logged in or has just logged out.
     console.log("you are loged out")
   }
 });
@@ -73,7 +74,7 @@ function appendUserData() {
 
   document.querySelector('#name-update').value = _currentUser.displayName;
   document.querySelector('#mail-update').value = _currentUser.mail;
-   document.querySelector('#imagePreview').src = _currentUser.img;
+  document.querySelector('#imagePreview').src = _currentUser.img;
 }
 
 function updateUser() {
@@ -89,7 +90,10 @@ function updateUser() {
     mail: document.querySelector('#mail-update').value,
   }, {
     merge: true
+
   });
+  document.querySelector("#edit").style.display = "none";
+  document.querySelector("#infouser").style.display = "block";
 
 }
 //----------------------------------- image previewImage --------------------------------------
@@ -119,11 +123,12 @@ function goBack() {
 // <img>${user.img}</img>
 // `
 // }
-function userNotAuthenticated(){
-document.querySelector("header").style.display="none";
-navigateTo("front");
+function userNotAuthenticated() {
+  document.querySelector("header").style.display = "none";
+  navigateTo("front");
 }
-function edit(){
-document.querySelector("#edit").style.display= "block";
-document.querySelector("#infouser").style.display= "none";
+
+function edit() {
+  document.querySelector("#edit").style.display = "block";
+  document.querySelector("#infouser").style.display = "none";
 }

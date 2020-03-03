@@ -1,25 +1,25 @@
+function viewPostFun() {
+  const _showPostRef = db.collection("posts");
+  let posts = [];
+  _showPostRef.onSnapshot(function (snapshotData) {
+    posts = [];
+    snapshotData.forEach(function (doc) {
+      let post = doc.data();
 
-function viewPostFun(){
-const _showPostRef = db.collection("posts");
-let posts=[];
-_showPostRef.onSnapshot(function(snapshotData) {
-  posts = [];
-  snapshotData.forEach(function(doc){
-    let post = doc.data();
+      post.id = doc.id;
+      posts.push(post);
 
-    post.id = doc.id;
-    posts.push(post);
-
+    });
+    console.log(posts);
+    appendPosts(posts)
   });
-  console.log(posts);
-appendPosts(posts)
-});
-function appendPosts(posts){
-  let htmlTemplate="";
-  for (let post of posts){
-    console.log(post)
 
-htmlTemplate +=`<article>
+  function appendPosts(posts) {
+    let htmlTemplate = "";
+    for (let post of posts) {
+      console.log(post)
+
+      htmlTemplate += `<article>
 
 <p>${post.title}</p>
 
@@ -29,17 +29,17 @@ htmlTemplate +=`<article>
 <button type="button" name="button" onclick="join('${post.id}')">join</button>
 </article>`
 
-document.querySelector("#view-post").innerHTML = htmlTemplate;
+      document.querySelector("#view-post").innerHTML = htmlTemplate;
+
+    }
 
   }
-
-}
 }
 const _showPostRef = db.collection("posts");
-let posts=[];
-_showPostRef.onSnapshot(function(snapshotData) {
+let posts = [];
+_showPostRef.onSnapshot(function (snapshotData) {
   posts = [];
-  snapshotData.forEach(function(doc){
+  snapshotData.forEach(function (doc) {
     let post = doc.data();
 
     post.id = doc.id;
@@ -47,16 +47,17 @@ _showPostRef.onSnapshot(function(snapshotData) {
 
   });
 });
-function join(id){
+
+function join(id) {
   let selectPost;
   for (let post of posts) {
-  if (post.id === id) {
-  selectPost = post
-  }
+    if (post.id === id) {
+      selectPost = post
+    }
 
   }
   navigateTo("postPage");
-  document.querySelector("#postPage").innerHTML=`
+  document.querySelector("#postPage").innerHTML = `
   <article>
   <p>${selectPost.player}</p>
   <p>${selectPost.playerCount}</p>
@@ -64,7 +65,7 @@ function join(id){
   `;
   let updetePlayer = db.collection("posts").doc(`${selectPost.id}`);
   return updetePlayer.update({
-  player:document.querySelector("#userName").textContent,
+    player: document.querySelector("#userName").textContent,
   });
 
 }
