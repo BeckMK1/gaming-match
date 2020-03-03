@@ -1,16 +1,6 @@
 "use strict";
 
-// inporting game title 
-// function appendgamesforpost(games){
-//     let htmlTemplate="";
-//     let htmlTemplate2="";
-//     for (let game of games){
-//       console.log(games)
-  
-  
-//     }
-  
-//   }
+
 
 // inporting tags
 function makePostFun(){
@@ -33,12 +23,12 @@ function appendtags(tags){
     let htmlTemplate="";
     for (let tag of tags){
       console.log(tags)
-  
+
   htmlTemplate +=`
   <option value="${tag.tag}">${tag.tag}</option>
-  ` 
-  document.querySelector("#maketags").innerHTML = htmlTemplate;   
-    } 
+  `
+  document.querySelector("#maketags").innerHTML = htmlTemplate;
+    }
 }
 }
 // creating post
@@ -51,6 +41,6 @@ _postRef.add({
   maxplayerCount: document.querySelector("#postPlayerCount").textContent,
   gameTitle:document.querySelector("#postGameTitle").textContent,
   title: document.querySelector("#postTitle").value,
-    tag: document.querySelector("#maketags").value,   
+    tag: document.querySelector("#maketags").value,
 })
 }
