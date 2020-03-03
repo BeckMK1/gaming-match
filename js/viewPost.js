@@ -58,14 +58,18 @@ function join(id) {
   }
   navigateTo("postPage");
   document.querySelector("#postPage").innerHTML = `
+  <div id="postPageContainer">
+  <h2 id="postTitle">${selectPost.title}</h2>
   <article>
-  <p>${selectPost.player}</p>
-  <p>${selectPost.playerCount}</p>
+  <p id="postPageName">${selectPost.player}</p>
+  <p id="postPageDicord">${selectPost.discord}</p>
   </article>
+  </div>
   `;
   let updetePlayer = db.collection("posts").doc(`${selectPost.id}`);
   return updetePlayer.update({
     player: document.querySelector("#userName").textContent,
+    discord: document.querySelector("#discord").textContent,
   });
 
 }

@@ -88,6 +88,7 @@ function updateUser() {
     img: document.querySelector('#img').value,
     displayName: document.querySelector('#name-update').value,
     mail: document.querySelector('#mail-update').value,
+    discord: document.querySelector("#discord-update").value,
   }, {
     merge: true
 

@@ -1026,5 +1026,40 @@ button {
 
   border-color: black;
 }
-
-#postPage {}
+/* postPage styling */
+#postPage {
+position: relative;
+height: 100%;
+width: auto;
+background-color: #1c1c1c;
+}
+#postPage article{
+position: relative;
+border: solid black;
+width: 50%;
+padding-left: 5px;
+border-radius: 10px;
+background-color: white;
+left: 25%;
+}
+#postPageName{
+position: relative;
+border: solid black ;
+width: 50%;
+text-align: center;
+border-radius: 25px;
+left: 22%;
+}
+#postTitle{
+position: relative;
+top: 2%;
+margin-top: 0px;
+}
+#postPageContainer{
+width: 40%;
+height: 90%;
+position: relative;
+left: 42%;
+top: 10%;
+background-color: #333333;
+}
