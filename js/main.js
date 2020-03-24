@@ -83,13 +83,20 @@ function updateUser() {
 }
 //----------------------------------- image previewImage --------------------------------------
 function previewImage(file, previewId) {
-  if (file) {
+if (file){
+(file) {
     let reader = new FileReader();
     reader.onload = function (event) {
       document.querySelector('#' + previewId).setAttribute('src', event.target.result);
     };
     reader.readAsDataURL(file);
   }
+
+
+
+
+
+
 }
 
 function logout() {
